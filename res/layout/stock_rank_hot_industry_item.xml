@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="?attr_bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.common.widget.AutoResizeTextView android:textSize="12.0dip" android:textColor="?attr_text_level1_color" android:id="@id/industry_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="--" android:singleLine="true" />
+    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:id="@id/industry_profit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="--" />
+    <com.xueqiu.android.common.widget.AutoResizeTextView android:textSize="12.0dip" android:textColor="?attr_text_level2_color" android:id="@id/top_stock_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="--" android:singleLine="true" />
+    <TextView android:textSize="12.0sp" android:textColor="?attr_text_level1_color" android:id="@id/top_stock_current_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:text="--  --" />
+</LinearLayout>

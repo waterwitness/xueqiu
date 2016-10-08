@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/profileImage" android:scrollbars="none" android:layout_width="@dimen/profile_image_width_small" android:layout_height="@dimen/profile_image_width_small" android:layout_margin="10.0dip" android:src="?attr_user_profile_default_small" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/avatar_frame" android:background="?attr_avatar_frame" android:layout_width="@dimen/profile_image_width_small" android:layout_height="@dimen/profile_image_width_small" android:layout_alignLeft="@id/profileImage" android:layout_alignTop="@id/profileImage" />
+    <RelativeLayout android:id="@id/screenName_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="45.0dip" android:layout_toRightOf="@id/profileImage" android:layout_alignTop="@id/profileImage">
+        <TextView android:textSize="16.0sp" android:textColor="?attr_color_username_2" android:id="@id/screen_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="蔡淑华" android:singleLine="true" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/vImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/v_others" android:layout_toRightOf="@id/screen_name" android:layout_alignParentTop="true" />
+        <TextView android:textSize="14.0sp" android:textColor="?attr_color_userintro" android:id="@id/description" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/screen_name" />
+    </RelativeLayout>
+    <Button android:id="@id/invite" android:background="?attr_btn_gray_selector" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:minHeight="0.0dip" android:text="邀请" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

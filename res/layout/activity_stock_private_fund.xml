@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/stock_detail_action_bar" />
+    <com.xueqiu.android.common.widget.SNBPullToRefreshListView android:layout_gravity="bottom" android:id="@id/comment_list" android:background="@drawable/transparent" android:paddingBottom="50.0dip" android:clickable="true" android:clipToPadding="false" android:divider="@null" android:dividerHeight="0.0dip" android:layout_below="@id/stock_detail_action_bar" android:layout_alignParentBottom="true" style="?attr/snbListViewStyle" />
+    <com.xueqiu.android.common.widget.FloatingActionMenu android:layout_gravity="bottom" android:id="@id/floating_action_menu" android:background="@color/bg_bottom_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

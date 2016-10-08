@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/action_bar_view" android:background="?attr_nav_color" android:layout_width="fill_parent" android:layout_height="@dimen/abc_action_bar_default_height">
+        <RelativeLayout android:id="@id/action_message_view" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/action_message" android:background="?selectableItemBackground" android:layout_width="52.0dip" android:layout_height="fill_parent" android:src="?attr_icon_tool_message" />
+            <ImageView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="top" android:id="@id/unread_count" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-25.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/action_message" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0dip" android:textColor="?attr_nav_text_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/action_search" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="?attr_icon_tool_search" />
+            <ImageButton android:id="@id/action_create_cube" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="?attr_icon_tool_cubenew" />
+            <ImageButton android:layout_gravity="center|right" android:id="@id/action_more" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="?attr_icon_tool_more" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <include layout="@layout/widget_view_pager_with_edit" />
+</LinearLayout>

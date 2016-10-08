@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.xueqiu.android.common.widget.FloatingActionMenu android:layout_gravity="bottom" android:id="@id/floating_action_view" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+        <com.xueqiu.android.common.widget.SNBPullToRefreshListView android:id="@id/content_listview" android:clickable="true" android:divider="@null" android:dividerHeight="0.0dip" android:layout_above="@id/floating_action_view" android:headerDividersEnabled="false" android:footerDividersEnabled="false" style="?attr/snbListViewStyle" />
+        <include android:id="@id/sticky_header" layout="@layout/stock_detail_tab_indicator" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/pop_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/stock_order_container" android:background="@color/transparent" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/trade_fragment_shadow" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" style="@style/im_contact_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/im_avatar" android:layout_marginLeft="@dimen/im_chat_item_element_margin" android:contentDescription="头像" style="@style/im_contact_avatar" />
+    <TextView android:id="@id/im_contact_name" android:layout_width="0.0dip" android:layout_marginLeft="@dimen/im_chat_item_element_margin" android:layout_weight="1.0" style="@style/im_contact_name" />
+    <ImageView android:contentDescription="arrow" style="@style/im_arrow_next" />
+</LinearLayout>

@@ -1,0 +1,74 @@
+[
+  [
+    {
+      "name": "IDENTIFY",
+      "icon": "icon_me_identify",
+      "title": "我的认证",
+      "sub_title": "",
+      "url": "http://xueqiu.com/prove/list",
+      "badge": false
+    }
+  ],
+  [
+    {
+      "name": "TRADER",
+      "icon": "icon_me_Securitiestrader",
+      "title": "我的券商",
+      "sub_title": "",
+      "url": "https://xueqiu.com/broker/config",
+      "badge": false
+    },
+    {
+      "name": "WEB",
+      "icon": "http://xqimg.imedao.com/151c86c723b15dc3fe93cde4.png",
+      "title": "交易券",
+      "sub_title": "",
+      "url": "http://xueqiu.com/broker/coupon/coupon-list",
+      "badge": false
+    },
+   {
+      "name": "WALLET",
+      "icon": "icon_me_wallet",
+      "title": "钱包",
+      "sub_title": "",
+      "url": "http://xueqiu.com/wallet/assets",
+      "badge": false
+    }
+  ],
+  [
+    {
+      "name": "CUBE",
+      "icon": "icon_me_cube",
+      "title": "我的组合",
+      "sub_title": "",
+      "url": "",
+      "badge": false
+    },
+    {
+      "name": "FAV",
+      "icon": "icon_me_fav",
+      "title": "收藏",
+      "sub_title": "",
+      "url": "http://xueqiu.com/favs/config",
+      "badge": false
+    }
+  ],
+  [
+    {
+      "name": "NIGHT",
+      "icon": "icon_me_night",
+      "title": "夜间模式",
+      "sub_title": "",
+      "url": "",
+      "badge": false
+    },
+    {
+      "name": "SETTING",
+      "icon": "icon_me_setting",
+      "title": "设置",
+      "sub_title": "",
+      "url": "",
+      "badge": false
+    }
+  ]
+]

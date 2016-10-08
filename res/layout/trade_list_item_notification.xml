@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?attr_background_color" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="?attr_big_round_corner_bg_with_stroke" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textColor="?attr_text_level1_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="成交提醒" />
+        <TextView android:textSize="13.0sp" android:textColor="?attr_text_level2_color" android:id="@id/occur_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2016-08-08 11:23:18" />
+        <com.xueqiu.android.common.widget.SnowBallTextView android:textSize="15.0sp" android:textColor="?attr_text_level2_color" android:id="@id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:lineSpacingExtra="4.0dip" />
+        <FrameLayout android:id="@id/more" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <View android:background="?attr_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <TextView android:textSize="13.0sp" android:textColor="?attr_text_level1_color" android:paddingTop="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/more" android:drawableRight="?attr_arrow" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

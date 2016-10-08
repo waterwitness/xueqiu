@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header" android:background="?attr_bg_table_header" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+        <TextView android:textAppearance="@style/cal_list_title_style" android:gravity="center_vertical" android:id="@id/cal_title_text" android:paddingLeft="5.0dip" android:paddingTop="4.5dip" android:paddingRight="5.0dip" android:paddingBottom="4.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_centerVertical="true" />
+    </LinearLayout>
+</RelativeLayout>

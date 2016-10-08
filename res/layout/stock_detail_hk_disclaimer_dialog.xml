@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="22.0dip" android:paddingTop="22.0dip" android:paddingRight="22.0dip" android:paddingBottom="22.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="免责声明" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="雪球及香港交易所资讯服务有限公司、其控股公司及／或该等控股公司的任何附属公司均竭力确保所提供信息的准确和可靠度，但不能保证其绝对准确和可靠，且亦不会承担因任何不准确或遗漏而引起的任何损失或损害的责任（不管是否侵权法下的责任或合约责任又或其它责任）。" android:lineSpacingExtra="3.0dip" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="温馨提示:实时港股-免费版，只提供基本市场信息作参考用途，投资者应考虑是否需要更详细的市场信息以协助投资决策！" android:lineSpacingExtra="3.0dip" />
+</LinearLayout>

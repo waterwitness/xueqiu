@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_cell_bg_with_stroke_selector" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:gravity="center" android:id="@id/order_otype_1" android:layout_width="56.0dip" android:layout_height="35.0dip" android:text="限价" />
+    <View android:layout_gravity="center" android:background="?attr_cell_stroke_color" android:layout_width="40.0dip" android:layout_height="1.0px" />
+    <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:gravity="center" android:id="@id/order_otype_2" android:layout_width="56.0dip" android:layout_height="35.0dip" android:text="市价" />
+    <View android:layout_gravity="center" android:background="?attr_cell_stroke_color" android:layout_width="40.0dip" android:layout_height="1.0px" />
+    <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:gravity="center" android:id="@id/order_otype_3" android:layout_width="56.0dip" android:layout_height="35.0dip" android:text="盘前" />
+    <View android:layout_gravity="center" android:background="?attr_cell_stroke_color" android:layout_width="40.0dip" android:layout_height="1.0px" />
+    <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:gravity="center" android:id="@id/order_otype_4" android:layout_width="56.0dip" android:layout_height="35.0dip" android:text="盘后" />
+</LinearLayout>

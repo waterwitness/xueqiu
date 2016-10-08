@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.community.widget.SNBRichImageView android:id="@id/rich_editor_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <com.xueqiu.android.community.widget.SNBRichEditText android:textSize="13.0sp" android:textColor="?attr_text_level3_color" android:gravity="center" android:id="@id/rich_editor_image_description" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:hint="添加图片描述" android:layout_below="@id/rich_editor_image" />
+    <TextView android:textSize="13.0sp" android:textColor="?attr_text_level3_color" android:gravity="center" android:id="@id/rich_editor_image_up" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="图片上传中......" android:layout_below="@id/rich_editor_image" />
+    <ImageView android:id="@id/rich_editor_image_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rich_text_image_delete" android:layout_alignParentRight="true" />
+</RelativeLayout>

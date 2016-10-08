@@ -1,0 +1,8 @@
+<!--Created by flynngao on 15/2/4.
+通用模板
+--><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/sea-2.3.0.js"></script><script src="js/lib/jade.runtime.js"></script><script src="js/lib/underscore_1.6.0.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script><link href="style/mobile.css" rel="stylesheet"><script>seajs.config({
+  base: './js'
+})
+</script><title>雪球币</title><link rel="stylesheet" type="text/css" href="./style/snow-coin.css"></head><body><div id="container"><content><div class="info"><img src="images/icon_snow_coin@2x.png" class="icon"><div class="description">雪球币</div><div class="balance"></div></div><div class="control"><button>购买雪球币</button><a><i></i>雪球币福利</a></div><div class="tip"><span>雪球币可用于赞助等功能，但不能用于股票交易</span></div></content></div><div id="footer"><script>seajs.use('./js/snow-coin.js', function (snow_coin) {
+  snow_coin.init()
+});</script></div></body></html>

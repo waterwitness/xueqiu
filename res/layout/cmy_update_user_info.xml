@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:background="?attr_color_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/parent_focus_layout" android:paddingLeft="@dimen/form_horizontal_margin" android:paddingRight="@dimen/form_horizontal_margin" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:layout_gravity="center|top" android:id="@id/img_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <ImageView android:id="@id/user_img" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/user_profile_male_default_big" android:scaleType="fitXY" />
+                <ImageView android:layout_gravity="bottom|center|right" android:id="@id/camera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/camera" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/screen_name_view" android:background="?attr_roundcorner_bg_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@style/form_item_style">
+                <TextView android:id="@id/screen_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/screen_name" style="@style/form_item_label_style" />
+                <EditText android:gravity="right" android:id="@id/screen_name" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/screen_name_hint" android:layout_weight="1.0" style="@style/form_item_edit_text_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/place_layout" android:background="?attr_roundcorner_bg_middle_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/form_item_style">
+                <TextView android:id="@id/place_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/place" style="@style/form_item_label_style" />
+                <TextView android:gravity="right" android:id="@id/palce" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/unknow" android:layout_weight="1.0" style="@style/form_item_edit_text_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/gender_layout" android:background="?attr_roundcorner_bg_bottom_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/form_item_style">
+                <TextView android:id="@id/gender_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gender" style="@style/form_item_label_style" />
+                <TextView android:gravity="right" android:id="@id/gender" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/gender_unknow" android:layout_weight="1.0" style="@style/form_item_edit_text_style" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textColor="?attr_color_desc" android:id="@id/digest_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/digest" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/digest_view" android:background="?attr_roundcorner_bg_single" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/form_item_style">
+                    <EditText android:gravity="top" android:id="@id/digest" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/digest_hint" style="@style/form_item_edit_text_style" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:id="@id/save_user_info" android:background="@drawable/btn_blue_selector" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/save" style="@style/blue_button_style" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/place_wheel_layout" android:background="@color/black" android:paddingTop="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="?attr_color_gray_roundcorner_btn" android:id="@id/close_wheel" android:background="?attr_btn_gray_selector" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minHeight="0.0dip" android:text="@string/cancel" android:layout_alignParentLeft="true" />
+        <Button android:textColor="?attr_color_gray_roundcorner_btn" android:id="@id/complete_edit" android:background="?attr_btn_gray_selector" android:paddingLeft="10.0dip" android:paddingTop="6.0dip" android:paddingRight="10.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:minHeight="0.0dip" android:text="@string/complete" android:layout_alignParentRight="true" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/close_wheel">
+            <com.xueqiu.android.view.wheel.WheelView android:layout_gravity="center_vertical" android:id="@id/province" android:layout_width="wrap_content" android:layout_height="110.0dip" android:layout_weight="1.0" />
+            <com.xueqiu.android.view.wheel.WheelView android:layout_gravity="center_vertical" android:id="@id/city" android:layout_width="wrap_content" android:layout_height="110.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

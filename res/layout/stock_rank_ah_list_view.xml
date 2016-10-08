@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/stock_list_view" android:background="?attr_color_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0" style="@style/style_table_header_clickable">
+        <TextView android:textSize="@dimen/ts_list_title" android:textColor="?attr_blue" android:id="@id/column_title_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="沪深" android:singleLine="true" android:layout_weight="0.22" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ts_list_title" android:textColor="?attr_blue" android:gravity="right" android:id="@id/column_title_two" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="热度" android:singleLine="true" android:layout_weight="0.265" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ts_list_title" android:textColor="?attr_blue" android:gravity="right" android:id="@id/column_title_three" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="趋势" android:singleLine="true" android:layout_weight="0.265" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/ts_list_title" android:textColor="?attr_blue" android:gravity="right" android:id="@id/column_title_four" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="趋势" android:singleLine="true" android:layout_weight="0.25" android:layout_centerVertical="true" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/title" android:layout_alignParentBottom="true">
+        <include layout="@layout/widget_snowball_list" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_white_selector" android:paddingLeft="@dimen/list_item_horizontal_outer_margin" android:paddingTop="@dimen/list_item_vertical_inner_margin" android:paddingRight="@dimen/list_item_horizontal_outer_margin" android:paddingBottom="@dimen/list_item_vertical_inner_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:id="@id/desc_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="16.0sp" android:id="@id/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="42% ➔ 56%" style="@style/cube_title_text" />
+        <TextView android:textSize="10.0sp" android:id="@id/desc1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="参考成交价 12.20" android:singleLine="true" style="@style/desc_text" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/titleWrapper" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/desc_container">
+        <TextView android:textSize="15.0sp" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="百度" android:singleLine="true" style="@style/cube_title_text" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/tagWrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="10.0sp" android:id="@id/symbol" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bidu" android:singleLine="true" android:layout_toLeftOf="@id/desc_container" android:layout_below="@id/titleWrapper" style="@style/desc_text" />
+</RelativeLayout>

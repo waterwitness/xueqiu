@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/order_broker_item_logo" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="12.0dip" android:src="?attr_default_logo" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textColor="?attr_text_level2_color" android:id="@id/order_broker_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="券商名称" android:layout_toRightOf="@id/order_broker_item_logo" android:layout_alignTop="@id/order_broker_item_logo" />
+    <TextView android:textColor="?attr_text_level2_color" android:id="@id/order_broker_item_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="0000 0000 0000 0000" android:layout_below="@id/order_broker_item_name" android:layout_alignLeft="@id/order_broker_item_name" />
+    <ImageView android:id="@id/order_broker_item_selected" android:background="@drawable/icon_broker_selected" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

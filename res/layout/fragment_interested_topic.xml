@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/topic_select_bg_white_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rl_head" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:id="@id/tv_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/guide_login" android:layout_centerVertical="true" style="@style/hint_text" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/topic_text_blue_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pick_interested_topic" android:layout_centerInParent="true" />
+        <TextView android:id="@id/tv_skip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:text="@string/skip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/hint_text" />
+        <View android:background="@color/guide_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/iv_illustration" android:layout_width="337.5dip" android:layout_height="162.0dip" android:layout_marginBottom="51.0dip" android:src="@drawable/illstration" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/rl_head">
+        <com.xueqiu.android.common.widget.FlowLayout android:layout_gravity="center_horizontal" android:id="@id/fl_topics" android:layout_width="320.0dip" android:layout_height="fill_parent" android:layout_marginTop="12.5dip" />
+        <include android:id="@id/ll_network_error" android:visibility="gone" layout="@layout/cmy_user_guide_network_error" />
+    </LinearLayout>
+    <TextView android:enabled="true" android:textSize="18.0sp" android:textColor="@color/topic_text_blue_color" android:gravity="center" android:id="@id/tv_next_step" android:background="@drawable/topic_button_bg_selector" android:layout_width="fill_parent" android:layout_height="51.0dip" android:text="@string/guide_next_step" android:layout_alignParentBottom="true" />
+    <View android:background="@color/guide_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_above="@id/tv_next_step" />
+</RelativeLayout>

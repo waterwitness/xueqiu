@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:background="?attr_color_bg" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/common_auto_search" />
+    </LinearLayout>
+    <com.emilsjolander.components.stickylistheaders.StickyListHeadersListView android:scrollbarStyle="outsideOverlay" android:id="@id/list_view" android:visibility="visible" android:clickable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="true" android:layout_below="@id/search_bar" style="?attr/snbListViewStyle" />
+    <ListView android:id="@id/search_name_card_list" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_below="@id/search_bar" style="?attr/snbListViewStyle" />
+</RelativeLayout>

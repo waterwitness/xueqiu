@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="95.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.common.widget.AutoResizeTextView android:textSize="14.0sp" android:textColor="@color/title_content" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="12.0dip" android:text="医药生物" android:singleLine="true" />
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:layout_gravity="center_vertical" android:id="@id/profit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="+223.64%" />
+</FrameLayout>

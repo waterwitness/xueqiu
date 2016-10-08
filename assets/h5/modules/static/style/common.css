@@ -1,0 +1,140 @@
+.m-signature-pad {
+  position: absolute;
+  font-size: 10px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  min-width: 250px;
+  min-height: 140px;
+  z-index: 10000;
+}
+
+.m-signature-pad:after {
+  left: auto;
+  right: 20px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.m-signature-pad--body {
+  position: absolute;
+  left: 32px;
+  right: 65px;
+  top: 32px;
+  bottom: 32px;
+  border: 1px dashed #C9CED6;
+  border-radius: 5px;
+}
+
+.m-signature-pad--body
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.02) inset;
+}
+
+.m-signature-pad--footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 10001;
+  width: 65px;
+}
+
+.m-signature-pad--footer .description {
+  color: #C3C3C3;
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 1.8em;
+}
+
+.m-signature-pad--footer .button {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  font-size: 16px;
+  color: #4471BC;
+  line-height: 22px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10002;
+}
+
+.m-signature-pad--footer .button:active {
+  background-color: #ddd;
+}
+
+.m-signature-pad--footer .button.clear {
+  top: 94px;
+  right: 10px;
+}
+
+.m-signature-pad--footer .button.save {
+  bottom: 32px;
+  right: 10px;
+}
+
+.m-signature-pad--footer .button.cancel {
+  top: 32px;
+  right: 10px;
+}
+
+.m-signature-pad--footer .title {
+  width: 300px;
+  right: -115px;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  font-size: 1.8rem;
+  color: #333333;
+  line-height: 25px;
+  text-align: center;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.m-signature-pad--footer .title p {
+  font-size: 1.4rem;
+  color: #AAAAAA;
+  line-height: 20px;
+}
+
+.error-cell {
+  width: 100%;
+  background: #FFEEBB;
+  font-size: 13px;
+  color: #666666;
+  box-sizing: border-box;
+  min-height: 30px;
+  padding: 10px 12px;
+}
+
+.error-cell:before {
+  content: " ";
+  background: url(../image/icon_alert.png);
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  background-size: cover;
+  vertical-align: middle;
+  margin-right: 4px;
+}

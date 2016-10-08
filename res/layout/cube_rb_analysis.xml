@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/cell_color" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:gravity="center_vertical" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="@string/cube_turnover" style="@style/cube_title_text" />
+        <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/chart_button_frame_normal" android:padding="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip">
+            <include android:id="@id/turnover_three_month" layout="@layout/cube_chart_button" />
+            <include android:id="@id/turnover_one_year" layout="@layout/cube_chart_button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/turnover_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="145.0dip">
+            <TextView android:textSize="36.0sp" android:textColor="@color/text_highlight_color" android:layout_gravity="center_horizontal" android:id="@id/turnover_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="--" />
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="275.0dip" android:layout_height="wrap_content">
+                <View android:background="@drawable/bg_cursor" android:layout_width="fill_parent" android:layout_height="8.0dip" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/turnover_cursor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/cursor" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_level1_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="低" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_level1_color" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="中" android:layout_weight="1.0" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_level1_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="高" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="#ffaaaaaa" android:gravity="center" android:id="@id/turnover_period" android:paddingTop="6.0dip" android:paddingBottom="24.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/desc_small_text" android:gravity="center" android:layout_gravity="center" android:id="@id/turnover_empty" android:layout_width="wrap_content" android:layout_height="145.0dip" android:text="@string/tip_no_data" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/cell_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_inner_margin">
+        <TextView android:gravity="center_vertical" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="@string/cube_liquidity" style="@style/cube_title_text" />
+        <View android:background="@color/toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/chart_button_frame_normal" android:padding="1.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip">
+            <include android:id="@id/liquidity_three_month" layout="@layout/cube_chart_button" />
+            <include android:id="@id/liquidity_one_year" layout="@layout/cube_chart_button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/liquidity_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="180.0dip">
+            <RelativeLayout android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="94.0dip" android:layout_marginTop="19.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:src="@drawable/liquidity4" />
+                <com.xueqiu.android.common.widget.RotateImageView android:layout_gravity="bottom|center" android:id="@id/watch_hand" android:layout_width="7.0dip" android:layout_height="30.0dip" android:src="@drawable/watch_hand" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:gravity="center" android:id="@id/liquidity_tag" android:background="@drawable/round_bg_cate_bad" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginRight="2.0dip" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_level1_color" android:gravity="center" android:id="@id/liquidity_text" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" />
+            </LinearLayout>
+            <TextView android:textSize="11.0sp" android:textColor="@color/text_level3_color" android:gravity="center" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/liquidity_description" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@color/desc_small_text" android:gravity="center" android:layout_gravity="center" android:id="@id/liquidity_empty" android:layout_width="wrap_content" android:layout_height="180.0dip" android:text="@string/tip_no_data" />
+    </LinearLayout>
+</LinearLayout>

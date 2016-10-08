@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bgColor" android:layout_width="152.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_level1_color" android:gravity="center" android:id="@android:id/text1" android:layout_width="52.0dip" android:layout_height="fill_parent" android:text="排名" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/text_level1_color" android:gravity="center_vertical" android:id="@android:id/text2" android:layout_width="100.0dip" android:layout_height="fill_parent" android:text="名称" android:layout_toRightOf="@android:id/text1" />
+    <View android:background="#ffdadee5" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

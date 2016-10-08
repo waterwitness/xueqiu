@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/reference_stocks" android:background="?attr_cell_color" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:gravity="center_vertical" android:id="@id/recommend_title" android:background="?attr_cell_color" android:paddingLeft="13.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="相关股票" />
+    <android.support.v4.view.ViewPager android:id="@id/reference_stocks_view_pager" android:layout_width="fill_parent" android:layout_height="75.0dip" />
+</LinearLayout>

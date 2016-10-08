@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:id="@id/common_dialog_background" android:background="@color/common_dialog_around_background" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/common_dialog" android:background="?attr_bg_common_dialog" android:clickable="true" android:layout_width="282.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:gravity="center" android:id="@id/common_dialog_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="11.0dip" />
+        <View android:id="@id/common_dialog_title_line" android:background="?attr_cell_stroke_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <RelativeLayout android:id="@id/common_dialog_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:id="@id/common_dialog_title_line2" android:background="?attr_cell_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/common_dialog_button_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="44.0dip">
+            <TextView android:textSize="17.0sp" android:textColor="@color/common_dialog_button_text" android:gravity="center" android:id="@id/common_dialog_left_btn" android:background="?attr_bg_common_dialog_left_button" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:id="@id/common_dialog_button_line_left" android:background="?attr_cell_line_color" android:visibility="gone" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/common_dialog_button_text" android:gravity="center" android:id="@id/common_dialog_mid_btn" android:background="?attr_bg_selector" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:id="@id/common_dialog_button_line_right" android:background="?attr_cell_line_color" android:visibility="gone" android:layout_width="1.0px" android:layout_height="fill_parent" />
+            <TextView android:textSize="17.0sp" android:textColor="@color/common_dialog_button_text" android:gravity="center" android:id="@id/common_dialog_right_btn" android:background="?attr_bg_common_dialog_right_button" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

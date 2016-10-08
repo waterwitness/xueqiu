@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="10.0sp" android:gravity="center_vertical" android:background="?attr_background_color" android:paddingLeft="@dimen/push_setting_item_padding" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="@string/push_description" />
+        <include layout="@layout/widget_line_divider" />
+        <LinearLayout android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingRight="@dimen/push_setting_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height">
+            <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/im_top_talk_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/push_switch" android:layout_weight="1.0" />
+            <CheckBox android:layout_gravity="center_vertical" android:id="@id/chk_push_switch" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+        </LinearLayout>
+        <include layout="@layout/widget_line_divider_margin_left_12" />
+        <LinearLayout android:orientation="vertical" android:id="@id/other_push_settings_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/btn_receive_period" android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingRight="@dimen/push_setting_item_padding" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height" android:onClick="changeReceivePeriod">
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="@dimen/settings_row_height" android:text="@string/receive_period" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_talk_list_description" android:id="@id/text_receive_period" android:paddingRight="@dimen/settings_value_text_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/receive_period_default_value" />
+            </LinearLayout>
+            <include layout="@layout/widget_line_divider_margin_left_12" />
+            <LinearLayout android:orientation="horizontal" android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/push_setting_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height">
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/notify_sound" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/chk_notify_sound" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+            </LinearLayout>
+            <include layout="@layout/widget_line_divider" />
+            <TextView android:textSize="@dimen/setting_section_header_text_size" android:id="@id/text_browse_settings" android:background="?attr_background_color" android:padding="@dimen/push_setting_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/communication_push" />
+            <include layout="@layout/widget_line_divider" />
+            <LinearLayout android:orientation="horizontal" android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/push_setting_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height">
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/mention_me" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/chk_mention_me" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+            </LinearLayout>
+            <include layout="@layout/widget_line_divider_margin_left_12" />
+            <LinearLayout android:orientation="horizontal" android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/push_setting_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height">
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/paid_mentioned_me" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/chk_paid_mention_me" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+            </LinearLayout>
+            <include layout="@layout/widget_line_divider_margin_left_12" />
+            <LinearLayout android:orientation="horizontal" android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/push_setting_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height">
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/comment" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/chk_comment" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+            </LinearLayout>
+            <include layout="@layout/widget_line_divider_margin_left_12" />
+            <LinearLayout android:orientation="horizontal" android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/push_setting_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height">
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/fans" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/chk_fans" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+            </LinearLayout>
+            <include layout="@layout/widget_line_divider" />
+            <TextView android:textSize="@dimen/setting_section_header_text_size" android:id="@id/system_push_title" android:background="?attr_background_color" android:padding="@dimen/push_setting_item_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/system_push_title" />
+            <include layout="@layout/widget_line_divider" />
+            <LinearLayout android:orientation="horizontal" android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/push_setting_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height">
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/system_push_stock_information" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/chk_news_message" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+            </LinearLayout>
+            <include layout="@layout/widget_line_divider" />
+            <TextView android:textSize="10.0sp" android:gravity="center_vertical" android:background="?attr_background_color" android:paddingLeft="@dimen/push_setting_item_padding" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="@string/system_push_stock_description" />
+            <include layout="@layout/widget_line_divider" />
+            <LinearLayout android:orientation="horizontal" android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/push_setting_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height">
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/system_push_follow" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/chk_follow" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+            </LinearLayout>
+            <include layout="@layout/widget_line_divider" />
+            <TextView android:textSize="10.0sp" android:gravity="center_vertical" android:background="?attr_background_color" android:paddingLeft="@dimen/push_setting_item_padding" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="@string/system_push_follow_description" />
+            <include layout="@layout/widget_line_divider" />
+            <LinearLayout android:orientation="horizontal" android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/push_setting_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height">
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/system_push_trade_information" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/chk_trade_message" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+            </LinearLayout>
+            <include layout="@layout/widget_line_divider" />
+            <TextView android:textSize="10.0sp" android:gravity="center_vertical" android:background="?attr_background_color" android:paddingLeft="@dimen/push_setting_item_padding" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="@string/system_push_trade_description" />
+            <include layout="@layout/widget_line_divider" />
+            <LinearLayout android:orientation="horizontal" android:background="?attr_bg_color" android:paddingLeft="@dimen/push_setting_item_padding" android:paddingTop="5.0dip" android:paddingRight="@dimen/push_setting_item_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height">
+                <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/system_push_tactic_information" android:layout_weight="1.0" />
+                <CheckBox android:layout_gravity="center_vertical" android:id="@id/chk_mart_message" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+            </LinearLayout>
+            <include layout="@layout/widget_line_divider" />
+            <TextView android:textSize="10.0sp" android:gravity="center_vertical" android:background="?attr_background_color" android:paddingLeft="@dimen/push_setting_item_padding" android:layout_width="fill_parent" android:layout_height="25.0dip" android:text="@string/system_push_tactic_description" />
+            <include layout="@layout/widget_line_divider" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

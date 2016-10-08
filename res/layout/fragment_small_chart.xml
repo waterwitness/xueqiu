@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="33.0dip" android:layout_marginBottom="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/small_period_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/small_chart_current_stock_info" android:paddingLeft="10.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_stock_time" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="11.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="价" />
+                <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_stock_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="11.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="幅" />
+                <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_stock_change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="11.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="量" />
+                <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_stock_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/small_chart_current_kline_info" android:paddingLeft="10.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/small_chart_current_kline_info_top" android:layout_width="fill_parent" android:layout_height="17.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开" />
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_kline_open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="高" />
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_kline_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="幅" />
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_kline_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_kline_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/small_chart_current_kline_info_bottom" android:layout_width="fill_parent" android:layout_height="18.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="收" />
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_kline_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="低" />
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_kline_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="量" />
+                    <TextView android:textSize="11.0dip" android:textColor="?attr_text_level1_color" android:id="@id/current_kline_volume" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="100万" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/small_chart_current_fund_info" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="10.0dip" android:textColor="?attr_chart_text_color" android:id="@id/current_fund_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+            <TextView android:textSize="10.0dip" android:textColor="?attr_chart_text_color" android:id="@id/current_fund_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <TextView android:textSize="10.0dip" android:textColor="?attr_chart_text_color" android:id="@id/current_fund_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/small_chart_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/small_chart_pankou_container" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="fill_parent">
+                <com.xueqiu.android.stockchart.view.PankouView android:id="@id/small_chart_pankou_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <LinearLayout android:orientation="horizontal" android:background="?attr_pankou_top_border" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip">
+                    <TextView android:textSize="10.0sp" android:textColor="?attr_pankou_btn_font_color_selector" android:gravity="center" android:id="@id/pankou_wudang" android:tag="wudang" android:background="?attr_pankou_btn_bg_color_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="五档" android:layout_weight="1.0" />
+                    <TextView android:textSize="10.0sp" android:textColor="?attr_pankou_btn_font_color_selector" android:gravity="center" android:id="@id/pankou_detail" android:tag="detail" android:background="?attr_pankou_btn_bg_color_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="明细" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textColor="#ffff7700" android:gravity="center" android:id="@id/danmu_show" android:background="@drawable/danmu_btn_bg_selector" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="26.0dip" android:layout_marginLeft="12.0dip" android:layout_marginBottom="12.0dip" android:text="弹幕" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="group_header_item_text_padding">5.0dip</dimen>
+    <dimen name="im_apply_text_item_max_width">220.0dip</dimen>
+    <dimen name="im_chat_text_item_max_width">240.0dip</dimen>
+    <dimen name="im_group_profile_row_height">50.0dip</dimen>
+    <dimen name="login_bg_height_compress">100.0dip</dimen>
+    <dimen name="login_bg_height_normal">200.0dip</dimen>
+    <dimen name="about_action_items_margin_bottom">60.0dip</dimen>
+    <dimen name="about_action_logo_margin_top">60.0dip</dimen>
+</resources>

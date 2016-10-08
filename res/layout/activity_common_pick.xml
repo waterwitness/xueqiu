@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <GridView android:id="@id/gridview" android:background="?attr_color_bg" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:numColumns="3" />
+    <LinearLayout android:gravity="right" android:background="#aa000000" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageButton android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/btn_preview" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_tool_preview_selector" android:minWidth="44.0dip" />
+        <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/btn_done" android:background="@drawable/btn_blue_selector" android:layout_width="wrap_content" android:layout_height="40.0dip" android:minWidth="80.0dip" android:text="发送(0/9)" />
+    </LinearLayout>
+</RelativeLayout>

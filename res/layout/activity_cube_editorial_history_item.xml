@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:background="@color/bg_bottom_layer" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <RelativeLayout android:background="@color/bg" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/editorial_image" android:background="@color/bg_bottom_layer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/default_background_editorial" android:adjustViewBounds="true" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/title_content" android:id="@id/editorial_title" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="这里是标题标题标题标题标题标题标题标题" android:maxEms="12" android:singleLine="true" android:layout_below="@id/editorial_image" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/stock_volume_color" android:id="@id/editorial_date" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2015.03.21" android:layout_below="@id/editorial_image" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

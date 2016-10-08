@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/user_info_bar" android:background="?attr_cell_color" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/profileImage" android:scrollbars="none" android:layout_width="@dimen/profile_image_width_small" android:layout_height="@dimen/profile_image_width_small" android:layout_marginTop="11.0dip" android:layout_marginRight="4.0dip" android:src="?attr_user_profile_default_small" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="17.0sp" android:textColor="?attr_text_level1_color" android:id="@id/userName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="8.0dip" android:text="蔡书华" android:layout_toRightOf="@id/profileImage" />
+        <TextView android:textSize="@dimen/ts_user_remark" android:textColor="?attr_text_level2_color" android:id="@id/userRemark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/userName" android:layout_alignBaseline="@id/userName" />
+        <ImageView android:id="@id/vImage" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:src="@drawable/v_others" android:layout_toRightOf="@id/userRemark" android:layout_alignBottom="@id/userName" />
+        <TextView android:textSize="10.0sp" android:textColor="?attr_text_level3_color" android:id="@id/created_at" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip" android:text="04:34" android:layout_toRightOf="@id/profileImage" android:layout_below="@id/userName" />
+        <TextView android:textSize="10.0sp" android:textColor="?attr_text_level3_color" android:id="@id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:text="Android客户端" android:layout_toRightOf="@id/created_at" android:layout_below="@id/userName" />
+        <LinearLayout android:id="@id/follow_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_alignParentRight="true">
+            <include layout="@layout/btn_follow" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/followed_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_alignParentRight="true">
+            <include layout="@layout/btn_followed" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/status_text_container" android:background="?attr_cell_color" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:paddingBottom="8.0dip" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:id="@id/statusTitle" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:lineSpacingExtra="5.0dip" />
+        <com.xueqiu.android.common.widget.StatusDetailTextView android:textSize="18.0sp" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:id="@id/statusText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_below="@id/statusTitle" android:lineSpacingExtra="5.0dip" android:textIsSelectable="true" />
+    </RelativeLayout>
+</LinearLayout>

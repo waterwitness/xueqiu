@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/section_sale" android:background="@color/white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/price_orange" android:layout_gravity="center|left" android:id="@id/text_commission" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizontal_outer_margin" android:text="¥88.00" />
+    <TextView android:textSize="24.0sp" android:textColor="@color/desc_small_text" android:layout_gravity="center|left" android:id="@id/pause_sale" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizontal_outer_margin" android:text="@string/sale_pause" />
+    <Button android:textSize="15.0sp" android:textColor="@color/white" android:layout_gravity="center|right" android:id="@id/btn_sale" android:background="@drawable/bg_orange_selector" android:layout_width="125.0dip" android:layout_height="40.0dip" android:layout_marginRight="@dimen/list_item_horizontal_outer_margin" android:text="查看调仓信息" />
+    <View android:layout_gravity="bottom" android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>

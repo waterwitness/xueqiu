@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/card_item_transparent_selector" android:paddingLeft="@dimen/im_chat_card_elem_margin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:text="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminate="true" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="标题" android:singleLine="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/im_chat_card_elem_margin" android:layout_below="@id/title">
+        <ImageView android:id="@id/image" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/image_no_content" android:scaleType="fitXY" />
+        <com.xueqiu.android.common.widget.IMTextView android:ellipsize="end" android:gravity="center_vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/im_chat_card_elem_margin" android:text="dsaf \n中文啊dsaggdsagsadgasdgsadgsadgsadgsadgdsagsadgsadg\n中文啊" android:maxLines="3" android:layout_alignBottom="@id/image" android:lineSpacingExtra="@dimen/im_chat_card_content_spacing" text:detectUrl="false" />
+    </LinearLayout>
+</RelativeLayout>

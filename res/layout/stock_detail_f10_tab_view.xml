@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/stock_detail_f10" android:background="?attr_bg_color" android:paddingLeft="9.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/cn_f10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:tag="公司概况" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:layout_width="fill_parent" android:layout_height="21.0dip" android:layout_marginTop="9.0dip" android:text="公司概况" />
+                <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginBottom="9.0dip" android:text="基本信息·主营收入·分红送配" />
+                <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="行业地位" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:layout_width="fill_parent" android:layout_height="21.0dip" android:layout_marginTop="9.0dip" android:text="行业地位" />
+                <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginBottom="9.0dip" android:text="行业地位" />
+                <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="财务数据" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:layout_width="fill_parent" android:layout_height="21.0dip" android:layout_marginTop="9.0dip" android:text="财务数据" />
+                <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginBottom="9.0dip" android:text="资产负债表·利润表·现金流量表" />
+                <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="交易数据" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:layout_width="fill_parent" android:layout_height="21.0dip" android:layout_marginTop="9.0dip" android:text="交易数据" />
+                <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginBottom="9.0dip" android:text="龙虎榜·大宗交易·高管增减持·融资融券" />
+                <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="股本信息" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:layout_width="fill_parent" android:layout_height="21.0dip" android:layout_marginTop="9.0dip" android:text="股本信息" />
+                <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginBottom="9.0dip" android:text="股本概况·限售解禁" />
+                <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            </LinearLayout>
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="股东持股" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+                <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:layout_width="fill_parent" android:layout_height="21.0dip" android:layout_marginTop="9.0dip" android:text="股东持股" />
+                <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginBottom="9.0dip" android:text="十大流通股东·十大股东·基金持股" />
+            </LinearLayout>
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/us_f10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:tag="简介" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="简介" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="分红派息" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="分红派息" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="综合损益表" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="综合损益表" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="资产负债表" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="资产负债表" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="现金流量表" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="现金流量表" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="动态关键指标" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="动态关键指标" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/hk_f10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:tag="简介" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="简介" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/oc_f10" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:tag="简介" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="简介" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="主要财务数据" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="主要财务数据" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="综合损益表" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="综合损益表" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="资产负债表" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="资产负债表" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:tag="现金流量表" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="现金流量表" android:layout_alignParentLeft="true" />
+            <ImageView android:textSize="10.0sp" android:paddingRight="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

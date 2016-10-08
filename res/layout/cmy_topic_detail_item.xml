@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_cell_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="10.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/topic_big_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="4.0dip" android:scaleType="fitXY" android:minHeight="110.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="12.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/topic_right_image" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="15.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+        <TextView android:textSize="18.0sp" android:textColor="?attr_text_level1_color" android:id="@id/topic_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/topic_right_image" />
+        <TextView android:textSize="12.0sp" android:textColor="?attr_text_level3_color" android:ellipsize="end" android:id="@id/topic_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="3" android:layout_toLeftOf="@id/topic_right_image" android:layout_below="@id/topic_title" android:lineSpacingMultiplier="1.2" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="19.0dip">
+        <ImageView android:id="@id/topic_author_profile" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/icon_defaultimage" />
+        <TextView android:textSize="12.0sp" android:textColor="?attr_text_level3_color" android:id="@id/topic_author" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="12.0sp" android:textColor="?attr_text_level3_color" android:gravity="center_vertical" android:id="@id/topic_transmit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:drawableLeft="?attr_icon_toolbar_transmit" android:drawablePadding="4.0dip" />
+        <TextView android:textSize="12.0sp" android:textColor="?attr_text_level3_color" android:gravity="center_vertical" android:id="@id/topic_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:text="10" android:drawableLeft="?attr_icon_toolbar_comment" android:drawablePadding="4.0dip" />
+    </LinearLayout>
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

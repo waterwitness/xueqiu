@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr_listview_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/list_item_horizontal_inner_margin" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="16.5sp" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="name" android:singleLine="true" />
+        <TextView android:textSize="12.0sp" android:id="@id/code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="code" />
+    </LinearLayout>
+    <TextView android:id="@id/text_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="涨停" style="@style/stockStatusText" />
+    <ImageButton android:id="@id/btn_add" android:background="@drawable/transparent_selector" android:layout_width="65.0dip" android:layout_height="48.0dip" android:src="@drawable/icon_card_add_selector" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg" android:padding="@dimen/cal_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_alignParentLeft="true">
+        <CheckBox android:layout_gravity="center" android:id="@id/is_select_box" android:focusable="false" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" />
+        <ImageView android:layout_gravity="center" android:id="@id/icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_other_add" />
+    </FrameLayout>
+    <TextView android:id="@id/user_group_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/container" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/cal_alert_item_style" />
+</RelativeLayout>

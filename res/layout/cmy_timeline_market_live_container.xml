@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/market_live" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/market_list_header" android:background="?attr_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr_bg_selector" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/market_live_news" />
+            <TextView android:textSize="13.0sp" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/title_live_news" />
+        </LinearLayout>
+        <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="20.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="?attr_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="?attr_text_level2_color" android:id="@id/market_live_text" android:background="?attr_market_live_bg_selector" android:padding="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:layout_marginBottom="10.0dip" android:lineSpacingMultiplier="1.2" />
+    </LinearLayout>
+</LinearLayout>

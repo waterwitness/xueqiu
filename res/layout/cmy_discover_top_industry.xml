@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/discover_button_line1" android:layout_width="fill_parent" android:layout_height="90.0dip" />
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/discover_button_line2" android:background="?attr_color_bg" android:layout_width="fill_parent" android:layout_height="42.0dip" />
+</LinearLayout>

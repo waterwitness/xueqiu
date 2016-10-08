@@ -1,0 +1,18 @@
+<!--Created by flynngao on 15/2/4.
+通用模板
+--><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="format-detection" content="telephone=no"><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/sea-2.3.0.js"></script><script src="js/lib/jade.runtime.js"></script><script src="js/lib/underscore_1.8.3.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script><link href="style/mobile.css" rel="stylesheet"><script>seajs.config({
+  base:'./js'
+})
+</script><title>交易记录</title><script src="./js/lib/ptr.js"></script><script src="./js/lib/moment.js"></script><link rel="stylesheet" href="./style/trade/trade-history.css"></head><body><div id="container"><!--其他券商--><div class="moudle-default"><div class="history-type"><div class="switch-type not-new-stock"><button id="today-history"><span class="select">今日交易</span></button><button id="trade-history"><span>历史交易</span></button></div><div class="history-date fn-hide fn-clear"><img src="./images/arrow.png"><span class="start-date select-date"><div class="circle"><p class="main">02.21</p><p class="year">2015</p></div></span><span class="end-date select-date"><div class="circle"><p class="main">02.21</p><p class="year">2015</p></div></span></div></div><div class="history-list"></div></div><!--平安--><div class="moudle-pingan"><div class="history-type"><div class="switch-type"><button data-action="order"><span>委托单</span></button><button data-action="history"><span>成交记录</span></button><button data-action="newStock"><span>打新记录</span></button><button data-action="account"><span>对账单</span></button></div></div><div class="clone"></div><div id="wrapper"><div id="scroller"><div id="pullDown"><div class="pullDownIcon"></div><div class="pullDownLabel"><div class="pullDownText">下拉刷新</div><div class="pullDownTime">最后更新:<span>2015-05-19 18:26:31</span></div></div></div><div class="history-list"></div></div></div></div><div class="tip isIb"></div><div class="dialog"><div class="dialog-title">手续费包括</div><table><tr><td nowrap>佣金<div class="amount-tiny">券商收取</div></td><td><p>• 买卖股票、ETF收取</p><p>• 每笔最低5元，超过按佣金比例收取（按万2.5佣金估算）</p></td></tr><tr><td nowrap>印花税<div class="amount-tiny">国税局收取</div></td><td><p>• 卖出股票收取，买入不收</p><p>• 按成交金额的0.1%</p></td></tr><tr><td nowrap>过户费<div class="amount-tiny">上交所收取</div></td><td><p>• 买卖沪市股票收取</p><p>• 按成交金额的十万分之二</p></td></tr></table><p style="font-size: 1rem;margin-top:.5rem;">注：如对手续费有疑问，请联系您所在的券商</p></div></div><div id="footer"><script>if (Util.parseParams().tid === 'PAMID') {
+  seajs.use('trade/trade-history-pingan.js?v=20150515', function (history) {
+    $(".moudle-default").remove();
+    $(".moudle-pingan").show();
+    history.init();
+  });
+} else{
+  seajs.use('trade/trade-history.js?v=20150515', function (history) {
+    $(".moudle-pingan").remove();
+    $(".moudle-default").show();
+    history.init()
+  });
+}</script></div></body></html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/blue" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/trade_paaccount_hangup" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="挂断" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="视频见证" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/video_frm" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/trade_paaccount_video_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <SurfaceView android:id="@id/trade_paaccount_video_local" android:visibility="visible" android:layout_width="126.0dip" android:layout_height="192.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <SurfaceView android:id="@id/trade_paaccount_video_remote" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/trade_paaccount_dialog" android:background="@drawable/bg_common_dialog" android:visibility="gone" android:layout_width="160.0dip" android:layout_height="160.0dip">
+            <ImageView android:id="@id/trade_paaccount_loading_view" android:background="@drawable/icon_paaccount_loading" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="30.0dip" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/price_orange" android:id="@id/trade_paaccount_tip_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="排队中" android:layout_below="@id/trade_paaccount_loading_view" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="12.0dip" android:textColor="?attr_text_level2_color" android:gravity="center" android:id="@id/trade_paaccount_tip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/trade_paaccount_tip_title" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

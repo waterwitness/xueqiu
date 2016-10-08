@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/camera_title_height">
+        <Button android:textColor="@color/white" android:id="@id/cancel" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/flip_camera" android:background="@color/transparent" android:layout_width="30.0dip" android:layout_height="fill_parent" android:src="@drawable/nav_icon_camera" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/preview_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.xueqiu.android.common.camera.CameraPreview android:id="@id/activity_camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <RelativeLayout android:id="@id/preview_mask_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:id="@id/camera_mask_corner" android:background="@drawable/camera_mask_corner" android:layout_width="200.0dip" android:layout_height="300.0dip" android:layout_centerInParent="true" />
+                <View android:id="@id/capture_mask_left" android:background="#88000000" android:layout_width="@dimen/camera_mask_padding" android:layout_height="fill_parent" android:layout_toLeftOf="@id/camera_mask_corner" android:layout_alignParentLeft="true" />
+                <View android:id="@id/capture_mask_top" android:background="#88000000" android:layout_width="fill_parent" android:layout_height="@dimen/camera_mask_padding" android:layout_toRightOf="@id/capture_mask_left" android:layout_above="@id/camera_mask_corner" android:layout_alignParentTop="true" />
+                <View android:id="@id/capture_mask_right" android:background="#88000000" android:layout_width="@dimen/camera_mask_padding" android:layout_height="fill_parent" android:layout_toRightOf="@id/camera_mask_corner" android:layout_below="@id/capture_mask_top" android:layout_alignParentRight="true" />
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/capture_mask_tips" android:background="#88000000" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/camera_mask_padding" android:text="@string/camera_hint" android:layout_toLeftOf="@id/capture_mask_right" android:layout_toRightOf="@id/capture_mask_left" android:layout_below="@id/camera_mask_corner" android:layout_alignParentBottom="true" />
+                <View android:id="@id/camera_anim_mask" android:background="@color/black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/capture_mask_tips_horizontal" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="请横向拍照, 并保证身份证照片在相框中" android:singleLine="true" />
+        <ImageView android:id="@id/preview_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/black" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="90.0dip">
+        <Button android:textColor="@color/white" android:id="@id/redo_btn" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/camera_redo" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/take_btn" android:background="@color/transparent" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/icon_take_photo" android:scaleType="centerInside" android:layout_centerInParent="true" />
+        <Button android:textColor="@color/white" android:id="@id/use_btn" android:background="@color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/use_picture" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

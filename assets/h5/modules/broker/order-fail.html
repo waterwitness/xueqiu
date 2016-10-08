@@ -1,0 +1,8 @@
+<!--Created by flynngao on 15/2/4.
+通用模板
+--><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="format-detection" content="telephone=no"><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/sea-2.3.0.js"></script><script src="js/lib/jade.runtime.js"></script><script src="js/lib/underscore_1.8.3.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script><link href="style/mobile.css" rel="stylesheet"><script>seajs.config({
+  base:'./js'
+})
+</script><title>委托结果</title><link rel="stylesheet" href="./style/order/order-result.css"><link rel="stylesheet" href="./style/order/order-state.css"></head><body><div id="container"><div class="state fail"><div class="state-img"></div><div class="state-text">交易委托单已发送<div class="state-desc"><p>券商返回结果如下</p></div></div></div><div class="order-state"></div><div class="submit"><button type="submit" class="broker-order">查看委托单</button></div><div class="share"><button type="submit" class="order-share">分享给球友</button></div><!--  p--><!--    | 分享本次交易到雪球，有机会赢取无人机一台--></div><div id="footer"><script>seajs.use("order/order-state.js", function (state) {
+  state.init();
+});</script></div></body></html>

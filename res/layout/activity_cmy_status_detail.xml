@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/status_item_detail" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.common.widget.FloatingActionMenu android:layout_gravity="bottom" android:id="@id/floating_action_view" android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <ListView android:id="@id/comments_listview" android:paddingBottom="5.0dip" android:visibility="invisible" android:scrollbars="vertical" android:fadingEdge="none" android:clickable="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" android:layout_weight="2.0" android:layout_above="@id/floating_action_view" android:headerDividersEnabled="false" android:smoothScrollbar="false" />
+    <include android:id="@id/sticky_header" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/cmy_status_detail_middle_toolbar" />
+</RelativeLayout>

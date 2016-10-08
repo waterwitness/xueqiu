@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_trade_card_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ad_card_image" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/image_no_content_with_big_logo" android:scaleType="fitXY" android:minHeight="100.0dip" />
+    <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:id="@id/ad_card_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="6.0dip" android:text="新纯电动BMW i3" android:includeFontPadding="false" />
+    <TextView android:textSize="14.0dip" android:textColor="?attr_text_level2_color" android:id="@id/ad_card_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="12.0dip" android:text="由BMW荣耀赞助的2015伤害国际马拉松将于11月8日激情开赛。" android:includeFontPadding="false" />
+</LinearLayout>

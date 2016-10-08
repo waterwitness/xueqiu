@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/topic_select_bg_white_color" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <LinearLayout android:gravity="center" android:id="@id/ll_search" android:background="@drawable/cmy_find_people_bg" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip">
+            <TextView android:textSize="14.0sp" android:textColor="@color/text_level3_color" android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/search" android:drawableLeft="@drawable/search_icon" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:background="@color/industry_item_selected_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <ListView android:id="@id/industry_list" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="@null" android:layout_weight="0.75" android:smoothScrollbar="false" />
+        <ImageView android:id="@id/shadow_left" android:background="@drawable/shadow_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignLeft="@id/industry_list" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_weight="0.25">
+            <com.xueqiu.android.common.widget.SNBPullToRefreshListView android:id="@id/sw_list" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="?attr_toolbar_line_color" android:dividerHeight="1.0px" android:smoothScrollbar="false" />
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="15.0dip" layout="@layout/cmy_bind_weibo_empty" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

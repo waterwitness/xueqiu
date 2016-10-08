@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="?attr_color_bg" android:padding="@dimen/cal_margin_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/cal_show_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/cal_alert_item_style" />
+    <CheckBox android:id="@id/cal_show_box" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="?attr_checkbox_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

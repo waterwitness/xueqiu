@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.community.widget.PullToZoomListView android:id="@id/list_view" android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="?attr_background_color" />
+    <com.xueqiu.android.community.widget.TransparentHeader android:id="@id/transparent_header" android:background="@android:color/holo_blue_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/tactic_detail_list_header" android:background="?attr_bg_color" android:paddingLeft="12.0dip" android:paddingTop="8.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/transparent_header">
+        <TextView android:textSize="13.0sp" android:textColor="?attr_text_level1_color" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="名称" />
+        <TextView android:textSize="13.0sp" android:textColor="?attr_text_level1_color" android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="最新价" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textColor="?attr_text_level1_color" android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="入选价" android:layout_weight="1.0" />
+        <TextView android:textSize="13.0sp" android:textColor="?attr_text_level1_color" android:gravity="end|center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="累计涨跌幅" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/tactic_warning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="本结果不构成投资建议，交易风险自负" android:drawableLeft="@drawable/exclamation_icon" android:drawablePadding="6.0dip" />
+    </FrameLayout>
+</RelativeLayout>

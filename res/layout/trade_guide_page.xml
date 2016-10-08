@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#99000000" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/tip_step_one" android:background="@drawable/common_guide_background_upright" android:layout_width="wrap_content" android:layout_height="58.0dip" android:layout_marginTop="45.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="50.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:paddingLeft="15.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="新增下单音效,请在交易设置中开启" />
+        <ImageView android:gravity="center" android:layout_gravity="center" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_guide_icon_ok" />
+    </LinearLayout>
+</RelativeLayout>

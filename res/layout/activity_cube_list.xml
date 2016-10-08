@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/list" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:headerDividersEnabled="false" style="?attr/snbListViewStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:gravity="center" android:id="@id/text_desc" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="我还没有创建组合，试试看" android:layout_weight="1.0" style="@style/cube_desc_text" />
+        <include layout="@layout/cube_btn_info" />
+    </LinearLayout>
+</FrameLayout>

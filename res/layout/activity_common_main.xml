@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/mainContent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <View android:id="@id/line" android:background="?attr_tabbar_stroke_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.xueqiu.android.common.widget.SnowBallTabHost android:id="@android:id/tabhost" android:background="@color/color_tab_background" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

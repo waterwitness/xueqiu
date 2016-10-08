@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/trade_item_title_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/title_line" android:background="@color/light_blue" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/trade_item_left_margin" android:layout_marginRight="@dimen/trade_item_left_margin" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/trade_item_title_text_size" android:textColor="?attr_text_level1_color" android:layout_gravity="center|left" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="未来智能医疗" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/trade_item_month_text_size" android:textColor="?attr_text_level3_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trade_month" />
+        <TextView android:textSize="@dimen/trade_item_month_price_size" android:textColor="@color/text_stock_red_color" android:layout_gravity="center_vertical" android:id="@id/mothgain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="33.44%" />
+    </LinearLayout>
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.common.widget.ptr.PullToRefreshExpandableListView android:id="@id/list" android:background="?attr_color_deep_bg" android:clickable="true" android:layout_height="fill_parent" android:divider="@color/toolbar_line_color" android:dividerHeight="1.0px" style="?attr/snbListViewStyle" />
+    <TextView android:gravity="center" android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/tip_no_visible_rb" style="@style/desc_text" />
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:id="@id/label_h5_debug_config" android:background="@drawable/roundcorner_bg_bottom_selector" android:paddingLeft="@dimen/im_group_edit_text_padding_left" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height" android:text="@string/h5_debug_config" android:onClick="about" style="@style/form_item_edit_text_style" />
+</merge>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/grid" android:background="?attr_color_bg" android:paddingLeft="15.0dip" android:paddingTop="@dimen/list_item_vertical_inner_margin" android:paddingRight="15.0dip" android:paddingBottom="@dimen/list_item_vertical_inner_margin" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/transparent" android:divider="@null" android:dividerHeight="@dimen/cube_topic_spacing" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/btn_refresh" android:background="@drawable/bg_white_selector" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_guide_random" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff0077ee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="换一换" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+.class final Lcom/tencent/open/o;
+.super Ljava/lang/Object;
+.source "ProGuard"
+
+
+# instance fields
+.field final synthetic a:Lcom/tencent/open/RedoDialog;
+
+
+# direct methods
+.method private constructor <init>(Lcom/tencent/open/RedoDialog;)V
+    .locals 0
+
+    .prologue
+    .line 112
+    iput-object p1, p0, Lcom/tencent/open/o;->a:Lcom/tencent/open/RedoDialog;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method synthetic constructor <init>(Lcom/tencent/open/RedoDialog;B)V
+    .locals 0
+
+    .prologue
+    .line 112
+    invoke-direct {p0, p1}, Lcom/tencent/open/o;-><init>(Lcom/tencent/open/RedoDialog;)V
+
+    return-void
+.end method

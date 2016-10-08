@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/desc" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginBottom="20.0dip" android:text="在雪球上可以找到" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:layout_marginRight="80.0dip" android:weightSum="2.0">
+        <RelativeLayout android:id="@id/part_1" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_1" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/search_icon_stock" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="@color/desc" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="实时股票行情" android:singleLine="true" android:layout_below="@id/img_1" />
+        </RelativeLayout>
+        <View android:background="@drawable/gradient_bottom_top" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/part_2" android:paddingBottom="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_2" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/search_icon_friend" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="@color/desc" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="百万球友" android:singleLine="true" android:layout_below="@id/img_2" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@drawable/gradient_left_right" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="80.0dip" android:layout_marginRight="80.0dip" android:weightSum="2.0">
+        <RelativeLayout android:id="@id/part_3" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_3" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/search_icon_discussion" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="@color/desc" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="热点资讯讨论" android:singleLine="true" android:layout_below="@id/img_3" />
+        </RelativeLayout>
+        <View android:background="@drawable/gradient_top_bottom" android:paddingTop="15.0dip" android:paddingBottom="10.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <RelativeLayout android:id="@id/part_4" android:paddingTop="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_4" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/search_icon_opinion" android:layout_centerHorizontal="true" />
+            <TextView android:textColor="@color/desc" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="大V分享观点" android:singleLine="true" android:layout_below="@id/img_4" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

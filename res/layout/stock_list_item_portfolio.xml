@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?attr_bg_selector" android:layout_width="fill_parent" android:layout_height="@dimen/portfolio_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/change_anim_bg" android:background="@drawable/bg_portfolio_cell_red" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/portfolio_side_padding" android:paddingRight="@dimen/portfolio_side_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/code_name" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" android:layout_alignParentTop="true">
+                <TextView android:textSize="16.0dip" android:textColor="?attr_text_level1_color" android:id="@id/stockName" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="dddyq" android:singleLine="true" />
+                <ImageView android:id="@id/cube_in_top_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cube_medal_list" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:gravity="center" android:id="@id/stock_cube_type_icon" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="9.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/tag_shipan" />
+                <ImageView android:id="@id/stockTag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:src="@drawable/tag_hk" />
+                <TextView android:textSize="12.0dip" android:textColor="?attr_text_level3_color" android:id="@id/stockCode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dfff" android:singleLine="true" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:gravity="right" android:id="@id/currentPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.00" android:singleLine="true" />
+        <FrameLayout android:id="@id/change_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip">
+            <com.xueqiu.android.common.widget.AutoResizeTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center|right" android:id="@id/change" android:background="@color/stock_red" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:longClickable="false" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="" android:singleLine="true" />
+            <com.xueqiu.android.common.widget.AutoResizeTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/change1" android:background="@color/stock_red" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:longClickable="false" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="" android:singleLine="true" />
+        </FrameLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/divider" android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>

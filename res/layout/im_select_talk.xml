@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/im_select_talk_header" />
+    <TextView android:textSize="@dimen/im_talk_list_title_text_size" android:textColor="?attr_color_title" android:id="@id/title_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="最近对话列表" android:singleLine="true" style="@style/style_table_header" />
+    <ListView android:id="@id/im_select_talk_list" android:background="?attr_color_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/snbListViewStyle" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/seg_container" android:background="@drawable/bg_simple_cell_selector" android:layout_width="fill_parent" android:layout_height="39.0dip" android:divider="@drawable/line_ver_gray" android:showDividers="middle" android:dividerPadding="6.0dip">
+        <include layout="@layout/common_seg_element" />
+        <include layout="@layout/common_seg_element" />
+    </LinearLayout>
+    <View android:layout_gravity="top" android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:layout_gravity="bottom" android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>

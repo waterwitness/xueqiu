@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/stock_rank_header" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header" android:background="?attr_bg_color" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="32.0dip" android:weightSum="1.0">
+        <TextView android:textSize="12.0sp" android:textColor="?attr_text_level2_color" android:id="@id/title_colum_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="沪深" android:singleLine="true" android:layout_weight="0.22" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?attr_text_level2_color" android:gravity="right" android:id="@id/title_colum_two" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="热度" android:singleLine="true" android:layout_weight="0.265" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?attr_text_level2_color" android:gravity="right" android:id="@id/title_colum_three" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="趋势" android:singleLine="true" android:layout_weight="0.265" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="?attr_text_level2_color" android:gravity="right" android:id="@id/title_colum_four" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="趋势" android:singleLine="true" android:layout_weight="0.25" android:layout_centerVertical="true" />
+    </LinearLayout>
+</LinearLayout>

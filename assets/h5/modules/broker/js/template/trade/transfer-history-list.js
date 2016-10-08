@@ -1,0 +1,1 @@
+define([],function(){return function(){var n=[];return n.push("<!--Created by lyj on 6/23/15.-->"),n.join("")}});

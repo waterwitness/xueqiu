@@ -1,0 +1,15 @@
+<!--Created by flynngao on 15/2/4.
+通用模板
+--><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="format-detection" content="telephone=no"><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/sea-2.3.0.js"></script><script src="js/lib/jade.runtime.js"></script><script src="js/lib/underscore_1.8.3.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script><link href="style/mobile.css" rel="stylesheet"><script>seajs.config({
+  base:'./js'
+})
+</script><title>下单</title><link rel="stylesheet" href="./style/trade/trade.css"><script src="js/lib/moment.js"></script></head><body><div id="container"><div class="trade-body"></div><div class="dialog"><div class="dialog-title">参考手续费计算</div><table><tr><td nowrap>交易金额</td><td id="totalAmount">0.00</td></tr><tr><td nowrap>佣金<div class="amount-tiny">券商收取</div></td><td id="commission">0.00<div class="amount-tiny">按万2.5估算，每笔最低5元</div></td></tr><tr><td nowrap>印花税<div class="amount-tiny">国税局收取</div></td><td id="stampTax">0.00<div class="amount-tiny">卖出股票收取0.1%，买入不收</div></td></tr><tr><td nowrap>过户费<div class="amount-tiny">上交所收取</div></td><td id="transferFee">0.00<div class="amount-tiny">买卖沪市股票收取，十万分之二</div></td></tr><tr><td nowrap>合计手续费</td><td id="totalCommission">0.00</td></tr></table><p style="font-size: 10px;margin-top:5px;">注：佣金率按万2.5估算，可能与实际佣金不符</p></div></div><div id="footer"><script>xqBridge.showLoading();
+//统计 —— 完整下单_展示
+xqBridge.SNBTrackEvent({
+  page: 1504,
+  event: 0,
+  info: {tid : Util.parseParams().tid}
+});
+seajs.use('trade/trade.js',function(trade){
+  trade.init();
+})</script></div></body></html>

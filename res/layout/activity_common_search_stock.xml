@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/search_stock_container" android:background="?attr_cell_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/trade_search_action_bar" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_input_container" android:background="?attr_bg_order_edittext_sell_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <EditText android:textSize="16.0dip" android:textColor="?attr_text_level2_color" android:textColorHint="?attr_text_level3_color" android:id="@id/search_input" android:background="@null" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:hint="@string/search_stock_input_hint" android:singleLine="true" android:layout_weight="1.0" />
+        <ImageView android:id="@id/search_delete" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?attr_cycle_delete" />
+    </LinearLayout>
+    <TextView android:textSize="13.0dip" android:textColor="?attr_text_level3_color" android:gravity="center_vertical" android:id="@id/search_history_title" android:background="?attr_list_section_bg" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="历史记录" />
+    <ListView android:id="@id/auto_search_list" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_alignParentBottom="true" style="?attr/snbListViewStyle" />
+    <TextView android:textSize="14.0dip" android:textColor="?attr_text_level3_color" android:gravity="center" android:layout_gravity="center" android:id="@id/search_clear_history" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="清空搜索记录" />
+    <TextView android:textSize="12.0dip" android:gravity="center" android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/tip_no_match_result" style="@style/desc_text" />
+</LinearLayout>

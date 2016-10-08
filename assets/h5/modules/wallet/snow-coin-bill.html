@@ -1,0 +1,8 @@
+<!--Created by flynngao on 15/2/4.
+通用模板
+--><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/sea-2.3.0.js"></script><script src="js/lib/jade.runtime.js"></script><script src="js/lib/underscore_1.6.0.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script><link href="style/mobile.css" rel="stylesheet"><script>seajs.config({
+  base: './js'
+})
+</script><title>交易记录</title><link rel="styleSheet" type="text/css" href="style/snow-coin-bill.css"><script src="js/lib/moment.js"></script></head><body><div id="container"><div class="bill"><ol class="bill-list"></ol><div class="loading">加载中...</div><div class="no-data"><div class="img"></div><p>暂时没有交易记录</p></div></div></div><div id="footer"><script>seajs.use('./js/snow-coin-bill.js', function (coin_bill) {
+  coin_bill.init()
+})</script></div></body></html>

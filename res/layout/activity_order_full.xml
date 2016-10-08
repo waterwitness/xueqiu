@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/big_chart_container" android:background="@color/red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/trade_order_full_title_bar" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.xueqiu.android.common.widget.ptr.PullToRefreshScrollView android:id="@id/activity_order_full_refresh_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" app:pr_content_layout="@layout/order_full_content" />
+        <include layout="@layout/trade_order_full_tab_indicator" />
+    </FrameLayout>
+</LinearLayout>

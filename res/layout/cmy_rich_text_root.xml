@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/rich_editor" android:background="?attr_bg_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:id="@id/edit_tool_bar" android:background="?attr_list_section_bg" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <ImageButton android:id="@id/bold" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/kb_icon_bold_selector" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/italic" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/kb_icon_italic_selector" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/header" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/kb_icon_heading_selector" android:layout_weight="1.0" />
+        <FrameLayout android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <View android:layout_gravity="center" android:background="@color/toolbar_line_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        </FrameLayout>
+        <ImageButton android:id="@id/link" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/kb_icon_link" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/image" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/kb_icon_camera" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/at" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/kb_icon_at" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/stock" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/kb_icon_dollar" android:layout_weight="1.0" />
+        <ImageButton android:id="@id/emoji" android:background="?selectableItemBackground" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/emoticon_selector" android:layout_weight="1.0" />
+    </LinearLayout>
+    <GridView android:gravity="center" android:id="@id/emoticon_grid_view" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/emoticon_item_selector" android:stretchMode="columnWidth" android:numColumns="6" android:layout_weight="1.0" />
+</LinearLayout>

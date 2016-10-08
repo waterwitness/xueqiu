@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_cell_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/cube_rb_item_height" android:layout_marginLeft="@dimen/trade_item_left_margin" android:layout_marginRight="@dimen/trade_item_left_margin">
+        <TextView android:textSize="@dimen/trade_item_image_text_size" android:textColor="?attr_text_button_color" android:layout_gravity="center_vertical" android:id="@id/trade" android:background="@drawable/sell_round_bg" android:paddingLeft="@dimen/trade_item_image_text_padding_left" android:paddingTop="@dimen/trade_item_image_text_padding" android:paddingRight="@dimen/trade_item_image_text_padding_left" android:paddingBottom="@dimen/trade_item_image_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/buy" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/cube_rb_item_title_size" android:textColor="?attr_text_level1_color" android:ellipsize="end" android:id="@id/cube_rb_stock_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中信证券" android:maxEms="16" android:singleLine="true" />
+            <TextView android:textSize="@dimen/cube_rb_item_explain_size" android:textColor="?attr_text_level3_color" android:id="@id/cube_rb_stock_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sz600030" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center|right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/cube_rb_item_title_size" android:textColor="?attr_text_level3_color" android:ellipsize="end" android:layout_gravity="right" android:id="@id/stock_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="42% ➔ 56%" android:maxEms="16" android:singleLine="true" />
+            <TextView android:textSize="@dimen/cube_rb_item_explain_size" android:textColor="?attr_text_level3_color" android:layout_gravity="right" android:id="@id/deal_price_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trade_rb_price" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/trade_item_buy_text_size" android:textColor="?attr_text_highlight_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/cube_stock_buy" android:background="?attr_roundcorner_bg_single_selector" android:layout_width="@dimen/trade_item_buy_width" android:layout_height="@dimen/trade_item_buy_height" android:layout_marginLeft="@dimen/trade_item_buy_left_margin" android:text="@string/trade_rb_bug" />
+    </LinearLayout>
+    <View android:id="@id/item_bottom_line" android:background="?attr_cell_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/trade_item_left_margin" android:layout_marginRight="@dimen/trade_item_left_margin" />
+</LinearLayout>

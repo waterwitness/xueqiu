@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="#ff444444" android:clickable="false" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/indicator" android:background="@color/blue" android:layout_width="5.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/title_left" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/list_item_horizontal_outer_margin" android:text="银行" android:singleLine="true" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/title_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="30%" android:singleLine="true" android:layout_toRightOf="@id/title_left" />
+</RelativeLayout>

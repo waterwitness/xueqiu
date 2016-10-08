@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?attr_bg_selector" android:padding="@dimen/im_chat_card_padding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" android:layout_width="80.0dip" android:layout_height="60.0dip" android:layout_marginRight="@dimen/im_chat_card_elem_margin" android:src="?attr_image_no_content" android:scaleType="fitXY" />
+    <TextView android:textSize="16.5sp" android:textColor="?attr_color_username_2" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="内容标题测试" android:lineSpacingExtra="@dimen/im_chat_card_content_spacing" />
+</LinearLayout>

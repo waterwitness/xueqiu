@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="im_apply_text_item_max_width">180.0dip</dimen>
+    <dimen name="im_chat_text_item_max_width">180.0dip</dimen>
+    <dimen name="login_bg_height_compress">80.0dip</dimen>
+    <dimen name="login_bg_height_normal">180.0dip</dimen>
+</resources>

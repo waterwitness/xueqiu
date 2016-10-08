@@ -1,0 +1,9 @@
+<!--Created by flynngao on 15/2/4.
+通用模板
+--><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="format-detection" content="telephone=no"><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/sea-2.3.0.js"></script><script src="js/lib/jade.runtime.js"></script><script src="js/lib/underscore_1.8.3.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script><link href="style/mobile.css" rel="stylesheet"><script>seajs.config({
+  base:'./js'
+})
+</script><title>添加证券账户</title><link rel="stylesheet" href="style/trade/bind-list.css"></head><body><div id="container"><!--.markets--><!--  ul.market-list--><!--    li.select(data-market="CN") 沪深--><!--    li(data-market="USHK").last 美/港股--><div class="brokers"></div><div class="open-broker">没有您的券商？支持一人多户，万2.5佣金，送雪球专属内参。<a href="#" class="open">立即开户</a></div><div class="open-ib">没有盈透证券账户？你可以新开账户后再添加到雪球。<a href="#" class="open">立即开户</a></div><div class="more-brokers"><div class="left"><div class="line"></div><div class="dot"></div></div><div class="text">更多<span class="market"></span>券商敬请期待</div><div class="right"><div class="dot"></div><div class="line"></div></div></div><div class="no-brokers">还未接入<span class="market"></span>券商，敬请期待</div><div class="disclaimer"><span>添加券商账号即表示同意</span><a href="#" target="_blank" class="agreement">《雪球交易服务协议》</a></div></div><div id="footer"><script>xqBridge.showLoading();
+seajs.use("trade/bind-list.js", function (brokers) {
+  brokers.init();
+});</script></div></body></html>

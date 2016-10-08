@@ -1,0 +1,23 @@
+<!--Created by flynngao on 15/2/4.
+通用模板
+--><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="format-detection" content="telephone=no"><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/sea-2.3.0.js"></script><script src="js/lib/jade.runtime.js"></script><script src="js/lib/underscore_1.8.3.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script><link href="style/mobile.css" rel="stylesheet"><script>seajs.config({
+  base:'./js'
+})
+</script><title>免佣ETF</title><link rel="stylesheet" href="style/trade/dyzq-free-trade.css"></head><body><div id="container"><table><thead><tr><th class="space"></th><th class="code">ETF代码</th><th class="discribe">追踪目标</th><th></th></tr></thead><tbody id="list"><tr etf-code="FXI"><td class="space"></td><td>FXI</td><td><b>中国概念股</b><br>追踪FTSE新华中国25指数。该指数包含可供国际投资者投资之中国股市表现。</td><td><div class="arrow"></div></td></tr><tr etf-code="IYW"><td class="space"></td><td>IYW</td><td><b>大型公司成长</b><br>追踪美国股市科技公司指数之表现。</td><td><div class="arrow"></div></td></tr><tr etf-code="IWV"><td class="space"></td><td>IWV</td><td><b>大型公司综合</b><br>追踪美国股市大范围的指数之表现。</td><td><div class="arrow"></div></td></tr><tr etf-code="BLV"><td class="space"></td><td>BLV </td><td><b>长期债券追踪</b><br>Barclays Capital Mutual Fund长期美国政府债券指数之表现。</td><td><div class="arrow"></div></td></tr><tr etf-code="BIV"><td class="space"></td><td>BIV </td><td><b>中期债券</b><br>追踪 Barclays Capital 5-10年政府债券/信用指数。此指数涵盖美国政府，投资级别企业以及5-10年国际美元支付发行债券等。</td><td><div class="arrow"></div></td></tr><tr etf-code="BSV"><td class="space"></td><td>BSV </td><td><b>短期债券</b><br>追踪 Barclays Capital 1-5年短期政府债券指数。此指数涵盖美国政府，投资级别企业以及1-5年国际美元支付发行债券等。</td><td><div class="arrow"></div></td></tr><tr etf-code="VIG"><td class="space"></td><td>VIG</td><td><b>大型公司综合</b><br>追踪 Dividend Achievers Select指数。该指数测量股息有持续成长纪录之公司的普通股投资报酬。</td><td><div class="arrow"></div></td></tr><tr etf-code="IVV"><td class="space"></td><td>IVV</td><td><b>大型公司综合</b><br>追踪标准普尔500大型公司指数。该指数测量美国股市大型公司之表现。</td><td><div class="arrow"></div></td></tr><tr etf-code="IJH"><td class="space"></td><td>IJH </td><td><b>中型公司总合</b><br>追踪标准普尔400中型公司指数。该指数测量美国股市中型公司之表现。</td><td><div class="arrow"></div></td></tr><tr etf-code="VBK"><td class="space"></td><td>VBK </td><td><b>小型公司成长</b><br>追踪 MSCI美国小型公司成长指数，一测量小型股投资报酬的基准指数。</td><td><div class="arrow"></div></td></tr><tr etf-code="VWO"><td class="space"></td><td>VWO </td><td><b>多元新兴市场</b><br>追踪MSCI新兴市场指数之表现。该基金主要将资产投入该指数所涵盖的普通股中。</td><td><div class="arrow"></div></td></tr><tr etf-code="DBC"><td></td><td>DBC</td><td><b>期货</b><br>追踪德意志银行流通商品指数。</td><td><div class="arrow"></div></td></tr></tbody></table><p>注意：十二支免佣金交易的ETF，每笔买进或卖出订单必须有<i>10股或10股以上</i>。若订单在10股以下， 或您於<i>30天内平仓卖出</i>，第一证券将收每笔$6.95佣金。</p><p>交易证券必须承担风险，第一证券免费交易ETF活动并不鼓励客户在未详细了解风险之前进行频繁交易。</p></div><div id="footer"><script>xqBridge.showLoading();
+$(function () {
+  xqBridge.setRightNavigationButton({
+    title: "电话帮助",
+    action: function () {
+      location.href = 'tel://4006858589';
+    }
+  })
+  xqBridge.hideLoading();
+  $('#list').on('click', 'tr', function () {
+    var etfCode = $(this).attr('etf-code');
+    xqBridge.redirect({
+      url: "http://xueqiu.com/S/" + etfCode,
+      type: "PUSH"
+    });
+    return false;
+  })
+})</script></div></body></html>

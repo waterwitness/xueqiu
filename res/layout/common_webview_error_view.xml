@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/webview_error_view" android:background="?attr_color_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:src="@drawable/icon_refresh" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/desc_small_text" android:gravity="center" android:id="@id/desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="加载失败，轻触页面重试" android:layout_below="@id/icon" />
+</RelativeLayout>

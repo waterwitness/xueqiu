@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/cell_drawable_pressed_with_stroke" />
+    <item android:drawable="@drawable/cell_drawable_normal_with_stroke" />
+</selector>

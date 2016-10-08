@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/bgColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/answer_complete_action_bar" android:background="?attr_nav_color" android:layout_width="fill_parent" android:layout_height="@dimen/abc_action_bar_default_height">
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/tv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="关闭" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="回复完成" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:src="@drawable/icon_money" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/text_level3_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="已获得" />
+        <TextView android:textSize="40.0sp" android:textColor="@color/tabbar_new_color" android:id="@id/tv_amount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="42.0dip" android:text="42.00" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_go_to_wallet" android:background="@color/toolbar_button_buy_color" android:paddingTop="8.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="12.0dip" android:text="去钱包看看" />
+</LinearLayout>

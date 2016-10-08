@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/stock_detail_action_bar" />
+    <FrameLayout android:id="@id/indicator_with_shadow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:translationY="1.0px">
+        <com.viewpagerindicator.TabPageIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:layout_gravity="right" android:id="@id/edit_group_shadow" android:background="?attr_tab_edit_shadow" android:layout_width="60.0dip" android:layout_height="40.0dip" />
+    </FrameLayout>
+    <com.xueqiu.android.common.widget.SwitchSwipeEnableViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

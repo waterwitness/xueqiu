@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/portfolio_side_padding" android:paddingTop="27.0dip" android:paddingRight="@dimen/portfolio_side_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/daily_holdings_performance" />
+    <LinearLayout android:orientation="horizontal" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:layout_below="@id/title">
+        <TextView android:textSize="50.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/change" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip" android:text="28198.87" android:includeFontPadding="false" android:layout_below="@id/title" />
+        <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="#77ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shares_amount" />
+            <TextView android:textSize="14.0sp" android:typeface="normal" android:textColor="@color/white" android:id="@id/total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:text="+8.82" style="@style/cube_red_text" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-12.0dip" android:src="@drawable/arrow_next_translucent" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="?attr_bg_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="?attr_text_level1_color" android:gravity="center" android:paddingTop="140.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tactic_subscribe_empty_description" android:drawableTop="@drawable/tactic_manage_empty" android:drawablePadding="20.0dip" />
+</FrameLayout>

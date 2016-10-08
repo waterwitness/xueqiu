@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xueqiu.android.common.widget.IndicatorTabLayout android:id="@id/trade_history_indicator" android:background="?attr_bg_color" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:weightSum="3.0">
+        <com.xueqiu.android.trade.view.IndicatorTabView android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:tab_text="@string/trade_position" />
+        <com.xueqiu.android.trade.view.IndicatorTabView android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:tab_text="@string/trade_order_list" />
+        <com.xueqiu.android.trade.view.IndicatorTabView android:id="@id/trade_history_transaction_tab" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" app:tab_text="@string/trade_transaction_history" />
+    </com.xueqiu.android.common.widget.IndicatorTabLayout>
+    <FrameLayout android:id="@id/listContainer" android:background="?attr_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

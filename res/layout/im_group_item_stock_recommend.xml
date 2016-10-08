@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?attr_bg_selector" android:paddingLeft="4.0dip" android:paddingTop="6.0dip" android:paddingRight="4.0dip" android:paddingBottom="6.0dip" style="@style/im_contact_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/im_avatar" android:paddingTop="2.0dip" android:layout_marginLeft="@dimen/im_chat_item_element_margin" android:layout_marginRight="6.0dip" android:layout_centerVertical="true" android:contentDescription="头像" style="@style/im_contact_avatar" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/im_avatar" android:layout_centerVertical="true">
+        <TextView android:id="@id/im_contact_name" android:layout_width="wrap_content" android:layout_marginLeft="@dimen/im_chat_item_element_margin" android:layout_marginBottom="3.0dip" android:layout_weight="1.0" style="@style/im_contact_name" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/im_avatar" android:layout_below="@id/im_contact_name" />
+    </LinearLayout>
+</RelativeLayout>

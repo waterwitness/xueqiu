@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/row_cash" android:background="#ff444444" android:paddingLeft="@dimen/list_item_horizontal_inner_margin" android:paddingRight="@dimen/list_item_horizontal_inner_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="45.0dip" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/simple_text_size" android:textStyle="normal" android:textColor="@color/white" android:id="@id/cash_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="现金" android:layout_weight="1.0" />
+    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/cash_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="97%" />
+</LinearLayout>

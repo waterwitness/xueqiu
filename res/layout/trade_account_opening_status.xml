@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@id/open_status_view" android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="#ff888888" android:layout_gravity="center_horizontal" android:id="@id/status_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/button_one" android:background="@drawable/bg_orange_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="12.0dip" android:minHeight="41.0dip" android:layout_below="@id/status_desc">
+        <TextView android:textSize="15.0sp" android:textColor="?attr_trade_fund_text_color" android:id="@id/button_one_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="极速开户" />
+        <TextView android:textSize="10.0sp" android:textColor="?attr_trade_fund_text_color" android:id="@id/button_one_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我要开户(支持一人多户)" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/button_two" android:background="@drawable/btn_blue_selector" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="12.0dip" android:minHeight="41.0dip" android:layout_below="@id/button_one">
+        <TextView android:textSize="15.0sp" android:textColor="?attr_trade_fund_text_color" android:id="@id/button_two_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="马上添加" />
+        <TextView android:textSize="10.0sp" android:textColor="?attr_trade_fund_text_color" android:id="@id/button_two_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我已有股票账户" />
+    </LinearLayout>
+    <TextView android:textSize="14.0dip" android:textColor="@color/gold_color" android:id="@id/open_others_account" android:background="?attr_trade_bg_open_others_account" android:paddingLeft="13.0dip" android:paddingTop="6.0dip" android:paddingRight="11.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="开通其他账户" android:drawableRight="?attr_arrow" android:drawablePadding="3.0dip" android:layout_below="@id/button_two" android:layout_centerHorizontal="true" />
+    <include layout="@layout/trade_bottom_text" />
+</RelativeLayout>

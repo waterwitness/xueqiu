@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/empty_view" android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/empty_view_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="?attr_empty_default" />
+        <TextView android:textSize="14.5sp" android:textColor="?attr_text_level2_color" android:gravity="center" android:id="@id/empty_desc" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_desc_default" android:layout_below="@id/image" />
+        <TextView android:textSize="14.5sp" android:textColor="?attr_text_link_color" android:id="@id/to_cube_top_list" android:background="?attr_cell_bg_with_stroke_selector" android:paddingLeft="10.0dip" android:paddingTop="4.0dip" android:paddingRight="10.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_tip_to_top_list" android:drawableRight="@drawable/arrow_next" android:drawablePadding="4.0dip" android:layout_below="@id/empty_desc" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/to_play_cube_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0sp" android:textColor="?attr_text_link_color" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/to_play_cube" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/empty_tip_to_play_cube" />
+    </FrameLayout>
+</RelativeLayout>

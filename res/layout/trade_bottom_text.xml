@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/bottom_text_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/pingan_insurance_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/bottom_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" android:layout_marginRight="4.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="#ff416cb2" android:layout_gravity="center_vertical" android:id="@id/bottom_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pingan_insurance_text" android:drawablePadding="3.0dip" android:lineSpacingExtra="0.0dip" />
+</LinearLayout>

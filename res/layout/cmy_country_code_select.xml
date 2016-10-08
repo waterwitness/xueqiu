@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:background="?attr_color_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/search_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/common_auto_search" />
+    </LinearLayout>
+    <ListView android:id="@id/country_code_list" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_bar" android:layout_alignParentBottom="true" android:fastScrollEnabled="true" style="?attr/snbListViewStyle" />
+</RelativeLayout>

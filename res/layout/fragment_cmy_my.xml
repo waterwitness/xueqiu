@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/user_profile_view" android:background="?attr_background_color" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <View android:id="@id/v_divider_1" android:background="?attr_cell_stroke_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/user_info_row" android:background="?attr_color_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/profile_image" android:scrollbars="none" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+                <ImageView android:id="@id/avatar_frame" android:background="@drawable/avatar_frame" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_alignLeft="@id/profile_image" android:layout_alignTop="@id/profile_image" />
+                <RelativeLayout android:gravity="center_horizontal" android:id="@id/below_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/profile_image">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                        <RelativeLayout android:id="@id/screenName_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="7.0dip" android:layout_alignParentTop="true">
+                            <TextView android:textSize="16.0sp" android:textColor="?attr_text_level1_color" android:id="@id/screen_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="蔡书华" />
+                            <ImageView android:gravity="center" android:id="@id/flag_gender" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/identify_icon_female" android:layout_toRightOf="@id/screen_name" android:layout_alignBottom="@id/screen_name" />
+                            <ImageView android:id="@id/vImage" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/flag_gender" android:layout_alignBottom="@id/screen_name" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/screenName_view" android:layout_alignLeft="@id/screenName_view">
+                            <TextView android:textSize="10.0sp" android:textColor="@color/verified_color" android:id="@id/tv_verified" android:background="@drawable/cmy_my_verification" android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/verified" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/desc" android:id="@id/description" android:paddingRight="18.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:singleLine="true" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <ImageView android:textSize="10.0sp" android:id="@id/arrow" android:background="?attr_arrow" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View android:id="@id/divider" android:background="?attr_cell_stroke_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="12.0dip" android:layout_below="@id/profile_image" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_status" android:background="?attr_color_bg" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0" android:layout_below="@id/divider">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/my_statuses" android:background="?attr_btn_bg_in_user_profile" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:id="@id/my_status_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="443" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/desc" android:id="@id/item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="讨论" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/attention" android:background="?attr_btn_bg_in_user_profile" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:id="@id/attention_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/attention" android:maxLength="6" />
+                    </LinearLayout>
+                    <RelativeLayout android:gravity="center" android:id="@id/fans" android:background="?attr_btn_bg_in_user_profile" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_fans" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:id="@id/fans_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13" />
+                            <TextView android:textSize="12.0sp" android:textColor="@color/desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/fans" android:maxLength="6" />
+                        </LinearLayout>
+                        <ImageView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="top" android:id="@id/fans_unread_count" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/ll_fans" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:id="@id/v_divider_3" android:background="?attr_cell_stroke_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:orientation="vertical" android:id="@id/items_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

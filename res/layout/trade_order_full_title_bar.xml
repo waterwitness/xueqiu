@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/stock_detail_action_bar" android:background="?attr_nav_color" android:layout_width="fill_parent" android:layout_height="@dimen/abc_action_bar_default_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/action_bar_back" android:background="?selectableItemBackground" android:layout_width="52.0dip" android:layout_height="fill_parent">
+        <ImageView android:paddingLeft="8.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="?attr_icon_tool_back" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/action_bar_title" android:layout_width="wrap_content" android:layout_height="@dimen/abc_action_bar_default_height" android:layout_centerInParent="true">
+        <TextView android:textSize="18.0dip" android:textColor="?attr_nav_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下单" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="13.0dip" android:textColor="?attr_nav_text_color" android:gravity="center" android:id="@id/action_bar_broker_name" android:layout_width="wrap_content" android:layout_height="22.0dip" android:maxEms="12" android:singleLine="true" />
+            <ImageView android:id="@id/action_bar_broker_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="?attr_trade_title_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <ImageButton android:gravity="center_vertical" android:id="@id/action_bar_refresh" android:background="?selectableItemBackground" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:visibility="invisible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_trade_nav_icon_refresh" android:text="刷新" />
+    </RelativeLayout>
+    <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:background="?attr_color_bg" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/search_input_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/common_auto_search" />
+    </LinearLayout>
+    <ListView android:id="@id/attentioned_stock_list" android:scrollbars="none" android:layout_height="fill_parent" android:layout_below="@id/search_input_view" style="?attr/snbListViewStyle" />
+    <ListView android:id="@id/search_stock_list" android:visibility="gone" android:scrollbars="none" android:layout_height="fill_parent" android:layout_below="@id/search_input_view" style="?attr/snbListViewStyle" />
+</RelativeLayout>

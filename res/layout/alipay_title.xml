@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/AlipayTitle" android:background="@drawable/alipay_title_background" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/alipay_title" android:layout_centerInParent="true" android:contentDescription="@string/content_description_icon" />
+    <Button android:textColor="@color/TextColorWhite" android:id="@id/btn_refresh" android:background="@drawable/alipay_refresh_button" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/refresh" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

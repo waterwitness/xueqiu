@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_background_color" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/table_title_container" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textColor="@color/price_orange" android:id="@id/table_title" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginTop="10.0dip" android:text="" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/text_level3_color" android:id="@id/table_subtitle" android:layout_width="wrap_content" android:layout_height="17.0dip" android:text="" android:layout_below="@id/table_title" android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_alignParentRight="true" android:layout_centerHorizontal="true">
+            <TextView android:textSize="12.0dip" android:textColor="@color/text_level3_color" android:id="@id/table_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2013-12-24" />
+            <ImageView android:textSize="10.0sp" android:id="@id/url_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:src="@drawable/arrow_next" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/title_divide_line" android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/table_data_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

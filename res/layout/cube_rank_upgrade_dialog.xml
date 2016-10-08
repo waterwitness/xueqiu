@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/swipe_dialog_bg" android:layout_width="270.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/text_level1_color" android:gravity="center" android:layout_gravity="center" android:id="@id/swipe_item_title" android:padding="22.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="升级提醒" />
+    <TextView android:textSize="14.0sp" android:layout_gravity="center" android:id="@id/rank_upgrade_message" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/rank_upgrade_image" android:paddingTop="12.0dip" android:paddingBottom="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_star_upgrade_1_2" />
+    <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/button_blue_text_color" android:gravity="center" android:layout_gravity="center" android:id="@id/make_sure" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="我知道了" />
+</LinearLayout>

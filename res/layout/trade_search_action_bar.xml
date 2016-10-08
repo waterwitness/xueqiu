@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/trade_search_action_bar" android:background="?attr_nav_color" android:layout_width="fill_parent" android:layout_height="@dimen/abc_action_bar_default_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/white" android:id="@id/action_bar_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="股票搜索" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:id="@id/search_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="@string/cancel" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

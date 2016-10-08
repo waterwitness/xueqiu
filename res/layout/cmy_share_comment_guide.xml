@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_general_notice" android:background="@color/share_comment_guide_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_comment_guide" android:layout_centerInParent="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/share_comment_guide_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="100.0dip" android:src="@drawable/share_comment_guide_btn" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/types_container" android:background="?attr_bg_selector" android:paddingLeft="12.0dip" android:paddingTop="15.0dip" android:paddingRight="12.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="私募工厂" android:background="@drawable/quotes_center_other_types_pf_bg" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip">
+            <TextView android:textSize="13.0dip" android:textColor="?attr_text_level1_color" android:gravity="center" android:background="?attr_quotes_center_other_types_text_bg" android:layout_width="60.0dip" android:layout_height="60.0dip" android:text="@string/private_fund_factory" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="基金债券" android:background="@drawable/quotes_center_other_types_fund_bg" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip">
+            <TextView android:textSize="13.0dip" android:textColor="?attr_text_level1_color" android:gravity="center" android:background="?attr_quotes_center_other_types_text_bg" android:layout_width="60.0dip" android:layout_height="60.0dip" android:text="@string/bond_fund" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="新三板" android:background="@drawable/quotes_center_other_types_bond_bg" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip">
+            <TextView android:textSize="13.0dip" android:textColor="?attr_text_level1_color" android:gravity="center" android:background="?attr_quotes_center_other_types_text_bg" android:layout_width="60.0dip" android:layout_height="60.0dip" android:text="@string/new_otc" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:tag="新股申购" android:background="@drawable/quotes_center_other_types_preipo_bg" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip">
+            <TextView android:textSize="13.0dip" android:textColor="?attr_text_level1_color" android:gravity="center" android:background="?attr_quotes_center_other_types_text_bg" android:layout_width="60.0dip" android:layout_height="60.0dip" android:text="@string/apply_new_stock" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

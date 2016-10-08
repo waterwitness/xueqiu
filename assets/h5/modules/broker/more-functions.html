@@ -1,0 +1,25 @@
+<!--Created by flynngao on 15/2/4.
+通用模板
+--><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="format-detection" content="telephone=no"><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/sea-2.3.0.js"></script><script src="js/lib/jade.runtime.js"></script><script src="js/lib/underscore_1.8.3.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script><link href="style/mobile.css" rel="stylesheet"><script>seajs.config({
+  base:'./js'
+})
+</script><title></title><link rel="stylesheet" href="style/trade/more-functions.css"></head><body><div id="container"><div data-title="更多功能" class="PAMID none"><a data-url="https://xueqiu.com/broker/new-stock?from=app_more" class="box"><div class="img-wrap newStock"></div><p>新股申购</p><div class="tip">先申购，中签后缴款</div></a><a data-url="https://xueqiu.com/hq#repurchase" class="box"><div class="img-wrap nihuigou"></div><p>国债逆回购</p><div class="tip">现金理财神器，1千元起</div></a><a data-url="/broker/gem-sign" class="box"><div class="img-wrap zhuanqian"></div><p>创业板转签</p><div class="tip">申请开通/查询</div></a><a data-url="https://xueqiu.com/broker/event/contestrank" class="box"><div class="img-wrap realcontest"></div><p>实盘大赛</p><div class="tip">每周颁奖，赢6万现金</div></a><a data-url="https://xueqiu.com/broker/invite-detail?from=app_more" class="box"><div class="img-wrap present"></div><p>邀请有礼</p><div class="tip">好友开户，各得50</div></a><a data-url="" class="box"><div class="img-wrap yingkui"></div><p>盈亏分析</p><div class="tip">敬请期待</div></a></div><div data-title="入金及更多" class="DYZQ none"><a data-url="https://xueqiu.com/broker/guide/ft-transfer-guide" class="box"><div class="img-wrap transferIn"></div><p>转入资金</p><div class="tip">入金指南</div></a><a data-url="https://xueqiu.com/6123409880/67180837" class="box"><div class="img-wrap transferOut"></div><p>转出资金</p><div class="tip">出金指南</div></a><a data-url="https://xueqiu.com/6123409880/67180900" class="box"><div class="img-wrap transactionCost"></div><p>交易费用</p><div class="tip">关于手续费的介绍</div></a><a data-url="https://xueqiu.com/firstrade/freeCount" class="box"><div class="img-wrap freeTradeSearch"></div><p>免佣查询</p><div class="tip">查询剩余免佣次数</div></a><a data-url="/broker/dyzq-free-trade" class="box"><div class="img-wrap freeTrade"></div><p>免佣ETF</p><div class="tip">12只ETF</div></a><a data-url="/broker/specialPage" class="box"><div class="img-wrap stockUS"></div><p>美股专题</p><div class="tip">美股专题</div></a><a data-url="https://xueqiu.com/firstrade/transfer" class="box"><div class="img-wrap transfer"></div><p>账户转移</p><div class="tip">账户转移</div></a><a data-url="https://xueqiu.com/6123409880/67180960" class="box"><div class="img-wrap moreHelp"></div><p>更多帮助</p><div class="tip">查看常见问题</div></a><a data-url="/firstrade/config" class="box"><div class="img-wrap habits"></div><p>汇款习惯</p><div class="tip">参与调查</div></a><a data-url="/firstrade/rules" class="box"><div class="img-wrap protocol"></div><p>相关协议</p><div class="tip">相关协议</div></a><a data-url="https://xueqiu.com/broker/invite-detail?from=app_more&amp;action=us" class="box"><div class="img-wrap present"></div><p>邀请有礼</p><div class="tip">好友开户，各得50</div></a><a class="box"></a></div></div><div id="footer"><script>$(function () {
+  var params = Util.parseParams();
+  var tid = params.tid;
+  if (tid) {
+    var $page = $('.' + tid);
+    var title = $page.data('title');
+    $page.removeClass('none');
+    document.title = title;
+  }
+  $('.box').on('click', function (e) {
+    var $this = $(this);
+    var url = $this.data('url');
+    if (url) {
+      xqBridge.redirect({
+        url: url,
+        type: 'PUSH'
+      })
+    }
+  })
+})();</script></div></body></html>

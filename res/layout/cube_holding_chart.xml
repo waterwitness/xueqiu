@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/row_holdings" android:background="@drawable/bg_simple_cell_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/list_item_vertical_inner_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header_holding_chart" android:paddingLeft="15.0dip" android:paddingTop="5.0dip" android:paddingRight="15.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cube_stock_set" android:layout_weight="1.0" style="@style/cube_title_text" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffaaaaaa" android:paddingRight="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cube_stock_detail" style="@style/cube_title_text" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/arrow_next" />
+    </LinearLayout>
+    <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textColor="@color/orange" android:id="@id/text_rb_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:text="未成交" style="@style/cube_desc_text" />
+    <com.xueqiu.chart.view.PieChart android:id="@id/chart_holdings" android:layout_width="fill_parent" android:layout_height="260.0dip" android:layout_marginTop="-15.0dip" android:layout_marginBottom="15.0dip" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/desc" android:gravity="center" android:id="@id/text_contribute" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="最近三月调仓 xx 次，赚钱 x 次\n最赚钱股票 xxxx" android:lineSpacingMultiplier="1.5" />
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/to_stock_gain_container" android:background="@drawable/white_bg_with_orange_stroke_selector" android:paddingLeft="19.0dip" android:paddingRight="19.0dip" android:layout_width="wrap_content" android:layout_height="25.0dip" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/text_highlight_color" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="持仓股票收益分析" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" android:src="@drawable/cube_icon_arrow" />
+    </LinearLayout>
+    <TextView android:textSize="18.0dip" android:textColor="@color/light_black" android:gravity="center" android:id="@id/cube_holding_chart_empty" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="130.0dip" android:text="暂无数据" />
+    <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

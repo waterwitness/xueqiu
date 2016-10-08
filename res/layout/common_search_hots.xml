@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ll_hots" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="@color/topic_select_bg_white_color" android:gravity="center" android:id="@id/tv_rank" android:background="@color/toolbar_line_color" android:layout_width="14.0dip" android:layout_height="14.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_centerVertical="true" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/text_level2_color" android:ellipsize="end" android:gravity="center|left" android:id="@id/tv_hot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:lines="1" android:layout_toRightOf="@id/tv_rank" android:layout_centerVertical="true" />
+    <View android:id="@id/divider" android:background="@color/content_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+</RelativeLayout>

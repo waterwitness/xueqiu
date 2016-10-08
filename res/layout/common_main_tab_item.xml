@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?attr_toolbar_color" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="54.0dip" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tab_icon" android:background="@drawable/rtn_home_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/tabbar_text_color" android:id="@id/tab_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发现" android:layout_below="@id/tab_icon" android:layout_centerHorizontal="true" />
+    <TextView android:textColor="@android:color/white" android:layout_gravity="top" android:id="@id/unread_more" android:background="@drawable/round_bg_orange" android:visibility="gone" android:clickable="false" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_toRightOf="@id/tab_icon" />
+    <ImageView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="top" android:id="@id/unread_count" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-8.0dip" android:layout_toRightOf="@id/tab_icon" />
+</RelativeLayout>

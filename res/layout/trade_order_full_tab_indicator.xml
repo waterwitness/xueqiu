@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="?attr_bg_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.xueqiu.android.common.widget.IndicatorTabLayout android:orientation="horizontal" android:id="@id/trade_order_full_tab" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.xueqiu.android.trade.view.IndicatorTabView android:id="@id/order_full_tab_buy" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" app:tab_text="@string/trans_type_buy_in" />
+        <View android:id="@id/order_full_divider_1" android:background="?attr_cell_stroke_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+        <com.xueqiu.android.trade.view.IndicatorTabView android:id="@id/order_full_tab_sell" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" app:tab_text="@string/trans_type_sale_out" />
+        <com.xueqiu.android.trade.view.IndicatorTabView android:id="@id/order_full_tab_sell_short" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" app:tab_text="@string/trans_type_sell_short" />
+        <com.xueqiu.android.trade.view.IndicatorTabView android:id="@id/order_full_tab_buy_cover" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0" app:tab_text="@string/trans_type_buy_cover_title" />
+    </com.xueqiu.android.common.widget.IndicatorTabLayout>
+    <View android:layout_gravity="bottom" android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>

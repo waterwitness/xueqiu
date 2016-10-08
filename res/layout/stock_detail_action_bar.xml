@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/stock_detail_action_bar" android:background="?attr_nav_color" android:layout_width="fill_parent" android:layout_height="@dimen/abc_action_bar_default_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/action_back" android:background="?selectableItemBackground" android:layout_width="52.0dip" android:layout_height="fill_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:src="?attr_icon_tool_back" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/action_bar_title" android:layout_width="wrap_content" android:layout_height="@dimen/abc_action_bar_default_height" android:layout_centerInParent="true">
+        <com.xueqiu.android.common.widget.AutoResizeTextView android:textSize="16.0sp" android:textColor="?attr_nav_text_color" android:gravity="center" android:id="@id/action_bar_stock_name" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginTop="5.0dip" android:maxEms="12" android:singleLine="true" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="?attr_stock_tag_text_color" android:gravity="center" android:id="@id/action_bar_tong" android:background="@drawable/bg_stock_detail_rong_tong" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="12.0dip" android:layout_marginRight="5.0dip" android:minWidth="12.0dip" android:text="通" android:includeFontPadding="false" />
+            <TextView android:textSize="11.0sp" android:textColor="?attr_stock_tag_text_color" android:gravity="center" android:id="@id/action_bar_rzrq" android:background="@drawable/bg_stock_detail_rong_tong" android:paddingLeft="1.0dip" android:paddingRight="1.0dip" android:visibility="gone" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="5.0dip" android:text="融" android:includeFontPadding="false" />
+            <TextView android:textSize="12.0sp" android:textColor="?attr_nav_text_color" android:id="@id/action_bar_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <TextView android:textColor="?attr_nav_text_color" android:gravity="center_vertical" android:id="@id/action_follow" android:background="?selectableItemBackground" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="已关注" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootView" android:background="?attr_color_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.common.widget.SNBWebView android:id="@id/link_webview" android:background="?attr_color_bg" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ListView android:id="@id/auto_search_list" android:visibility="invisible" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/search_bar" android:layout_alignParentBottom="true" style="?attr/snbListViewStyle" />
+</RelativeLayout>

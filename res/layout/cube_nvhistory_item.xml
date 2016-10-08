@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingLeft="@dimen/list_item_vertical_inner_margin" android:paddingTop="@dimen/list_item_vertical_margin_half" android:paddingRight="@dimen/list_item_vertical_inner_margin" android:paddingBottom="@dimen/list_item_vertical_margin_half" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/container" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/background" android:background="@color/title_content" android:layout_width="300.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="16.0sp" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/list_item_horizontal_inner_margin" android:text="2014.8.15" style="@style/cube_clean_text" />
+        <TextView android:textSize="16.0sp" android:layout_gravity="right" android:id="@id/row_value" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/list_item_horizontal_inner_margin" android:text="-4.07%" style="@style/cube_clean_text" />
+    </FrameLayout>
+</FrameLayout>

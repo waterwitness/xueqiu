@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingTop="4.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/start_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="3.0dip" android:text="@string/start_time" android:layout_centerHorizontal="true" />
+        <com.xueqiu.android.view.wheel.WheelView android:layout_gravity="center_vertical" android:id="@id/start_time" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_below="@id/start_time_text" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="17.0sp" android:textColor="@color/black" android:id="@id/end_time_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="3.0dip" android:text="@string/end_time" android:layout_centerHorizontal="true" />
+        <com.xueqiu.android.view.wheel.WheelView android:layout_gravity="center_vertical" android:id="@id/end_time" android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_below="@id/end_time_text" />
+    </RelativeLayout>
+</LinearLayout>

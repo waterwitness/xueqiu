@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:id="@id/hot_title" android:paddingLeft="11.0dip" android:paddingRight="11.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="他的热门讨论" android:drawableRight="@drawable/arrow_next" />
+    <View android:background="?attr_color_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/hot_list_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:id="@id/hot_more" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="更多热门讨论" android:drawableRight="@drawable/arrow_next" android:drawablePadding="9.0dip" />
+    </LinearLayout>
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

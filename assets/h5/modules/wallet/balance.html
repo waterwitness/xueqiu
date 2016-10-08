@@ -1,0 +1,9 @@
+<!--Created by flynngao on 15/2/4.
+通用模板
+--><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/sea-2.3.0.js"></script><script src="js/lib/jade.runtime.js"></script><script src="js/lib/underscore_1.6.0.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script><link href="style/mobile.css" rel="stylesheet"><script>seajs.config({
+  base: './js'
+})
+</script><title>余额</title><link rel="stylesheet" href="./style/balance.css"></head><body><div id="container"><div class="info"><div class="totalBalance"><img src="images/icon_wallet_balance_big@2x.png" class="icon"><div class="description">余额</div><div class="balance"></div><div class="available"><span>可提现</span><span class="available-amount"></span><img src="images/icon_wallet_problem@2x.png" class="help"></div></div></div><div class="control"><button id="submit">提  现</button></div></div><div id="footer"><script>xqBridge.showLoading();
+seajs.use('./js/balance.js', function (balance) {
+  balance.init();
+});</script></div></body></html>

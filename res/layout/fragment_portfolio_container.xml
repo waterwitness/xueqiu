@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/portfolio_root_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/portfolio_action_bar" android:background="?attr_nav_color" android:layout_width="fill_parent" android:layout_height="@dimen/abc_action_bar_default_height">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/action_message" android:background="?selectableItemBackground" android:layout_width="52.0dip" android:layout_height="fill_parent" android:src="?attr_icon_tool_message" />
+            <ImageView android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="top" android:id="@id/unread_count" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="-25.0dip" android:layout_marginTop="10.0dip" android:layout_toRightOf="@id/action_message" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/abc_action_bar_default_height" android:layout_centerInParent="true">
+            <TextView android:textSize="13.0dip" android:textColor="?attr_trade_type_color" android:gravity="center_horizontal" android:id="@id/page_type_stock" android:tag="page_type" android:background="@drawable/trade_type_bg_left_selector" android:paddingLeft="25.0dip" android:paddingTop="7.0dip" android:paddingRight="25.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="股票" />
+            <TextView android:textSize="13.0dip" android:textColor="?attr_trade_type_color" android:gravity="center_horizontal" android:id="@id/page_type_cube" android:tag="page_type" android:background="@drawable/trade_type_bg_right_selector" android:paddingLeft="25.0dip" android:paddingTop="7.0dip" android:paddingRight="25.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="组合" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:layout_gravity="center|right" android:id="@id/action_search" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="?attr_icon_tool_search" />
+            <ImageButton android:layout_gravity="center|right" android:id="@id/action_create_cube" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="?attr_icon_tool_cubenew" />
+            <ImageButton android:layout_gravity="center|right" android:id="@id/action_more" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="44.0dip" android:layout_height="fill_parent" android:src="?attr_icon_tool_more" />
+        </LinearLayout>
+        <View android:id="@id/triangle" android:background="?attr_menu_triangle" android:visibility="gone" android:layout_width="13.0dip" android:layout_height="7.0dip" android:layout_marginRight="21.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/create_menu_layout" android:background="@color/dim_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/abc_action_bar_default_height">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/create_new_cube" android:background="?attr_post_status_menu_bg" android:layout_width="fill_parent" android:layout_height="90.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_post_status" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cube_create" />
+                <TextView android:textSize="15.0sp" android:textColor="?attr_post_status_menu_text" android:gravity="center" android:id="@id/tv_post_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建普通组合" />
+            </LinearLayout>
+            <View android:background="?attr_menu_vertical_divider" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/create_new_sp_cube" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/iv_pay_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_cube_sp_create" />
+                <TextView android:textSize="15.0sp" android:textColor="?attr_post_status_menu_text" android:gravity="center" android:id="@id/tv_pay_to_ask" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="创建实盘组合" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

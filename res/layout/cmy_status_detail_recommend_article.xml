@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_related_articles" android:background="?attr_cell_color" android:paddingTop="14.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:id="@id/recommend_title" android:background="?attr_cell_color" android:paddingLeft="13.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="@string/related_articles" />
+    <android.support.v4.view.ViewPager android:id="@id/vp_related_article" android:layout_width="fill_parent" android:layout_height="70.0dip" />
+</LinearLayout>

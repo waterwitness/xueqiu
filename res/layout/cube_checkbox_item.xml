@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="left" android:orientation="horizontal" android:id="@id/checkbox_item" android:background="@drawable/roundcorner_bg_single_selector" android:paddingLeft="@dimen/im_group_edit_text_padding_left" android:paddingTop="5.0dip" android:paddingRight="@dimen/im_group_chk_box_padding_right" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="@dimen/im_group_profile_row_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/im_group_section_edit_text_size" android:textColor="@color/im_group_edit_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/checkbox_item_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/turn_on_quick_scroll" android:layout_weight="1.0" />
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/checkbox_selector" />
+</LinearLayout>

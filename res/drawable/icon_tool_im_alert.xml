@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/icon_tool_im" />
+    <item android:drawable="@drawable/icon_alert" android:left="26.0dip" android:top="0.0dip" android:right="0.0dip" android:bottom="26.0dip" />
+</layer-list>

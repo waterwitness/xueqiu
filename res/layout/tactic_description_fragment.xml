@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tactic_condition" />
+        <com.xueqiu.android.common.widget.SnowBallTextView android:textSize="16.0sp" android:textColor="?attr_text_level1_color" android:id="@id/detail" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tactic_condition_detail" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tactic_description_title" />
+        <com.xueqiu.android.common.widget.SnowBallTextView android:textSize="16.0sp" android:textColor="?attr_text_level1_color" android:id="@id/content" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tactic_description_detail" />
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tactic_push_time" />
+        <com.xueqiu.android.common.widget.SnowBallTextView android:textSize="16.0sp" android:textColor="?attr_text_level1_color" android:id="@id/push_time" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tactic_push_time_detail" />
+    </LinearLayout>
+</ScrollView>

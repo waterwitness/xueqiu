@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr_list_selector" style="@style/im_contact_item"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:enabled="false" android:layout_gravity="center_vertical" android:id="@id/im_chk_select" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="?attr_checkbox_selector" />
+    <ImageView android:id="@id/im_chk_disabled" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/checkedbox_disabled" />
+    <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/im_avatar" android:layout_marginLeft="@dimen/im_chat_item_element_margin" android:layout_centerVertical="true" android:contentDescription="头像" style="@style/im_contact_avatar" />
+        <ImageView android:id="@id/avatar_frame" android:background="?attr_avatar_frame" android:layout_width="@dimen/im_chat_avatar_width" android:layout_height="@dimen/im_chat_avatar_width" android:layout_alignLeft="@id/im_avatar" android:layout_alignTop="@id/im_avatar" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/screenName_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toRightOf="@id/profileImage" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0sp" android:textColor="?attr_color_username_2" android:id="@id/screen_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="阿狗" />
+        <TextView android:textSize="@dimen/ts_user_remark" android:textColor="?attr_color_desc" android:id="@id/userRemark" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="(阿猫)" android:layout_toRightOf="@id/screen_name" android:layout_alignBaseline="@id/screen_name" />
+        <ImageView android:id="@id/vImage" android:paddingBottom="2.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/v_others" android:layout_toRightOf="@id/userRemark" android:layout_alignBottom="@id/screen_name" android:contentDescription="认证" />
+        <TextView android:textSize="14.0sp" android:textColor="?attr_color_userintro" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="描述" android:singleLine="true" android:layout_below="@id/screen_name" android:layout_alignLeft="@id/screen_name" />
+    </RelativeLayout>
+</LinearLayout>

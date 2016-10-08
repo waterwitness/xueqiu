@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_view" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0" android:layout_centerVertical="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.2">
+        <ImageView android:id="@id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_logo" android:layout_centerInParent="true" />
+        <pl.droidsonroids.gif.GifImageView android:id="@id/ad_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/skip_ad" android:background="@drawable/ad_skip_bg" android:padding="7.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginRight="12.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.8">
+        <ImageView android:layout_width="64.0dip" android:layout_height="28.0dip" android:src="@drawable/splash_logo_text" />
+        <TextView android:textSize="13.0dip" android:textColor="@color/text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/snowball_slogan" />
+        <ImageView android:id="@id/first_publish_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/blue" android:id="@id/beta_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试版" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/cell_line_color" android:showDividers="middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="15.0dip" android:text="@string/cube_take_order_modify_money" />
+    <EditText android:textSize="15.0sp" android:textColor="@color/text_level1_color" android:textColorHint="@color/text_level4_color" android:id="@id/modify_money" android:background="@drawable/roundcorner_bg_single" android:paddingLeft="10.0dip" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:hint="@string/cube_take_order_modify_money_hint" android:inputType="numberDecimal" android:imeOptions="actionDone" />
+</LinearLayout>

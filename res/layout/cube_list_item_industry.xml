@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="95.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/column_one" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/cube_industry_item" />
+    <View android:background="@color/toolbar_line_color" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <include android:id="@id/column_two" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/cube_industry_item" />
+    <View android:background="@color/toolbar_line_color" android:layout_width="1.0px" android:layout_height="fill_parent" />
+    <include android:id="@id/column_three" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" layout="@layout/cube_industry_item" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?attr_toolbar_line_color" android:paddingTop="1.0px" android:paddingBottom="1.0px" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:background="?attr_toolbar_color" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:id="@id/stock_name" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/portfolio_side_padding" android:text="@string/stock_name" />
+        <Button android:textColor="?attr_text_level1_color" android:gravity="center|right" android:id="@id/btn_current" android:focusable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="当前价" android:drawableRight="@drawable/arrow_down_sort" android:layout_weight="1.0" style="@style/portfolioHeaderBtn" />
+        <Button android:textColor="?attr_text_level1_color" android:gravity="center|right" android:id="@id/btn_change" android:paddingLeft="15.0dip" android:paddingRight="@dimen/portfolio_side_padding" android:focusable="false" android:layout_width="105.0dip" android:layout_height="fill_parent" android:text="涨跌幅" style="@style/portfolioHeaderBtn" />
+    </LinearLayout>
+</FrameLayout>

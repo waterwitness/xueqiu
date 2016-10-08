@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/cube_stock_header" android:background="@drawable/bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:layout_width="0.0dip" android:layout_height="77.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/text_level1_color" android:id="@id/stock_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/stock_hold_label" android:background="@drawable/round_bg_orange" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="7.0dip" android:layout_marginTop="24.0dip" android:text="持" android:layout_toRightOf="@id/stock_name" />
+            <TextView android:textSize="15.0sp" android:textColor="@color/text_stock_red_color" android:id="@id/stock_benefit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentRight="true" />
+            <ProgressBar android:id="@id/stock_benefit_progress" android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginTop="12.0dip" android:max="100" android:progressDrawable="@drawable/green_progress_bar" android:layout_below="@id/stock_name" style="?android:attr/progressBarStyleHorizontal" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/stock_benefit_progress_arrow" android:paddingLeft="8.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_down" />
+    </LinearLayout>
+    <View android:background="@color/toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/cube_stock_attach_container" android:background="@color/bgColor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/chart_button_frame_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:textColor="@color/text_highlight_color" android:paddingTop="7.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/holding_duration" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_highlight_color" android:id="@id/holding_duration" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/chart_button_frame_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:textColor="@color/text_highlight_color" android:paddingTop="7.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transaction_times" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_highlight_color" android:id="@id/transaction_times" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/chart_button_frame_normal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="10.0sp" android:textColor="@color/text_highlight_color" android:paddingTop="7.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/avg_position" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/text_highlight_color" android:id="@id/avg_position" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

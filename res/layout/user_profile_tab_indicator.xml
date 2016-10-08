@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?attr_bg_selector" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center" android:background="?attr_bg_stock_detail_indicator_tab" android:padding="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="全部" android:layout_weight="1.0" />
+    <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center" android:background="?attr_bg_stock_detail_indicator_tab" android:padding="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="原创" android:layout_weight="1.0" />
+    <TextView android:textSize="15.0dip" android:textColor="?attr_text_level1_color" android:gravity="center" android:background="?attr_bg_stock_detail_indicator_tab" android:padding="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="问答" android:layout_weight="1.0" />
+</LinearLayout>

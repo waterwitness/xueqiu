@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/keyboard_content_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/keyboard_password_band" android:background="?attr_background_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip">
+        <ImageView android:layout_gravity="center" android:background="?attr_keyboard_shield" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="13.0sp" android:textColor="?attr_text_level1_color" android:gravity="center" android:id="@id/remind_band_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="雪球安全键盘" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/keyboard_divider" android:background="?attr_cell_line_color" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <com.xueqiu.android.common.widget.SNBKeyboardView android:id="@id/keyboard_view" android:background="?attr_cell_line_color" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:shadowRadius="0.0" android:keyBackground="?attr_keyboard_btn_background" android:keyTextSize="22.0sp" android:labelTextSize="16.0sp" android:keyTextColor="?attr_text_level1_color" android:verticalCorrection="0.0dip" />
+</LinearLayout>

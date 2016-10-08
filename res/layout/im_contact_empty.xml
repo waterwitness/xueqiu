@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff424242" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip" android:text="哦噢， 还没有互相关注的球友哦！" />
+    <View android:background="?attr_color_line" android:layout_width="wrap_content" android:layout_height="0.100000024dip" />
+    <View android:background="?attr_color_line" android:layout_width="wrap_content" android:layout_height="0.100000024dip" />
+    <RelativeLayout android:id="@id/find_people_verified" android:background="?attr_list_selector" android:paddingLeft="6.0dip" android:paddingTop="5.0dip" android:paddingRight="6.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icon2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_table_v" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="?attr_color_title" android:id="@id/label2" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="看看雪球推荐用户" android:layout_toRightOf="@id/icon2" android:layout_centerVertical="true" />
+        <ImageView android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/recommend_contact_count2" android:background="@drawable/new_fans_alert" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/label2" android:layout_centerVertical="true" style="@style/tips_num_style" />
+    </RelativeLayout>
+    <View android:background="?attr_color_line" android:layout_width="wrap_content" android:layout_height="0.100000024dip" />
+    <View android:background="?attr_color_line" android:layout_width="wrap_content" android:layout_height="0.100000024dip" />
+</LinearLayout>

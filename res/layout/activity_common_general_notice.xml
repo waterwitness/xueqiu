@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_general_notice" android:background="@color/notice_dim_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/iv_notice" android:layout_width="285.0dip" android:layout_height="380.0dip" android:src="@drawable/default_logo" android:layout_centerInParent="true" />
+    <ImageButton android:layout_gravity="right" android:id="@id/ib_close" android:background="@drawable/common_nofigy_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_above="@id/iv_notice" android:layout_alignRight="@id/iv_notice" />
+</RelativeLayout>

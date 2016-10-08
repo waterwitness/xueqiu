@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/cube_2" android:background="@drawable/bg_selector" android:paddingLeft="12.0dip" android:paddingTop="7.0dip" android:paddingRight="12.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.5sp" android:textColor="?attr_color_stocklist_stockname" android:id="@id/cube_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="中国互联网概念股" android:singleLine="true" android:layout_alignParentTop="true" />
+    <ImageView android:layout_gravity="center" android:id="@id/cube_in_top_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:src="@drawable/icon_cube_medal_list" android:layout_toRightOf="@id/cube_name" />
+    <TextView android:textSize="12.0sp" android:textColor="?attr_color_stocklist_abbr" android:id="@id/cube_symbol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CN1001" android:singleLine="true" android:layout_below="@id/cube_name" />
+    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/stock_red" android:id="@id/annualized_gain_rate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.06" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

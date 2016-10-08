@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/chat_content" android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.common.widget.ptr.PullToRefreshListView android:scrollbarStyle="outsideOverlay" android:id="@id/pull_list" android:background="?attr_color_deep_bg" android:paddingTop="6.0dip" android:clickable="true" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:stackFromBottom="true" android:transcriptMode="normal" android:divider="@null" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:background="?attr_input_bar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/im_input_button_height" android:minHeight="@dimen/im_input_row_height">
+        <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/a_stock_open_account" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="A股开户" android:layout_weight="1.0" />
+        <View android:background="?attr_color_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/us_stock_open_account" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="美股开户" android:layout_weight="1.0" />
+        <View android:background="?attr_color_line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/qa" android:background="?selectableItemBackground" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="常见问题" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<!--Created by flynngao on 15/2/4.
+通用模板
+--><!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="format-detection" content="telephone=no"><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/sea-2.3.0.js"></script><script src="js/lib/jade.runtime.js"></script><script src="js/lib/underscore_1.8.3.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script><link href="style/mobile.css" rel="stylesheet"><script>seajs.config({
+  base:'./js'
+})
+</script><title>转账记录</title><link rel="stylesheet" href="./style/trade/transfer-history.css"><script src="./js/lib/ptr.js"></script><script src="./js/lib/moment.js"></script></head><body><div id="container"><div class="transfer-history-wrap"><table class="transfer-history"><thead><tr><th class="op">操作/状态</th><th>金额(元)</th><th class="time">时间</th></tr></thead></table><div class="clone"></div><div id="wrapper"><div id="scroller"><div id="pullDown"><div class="pullDownIcon"></div><div class="pullDownLabel"><div class="pullDownText">下拉刷新</div><div class="pullDownTime">最后更新:<span>2015-05-19 18:26:31</span></div></div></div><table class="transfer-history"><tbody></tbody></table></div></div></div></div><div id="footer"><script>xqBridge.showLoading();
+seajs.use('trade/transfer-history.js', function (history) {
+  history.init();
+});</script></div></body></html>

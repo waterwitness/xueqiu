@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?attr_bg_color" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/night_icon" android:layout_centerVertical="true" />
+    <TextView android:textColor="?attr_text_level1_color" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/icon" android:layout_centerVertical="true" style="@style/form_item_label_style" />
+    <com.xueqiu.android.common.widget.SwitchButton android:id="@id/st_night" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:SwitchButtonTintColor="#ff3b7eee" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/desc_small_text" android:id="@id/subtitle" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开户/一键下单" android:layout_toLeftOf="@id/arrow" android:layout_centerVertical="true" />
+    <ImageView android:textColor="@color/white" android:id="@id/is_new" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/title" android:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#99000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/image_notify" android:background="@drawable/swipe_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/update_banner" android:scaleType="centerInside" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff4b83df" android:gravity="center" android:id="@id/update_version" android:background="@drawable/round_corner_white_bg_10" android:layout_width="68.0dip" android:layout_height="22.0dip" android:layout_marginTop="90.0dip" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/blue" android:paddingLeft="30.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/new_feature_title" android:lineSpacingExtra="4.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/text_level2_color" android:id="@id/update_content" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dip" />
+        <TextView android:textSize="18.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/update_id_ok" android:background="@drawable/bg_round_blue_selector" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="30.0dip" android:text="@string/upgrade_now" />
+    </LinearLayout>
+    <ImageView android:id="@id/image_cancel" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginBottom="20.0dip" android:src="@drawable/common_nofigy_cancel" android:layout_above="@id/image_notify" android:layout_alignRight="@id/image_notify" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="?attr_bg_selector" android:paddingLeft="@dimen/portfolio_side_padding" android:paddingRight="@dimen/portfolio_side_padding" android:layout_width="fill_parent" android:layout_height="@dimen/trade_position_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0">
+        <RelativeLayout android:id="@id/code_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="0.28">
+            <TextView android:textSize="16.0sp" android:textColor="?attr_text_level1_color" android:id="@id/column_1_row_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="万科地产" android:singleLine="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="0.24">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:layout_gravity="right" android:id="@id/column_2_row_1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="1.34万" android:singleLine="true" android:layout_weight="1.0" android:layout_alignParentTop="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="0.24">
+            <me.grantland.widget.AutofitTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:layout_gravity="right" android:id="@id/column_3_row_1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="18.21" android:singleLine="true" android:layout_weight="1.0" android:layout_alignParentTop="true" app:minTextSize="11.0sp" />
+            <TextView android:textSize="10.0sp" android:textColor="?attr_text_level2_color" android:layout_gravity="right" android:id="@id/column_3_row_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14.90" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="0.24">
+            <me.grantland.widget.AutofitTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="?attr_text_level1_color" android:layout_gravity="right" android:id="@id/column_4_row_1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="2123.21" android:singleLine="true" android:layout_weight="1.0" android:layout_alignParentTop="true" app:minTextSize="11.0sp" />
+            <TextView android:textSize="10.0sp" android:textColor="?attr_text_level2_color" android:layout_gravity="right" android:id="@id/column_4_row_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="14.90%" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/divider" android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</FrameLayout>

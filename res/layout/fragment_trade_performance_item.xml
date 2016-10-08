@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?attr_trade_page_top_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.xueqiu.android.common.widget.SNBPullToRefreshListView android:id="@id/list" android:background="@drawable/transparent" android:clickable="false" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/transparent_selector" android:divider="@null" ptr:pr_headerTextColor="@color/white" ptr:pr_headerIcon="@drawable/ptr_progress_drawable_white"
+      xmlns:ptr="http://schemas.android.com/apk/res/com.xueqiu.android" />
+    <include android:id="@id/row_float" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="44.0dip" layout="@layout/trade_performance_position_list_title" />
+</FrameLayout>

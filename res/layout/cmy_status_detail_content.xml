@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_background_color" android:paddingTop="5.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/user_status_view" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include layout="@layout/cmy_status_detail_user_status_view" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/reStatusView" android:background="?attr_status_repost_bg_selector" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/status_view">
+        <TextView android:textSize="16.799988sp" android:textColor="?attr_text_level2_color" android:id="@id/reUserName" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginBottom="5.0dip" android:text="转发名字" android:layout_alignParentTop="true" android:lineSpacingExtra="0.0dip" />
+        <TextView android:textSize="@dimen/ts_user_remark" android:textColor="?attr_text_level2_color" android:id="@id/reUserRemark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="名字备注" android:layout_toRightOf="@id/reUserName" android:layout_alignBaseline="@id/reUserName" />
+        <TextView android:textStyle="bold" android:textColor="?attr_text_level2_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text=":" android:layout_toRightOf="@id/reUserRemark" android:layout_alignBaseline="@id/reUserName" />
+        <RelativeLayout android:id="@id/re_status_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/reUserName">
+            <TextView android:textSize="16.799988sp" android:textStyle="bold" android:textColor="?attr_text_level2_color" android:id="@id/reStatusTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="1.0dip" android:text="正文标题" android:lineSpacingExtra="4.0dip" />
+            <com.xueqiu.android.common.widget.SnowBallTextView android:textSize="16.799988sp" android:textColor="?attr_text_level2_color" android:id="@id/reStatusText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="2.0dip" android:text="转发正文转发正文转发正文转发正文转发正文转发正文转发正文" android:layout_below="@id/reStatusTitle" android:lineSpacingExtra="4.0dip" />
+            <ImageView android:id="@id/reStatusImage" android:scrollbars="none" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="9.0dip" android:src="?attr_image_no_content" android:scaleType="fitXY" android:layout_below="@id/reStatusText" />
+            <TextView android:textSize="12.0sp" android:textColor="?attr_small_text" android:id="@id/reStatus_comment_count" android:padding="1.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="9.0dip" android:text="相关讨论(23)" android:layout_below="@id/reStatusImage" android:lineSpacingExtra="0.0dip" />
+            <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/reStatus_comment_count" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/re_ad_card_container" android:paddingBottom="@dimen/timeline_ad_image_margin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timeline_ad_image_margin" android:layout_marginRight="@dimen/timeline_ad_image_margin" android:layout_below="@id/reUserName">
+            <include layout="@layout/cmy_timeline_ad_card" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <FrameLayout android:id="@id/status_reward_bt_container" android:background="?attr_cell_color" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/status_reward_button" android:background="@drawable/bg_orange_corner_seletor" android:layout_width="120.0dip" android:layout_height="32.0dip" android:layout_margin="10.0dip" android:text="打赏" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/status_reward_container" android:background="?attr_cell_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="?attr_text_level2_color" android:gravity="center" android:id="@id/status_reward_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1212人打赏，1211元" />
+        <TextView android:textSize="14.0sp" android:textColor="?attr_text_level2_color" android:gravity="center" android:id="@id/status_paid_mention_amount" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1212人打赏，1211元" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/status_reward_image_container" android:paddingTop="8.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View android:background="?attr_cell_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <include layout="@layout/cmy_status_recommend_cube" />
+    <include layout="@layout/cmy_status_reference_stocks" />
+    <include layout="@layout/cmy_status_detail_recommend_article" />
+    <LinearLayout android:orientation="vertical" android:id="@id/payment_comments" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="@color/gold_color" android:background="?attr_cell_color" android:paddingLeft="13.0dip" android:paddingTop="12.0dip" android:paddingRight="14.0dip" android:paddingBottom="12.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="回复" />
+        <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/payment_comments_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/wonderful_comments" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="?attr_text_level2_color" android:id="@id/retweet_count" android:background="?attr_cell_color" android:paddingLeft="13.0dip" android:paddingTop="12.0dip" android:paddingRight="14.0dip" android:paddingBottom="12.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="精彩评论" />
+        <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/wonderful_comments_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/action_item" android:background="?selectableItemBackground" android:layout_width="52.0dip" android:layout_height="fill_parent" android:layout_marginRight="2.0dip" android:src="@drawable/nav_icon_refresh" />
+    <ImageView android:id="@id/unread_count" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:layout_alignRight="@id/action_item" />
+</RelativeLayout>

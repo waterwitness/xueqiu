@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootView" android:background="?attr_background_color" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.common.widget.SNBPullToRefreshListView android:id="@id/sw_list" android:background="?attr_background_color" android:clickable="true" android:divider="@null" android:dividerHeight="0.0dip" style="?attr/snbListViewStyle" />
+</LinearLayout>

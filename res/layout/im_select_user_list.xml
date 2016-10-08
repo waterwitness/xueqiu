@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/im_select_user_header" layout="@layout/im_select_user_header" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.emilsjolander.components.stickylistheaders.StickyListHeadersListView android:scrollbarStyle="outsideOverlay" android:id="@id/list_view" android:clickable="false" android:clipToPadding="false" android:persistentDrawingCache="none" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?attr/snbListViewStyle" />
+        <TextView android:textSize="14.5sp" android:textColor="?attr_color_desc" android:layout_gravity="center_horizontal" android:id="@id/empty_desc" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_search_user" android:layout_centerInParent="true" android:layout_centerVertical="true" />
+    </FrameLayout>
+</LinearLayout>

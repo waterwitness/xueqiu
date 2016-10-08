@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <RelativeLayout android:id="@id/industry_header" android:background="?attr_bg_selector" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+        <TextView android:textSize="13.0dip" android:textColor="?attr_text_level1_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="领涨板块" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0dip" android:textColor="?attr_text_level2_color" android:gravity="center_vertical" android:id="@id/hot_industry_title" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="全部板块" android:drawableRight="@drawable/arrow_next" android:drawablePadding="7.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="vertical" android:id="@id/industries" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/row_1_column_1" layout="@layout/stock_rank_hot_industry_item" />
+            <View android:background="?attr_toolbar_line_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip" />
+            <include android:id="@id/row_1_column_2" layout="@layout/stock_rank_hot_industry_item" />
+            <View android:background="?attr_toolbar_line_color" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip" />
+            <include android:id="@id/row_1_column_3" layout="@layout/stock_rank_hot_industry_item" />
+        </LinearLayout>
+        <View android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginBottom="1.0dip" />
+    </LinearLayout>
+    <View android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

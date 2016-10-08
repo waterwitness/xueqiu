@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rootView" android:background="@color/bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.emilsjolander.components.stickylistheaders.StickyListHeadersListView android:id="@id/auto_search_list" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" style="?attr/snbListViewStyle" />
+    <TextView android:textSize="14.5sp" android:textColor="?attr_color_desc" android:layout_gravity="center_horizontal" android:id="@id/empty_desc" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/empty_search_user" android:layout_centerHorizontal="true" />
+    <View android:id="@id/empty_view" android:background="@color/bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

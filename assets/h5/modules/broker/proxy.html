@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head lang="en"><meta charset="UTF-8"><title></title><script src="js/lib/jquery-1.9.1.js"></script><script src="js/lib/underscore_1.6.0.js"></script><script src="js/lib/fastclick.js"></script><script src="js/base.js"></script></head><body><script>//  xqBridge.showLoading();
+setTimeout(function () {
+  xqBridge.hideLoading();
+}, 1000);
+var query = window.location.search;
+var hasEncode = false;
+var url = query;
+if (query.indexOf("&hasEncode=1") > -1) {
+  url = url.replace("&hasEncode=1", "");
+  hasEncode = true;
+}
+url = url.replace("?url=", "");
+// iOS6.5 传递过来的url 参数没有encode 所以这里不用decode了
+// 要不治国那边页面会报错
+if (navigator.userAgent.indexOf("iPhone") >= -1 && Util.appVersion() == 6.5 && !hasEncode) {
+  url = url;
+} else {
+  url = decodeURIComponent(url);
+}
+var params = Util.parseParams(url);
+// 海通 url里面有 =号  encodeURI不会 encode =
+// 但是会encode %
+// 所以就后端直接encode 一下 我这边不做处理
+// parseParams 会decode value 所以直接判断 = 号就行了
+if (params.param && params.param.indexOf("=") > -1) {
+  window.location.href = url
+} else {
+  window.location.href = encodeURI(url);
+}</script></body></html>

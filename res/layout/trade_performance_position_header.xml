@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/portfolio_header_shadow" android:paddingTop="27.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="#77ffffff" android:id="@id/group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/portfolio_side_padding" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/portfolio_side_padding" android:paddingRight="@dimen/portfolio_side_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip" android:layout_below="@id/title">
+        <TextView android:textSize="50.0sp" android:textStyle="bold" android:textColor="?attr_trade_fund_text_color" android:layout_gravity="bottom" android:id="@id/total_market_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5.0dip" android:text="--" android:includeFontPadding="false" android:layout_below="@id/title" />
+        <LinearLayout android:layout_gravity="bottom|center|left" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="#77ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="日盈亏额" />
+            <TextView android:textSize="12.0sp" android:typeface="normal" android:textColor="?attr_trade_fund_text_color" android:id="@id/day_income" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" style="@style/cube_red_text" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="?attr_trade_page_divider" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@dimen/portfolio_side_padding" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/portfolio_side_padding" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fund_columns_row_1" android:paddingLeft="@dimen/portfolio_side_padding" android:paddingRight="@dimen/portfolio_side_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/row_1_column_1" layout="@layout/trade_fund_info_item" />
+        <View android:background="?attr_trade_page_divider" android:layout_width="1.0px" android:layout_height="32.0dip" />
+        <include android:id="@id/row_1_column_2" layout="@layout/trade_fund_info_item" />
+        <View android:background="?attr_trade_page_divider" android:layout_width="1.0px" android:layout_height="32.0dip" />
+        <include android:id="@id/row_1_column_3" layout="@layout/trade_fund_info_item" />
+        <View android:background="?attr_trade_page_divider" android:layout_width="1.0px" android:layout_height="32.0dip" />
+        <include android:id="@id/row_1_column_4" layout="@layout/trade_fund_info_item" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fund_columns_row_2" android:paddingLeft="@dimen/portfolio_side_padding" android:paddingRight="@dimen/portfolio_side_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/row_2_column_1" layout="@layout/trade_fund_info_item" />
+        <View android:background="?attr_trade_page_divider" android:layout_width="1.0px" android:layout_height="32.0dip" />
+        <include android:id="@id/row_2_column_2" layout="@layout/trade_fund_info_item" />
+        <View android:background="?attr_trade_page_divider" android:layout_width="1.0px" android:layout_height="32.0dip" />
+        <include android:id="@id/row_2_column_3" layout="@layout/trade_fund_info_item" />
+        <View android:background="?attr_trade_page_divider" android:layout_width="1.0px" android:layout_height="32.0dip" />
+        <include android:id="@id/row_2_column_4" layout="@layout/trade_fund_info_item" />
+    </LinearLayout>
+    <View android:background="?attr_cell_stroke_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/trade_actions" android:background="?attr_background_color" android:paddingLeft="12.0dip" android:paddingTop="10.0dip" android:paddingRight="12.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13.0sp" android:textColor="?attr_text_level1_color" android:gravity="center" android:id="@id/add_tran" android:background="?attr_trade_action_selector" android:paddingTop="11.0dip" android:paddingBottom="11.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:text="添加交易" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/performance_market_income" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/performance_market_income_header" layout="@layout/trade_performance_market_income_header" />
+        <LinearLayout android:orientation="vertical" android:id="@id/performance_market_income_list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:layout_gravity="bottom" android:id="@id/divider" android:background="?attr_toolbar_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <LinearLayout android:orientation="horizontal" android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="11.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#88888888" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/undo_row_texttv" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/itemdeleted" android:layout_weight="1.0" />
+    <View android:background="@android:color/white" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_margin="10.0dip" />
+    <Button android:textSize="16.0sp" android:textColor="@android:color/white" android:id="@id/undo_row_undobutton" android:background="@null" android:padding="10.0dip" android:paddingRight="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/taptoundo" android:drawableLeft="@drawable/ic_undo" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,1595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Base.AppCompat.DialogWhenLarge" parent="@style/Theme.Base.AppCompat" />
+    <style name="Theme.Base.AppCompat.Light.DialogWhenLarge" parent="@style/Theme.Base.AppCompat.Light" />
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light" />
+    <style name="Theme.Base" parent="@android:style/Theme" />
+    <style name="Theme.Base.AppCompat.Dialog.FixedSize" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:panelBackground">@drawable/abc_menu_hardkey_panel_holo_dark</item>
+        <item name="actionModeBackground">@drawable/abc_cab_background_top_holo_dark</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode</item>
+        <item name="actionModeCloseDrawable">@drawable/abc_ic_cab_done_holo_dark</item>
+        <item name="actionModeSplitBackground">@drawable/abc_cab_background_bottom_holo_dark</item>
+        <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
+        <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
+        <item name="buttonBarStyle">@android:style/ButtonBar</item>
+        <item name="dividerHorizontal">@drawable/abc_list_divider_holo_dark</item>
+        <item name="dividerVertical">@drawable/abc_list_divider_holo_dark</item>
+        <item name="listPreferredItemHeight">?android:listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightLarge">80.0dip</item>
+        <item name="listPreferredItemHeightSmall">48.0dip</item>
+        <item name="listPreferredItemPaddingLeft">8.0dip</item>
+        <item name="listPreferredItemPaddingRight">8.0dip</item>
+        <item name="selectableItemBackground">@drawable/abc_item_background_holo_dark</item>
+        <item name="textAppearanceListItem">?android:textAppearanceMedium</item>
+        <item name="textAppearanceListItemSmall">?android:textAppearanceMedium</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowFixedWidthMajor">@dimen/dialog_fixed_width_major</item>
+        <item name="windowFixedHeightMinor">@dimen/dialog_fixed_height_minor</item>
+        <item name="windowFixedWidthMinor">@dimen/dialog_fixed_width_minor</item>
+        <item name="windowFixedHeightMajor">@dimen/dialog_fixed_height_major</item>
+        <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
+        <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
+        <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
+    </style>
+    <style name="Theme.Base.AppCompat.Dialog.Light.FixedSize" parent="@style/Theme.Base.AppCompat.Dialog.FixedSize" />
+    <style name="Theme.Base.Light" parent="@android:style/Theme.Light" />
+    <style name="Widget.AppCompat.Base.AutoCompleteTextView" parent="@android:style/Widget.AutoCompleteTextView">
+        <item name="android:textColor">?actionMenuTextColor</item>
+        <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_dark</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:maxWidth">@dimen/abc_action_bar_progress_bar_size</item>
+        <item name="android:maxHeight">@dimen/abc_action_bar_progress_bar_size</item>
+        <item name="android:minWidth">@dimen/abc_action_bar_progress_bar_size</item>
+        <item name="android:minHeight">@dimen/abc_action_bar_progress_bar_size</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ProgressBar.Horizontal" parent="@android:style/Widget.ProgressBar.Horizontal" />
+    <style name="Widget.AppCompat.Light.Base.AutoCompleteTextView" parent="@android:style/Widget.AutoCompleteTextView">
+        <item name="android:textColor">?actionMenuTextColor</item>
+        <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Base.SearchResult.Subtitle" parent="@style/TextAppearance.AppCompat.Base.SearchResult">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Base.SearchResult.Title" parent="@style/TextAppearance.AppCompat.Base.SearchResult">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Widget">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" parent="@android:style/TextAppearance.Widget">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Subtitle" parent="@style/TextAppearance.AppCompat.Light.Base.SearchResult">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Title" parent="@style/TextAppearance.AppCompat.Light.Base.SearchResult">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Large" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" />
+    <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Menu" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?actionMenuTextColor</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">@dimen/abc_action_bar_subtitle_text_size</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle.Inverse" parent="@android:style/TextAppearance.Small.Inverse">
+        <item name="android:textSize">@dimen/abc_action_bar_subtitle_text_size</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/abc_action_bar_title_text_size</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title.Inverse" parent="@android:style/TextAppearance.Medium.Inverse">
+        <item name="android:textSize">@dimen/abc_action_bar_title_text_size</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">?android:textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" parent="@android:style/TextAppearance.Small.Inverse">
+        <item name="android:textColor">?android:textColorSecondaryInverse</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title" parent="@android:style/TextAppearance.Medium" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse" parent="@android:style/TextAppearance.Medium.Inverse" />
+    <style name="Theme.Base.AppCompat" parent="@style/Theme.Base">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:panelBackground">@drawable/abc_menu_hardkey_panel_holo_dark</item>
+        <item name="actionBarDivider">?dividerVertical</item>
+        <item name="actionBarItemBackground">?selectableItemBackground</item>
+        <item name="actionBarSize">@dimen/abc_action_bar_default_height</item>
+        <item name="actionBarSplitStyle">?actionBarStyle</item>
+        <item name="actionBarStyle">@style/Widget.AppCompat.ActionBar</item>
+        <item name="actionBarTabBarStyle">@style/Widget.AppCompat.ActionBar.TabBar</item>
+        <item name="actionBarTabStyle">@style/Widget.AppCompat.ActionBar.TabView</item>
+        <item name="actionBarTabTextStyle">@style/Widget.AppCompat.ActionBar.TabText</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Menu</item>
+        <item name="actionMenuTextColor">?android:textColorPrimaryDisableOnly</item>
+        <item name="actionModeBackground">@drawable/abc_cab_background_top_holo_dark</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode</item>
+        <item name="actionModeCloseDrawable">@drawable/abc_ic_cab_done_holo_dark</item>
+        <item name="actionModeSplitBackground">@drawable/abc_cab_background_bottom_holo_dark</item>
+        <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
+        <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
+        <item name="buttonBarStyle">@android:style/ButtonBar</item>
+        <item name="dividerHorizontal">@drawable/abc_list_divider_holo_dark</item>
+        <item name="dividerVertical">@drawable/abc_list_divider_holo_dark</item>
+        <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_holo_dark</item>
+        <item name="listPreferredItemHeight">?android:listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightLarge">80.0dip</item>
+        <item name="listPreferredItemHeightSmall">48.0dip</item>
+        <item name="listPreferredItemPaddingLeft">8.0dip</item>
+        <item name="listPreferredItemPaddingRight">8.0dip</item>
+        <item name="selectableItemBackground">@drawable/abc_item_background_holo_dark</item>
+        <item name="textAppearanceListItem">?android:textAppearanceMedium</item>
+        <item name="textAppearanceListItemSmall">?android:textAppearanceMedium</item>
+        <item name="windowActionBar">true</item>
+        <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
+        <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
+        <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
+        <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
+    </style>
+    <style name="Theme.Base.AppCompat.Light" parent="@style/Theme.Base.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:panelBackground">@drawable/abc_menu_hardkey_panel_holo_light</item>
+        <item name="actionBarDivider">?dividerVertical</item>
+        <item name="actionBarItemBackground">?selectableItemBackground</item>
+        <item name="actionBarSize">@dimen/abc_action_bar_default_height</item>
+        <item name="actionBarSplitStyle">?actionBarStyle</item>
+        <item name="actionBarStyle">@style/Widget.AppCompat.Light.ActionBar</item>
+        <item name="actionBarTabBarStyle">@style/Widget.AppCompat.Light.ActionBar.TabBar</item>
+        <item name="actionBarTabStyle">@style/Widget.AppCompat.Light.ActionBar.TabView</item>
+        <item name="actionBarTabTextStyle">@style/Widget.AppCompat.Light.ActionBar.TabText</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionButtonStyle">@style/Widget.AppCompat.Light.ActionButton</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Widget.ActionBar.Menu</item>
+        <item name="actionMenuTextColor">?android:textColorPrimaryDisableOnly</item>
+        <item name="actionModeBackground">@drawable/abc_cab_background_top_holo_light</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.Light.ActionButton.CloseMode</item>
+        <item name="actionModeCloseDrawable">@drawable/abc_ic_cab_done_holo_light</item>
+        <item name="actionModeSplitBackground">@drawable/abc_cab_background_bottom_holo_light</item>
+        <item name="actionModeStyle">@style/Widget.AppCompat.ActionMode</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.Light.ActionButton.Overflow</item>
+        <item name="buttonBarButtonStyle">@android:style/Widget.Button</item>
+        <item name="buttonBarStyle">@android:style/ButtonBar</item>
+        <item name="dividerHorizontal">@drawable/abc_list_divider_holo_light</item>
+        <item name="dividerVertical">@drawable/abc_list_divider_holo_light</item>
+        <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_holo_light</item>
+        <item name="listPreferredItemHeight">?android:listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightLarge">80.0dip</item>
+        <item name="listPreferredItemHeightSmall">48.0dip</item>
+        <item name="listPreferredItemPaddingLeft">8.0dip</item>
+        <item name="listPreferredItemPaddingRight">8.0dip</item>
+        <item name="selectableItemBackground">@drawable/abc_item_background_holo_light</item>
+        <item name="textAppearanceListItem">?android:textAppearanceMedium</item>
+        <item name="textAppearanceListItemSmall">?android:textAppearanceMedium</item>
+        <item name="windowActionBar">true</item>
+        <item name="actionDropDownStyle">@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
+        <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
+        <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
+        <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_light</item>
+    </style>
+    <style name="Theme.Base.AppCompat.Light.DarkActionBar" parent="@style/Theme.Base.AppCompat.Light">
+        <item name="android:panelBackground">@drawable/abc_menu_hardkey_panel_holo_dark</item>
+        <item name="actionBarDivider">@drawable/abc_list_divider_holo_dark</item>
+        <item name="actionBarItemBackground">@drawable/abc_item_background_holo_dark</item>
+        <item name="actionBarStyle">@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse</item>
+        <item name="actionBarTabBarStyle">@style/Widget.AppCompat.Light.ActionBar.TabBar.Inverse</item>
+        <item name="actionBarTabStyle">@style/Widget.AppCompat.Light.ActionBar.TabView.Inverse</item>
+        <item name="actionBarTabTextStyle">@style/Widget.AppCompat.Light.ActionBar.TabText.Inverse</item>
+        <item name="actionBarWidgetTheme">@style/Theme.AppCompat</item>
+        <item name="actionMenuTextColor">?android:textColorPrimaryInverseDisableOnly</item>
+        <item name="actionModeBackground">@drawable/abc_cab_background_top_holo_dark</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.AppCompat.ActionButton.CloseMode</item>
+        <item name="actionModeCloseDrawable">@drawable/abc_ic_cab_done_holo_dark</item>
+        <item name="actionModeSplitBackground">@drawable/abc_cab_background_bottom_holo_dark</item>
+        <item name="actionModeStyle">@style/Widget.AppCompat.Light.ActionMode.Inverse</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
+        <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_holo_dark</item>
+        <item name="actionDropDownStyle">@style/Widget.AppCompat.Spinner.DropDown.ActionBar</item>
+        <item name="listChoiceBackgroundIndicator">@drawable/abc_list_selector_holo_dark</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ActionBar" parent="">
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
+        <item name="height">?actionBarSize</item>
+        <item name="displayOptions">showHome|showTitle|useLogo</item>
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle</item>
+        <item name="divider">?dividerVertical</item>
+        <item name="background">@drawable/abc_ab_transparent_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abc_ab_stacked_transparent_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abc_ab_bottom_transparent_dark_holo</item>
+        <item name="homeLayout">@layout/abc_action_bar_home</item>
+        <item name="progressBarStyle">@style/Widget.AppCompat.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.AppCompat.ProgressBar</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ActionBar.Solid" parent="@style/Widget.AppCompat.Base.ActionBar">
+        <item name="background">@drawable/abc_ab_solid_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abc_ab_stacked_solid_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abc_ab_bottom_solid_dark_holo</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ActionBar.TabBar" parent="">
+        <item name="divider">?actionBarDivider</item>
+        <item name="showDividers">middle</item>
+        <item name="dividerPadding">12.0dip</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ActionBar.TabText" parent="">
+        <item name="android:textAppearance">@null</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ActionBar.TabView" parent="">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/abc_tab_indicator_ab_holo</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">16.0dip</item>
+        <item name="android:minWidth">80.0dip</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ActionButton" parent="">
+        <item name="android:gravity">center</item>
+        <item name="android:background">?actionBarItemBackground</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">12.0dip</item>
+        <item name="android:minWidth">@dimen/abc_action_button_min_width</item>
+        <item name="android:minHeight">?actionBarSize</item>
+        <item name="android:maxLines">2</item>
+        <item name="textAllCaps">@bool/abc_config_actionMenuItemAllCaps</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ActionButton.CloseMode" parent="@style/Widget.AppCompat.Base.ActionButton" />
+    <style name="Widget.AppCompat.Base.ActionButton.Overflow" parent="@style/Widget.AppCompat.Base.ActionButton">
+        <item name="android:src">@drawable/abc_ic_menu_moreoverflow_normal_holo_dark</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ActivityChooserView" parent="">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/abc_ab_share_pack_holo_dark</item>
+        <item name="divider">?dividerVertical</item>
+        <item name="showDividers">middle</item>
+        <item name="dividerPadding">6.0dip</item>
+    </style>
+    <style name="Widget.AppCompat.Base.DropDownItem.Spinner" parent="">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.DropDownItem</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">8.0dip</item>
+        <item name="android:paddingRight">8.0dip</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ListPopupWindow" parent="">
+        <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_dark</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">0.0dip</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ListView.DropDown" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/abc_list_selector_holo_dark</item>
+    </style>
+    <style name="Widget.AppCompat.Base.ListView.Menu" parent="@android:style/Widget.ListView.Menu">
+        <item name="android:listSelector">?listChoiceBackgroundIndicator</item>
+        <item name="android:divider">?dividerHorizontal</item>
+    </style>
+    <style name="Widget.AppCompat.Base.PopupMenu" parent="@style/Widget.AppCompat.Base.ListPopupWindow" />
+    <style name="Widget.AppCompat.Base.Spinner" parent="">
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@drawable/abc_spinner_ab_holo_dark</item>
+        <item name="android:clickable">true</item>
+        <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_dark</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">0.0dip</item>
+        <item name="spinnerMode">dropdown</item>
+    </style>
+    <style name="Widget.AppCompat.Light.Base.ActionBar" parent="@style/Widget.AppCompat.Base.ActionBar">
+        <item name="actionButtonStyle">@style/Widget.AppCompat.Light.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.Light.ActionButton.Overflow</item>
+        <item name="background">@drawable/abc_ab_transparent_light_holo</item>
+        <item name="backgroundStacked">@drawable/abc_ab_stacked_transparent_light_holo</item>
+        <item name="backgroundSplit">@drawable/abc_ab_bottom_transparent_light_holo</item>
+        <item name="progressBarStyle">@style/Widget.AppCompat.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.AppCompat.ProgressBar</item>
+    </style>
+    <style name="Widget.AppCompat.Light.Base.ActionBar.Solid" parent="@style/Widget.AppCompat.Light.Base.ActionBar">
+        <item name="background">@drawable/abc_ab_solid_light_holo</item>
+        <item name="backgroundStacked">@drawable/abc_ab_stacked_solid_light_holo</item>
+        <item name="backgroundSplit">@drawable/abc_ab_bottom_solid_light_holo</item>
+    </style>
+    <style name="Widget.AppCompat.Light.Base.ActionBar.Solid.Inverse" parent="@style/Widget.AppCompat.Base.ActionBar.Solid">
+        <item name="actionButtonStyle">@style/Widget.AppCompat.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ActionButton.Overflow</item>
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse</item>
+    </style>
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabBar" parent="@style/Widget.AppCompat.Base.ActionBar.TabBar" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabBar.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabBar" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabText" parent="@style/Widget.AppCompat.Base.ActionBar.TabText" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabText.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabText">
+        <item name="android:textColor">?android:textColorPrimaryInverseDisableOnly</item>
+    </style>
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabView" parent="@style/Widget.AppCompat.Base.ActionBar.TabView" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabView.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabView" />
+    <style name="Widget.AppCompat.Light.Base.ActionButton" parent="@style/Widget.AppCompat.Base.ActionButton" />
+    <style name="Widget.AppCompat.Light.Base.ActionButton.CloseMode" parent="@style/Widget.AppCompat.Light.Base.ActionButton" />
+    <style name="Widget.AppCompat.Light.Base.ActionButton.Overflow" parent="@style/Widget.AppCompat.Light.Base.ActionButton">
+        <item name="android:src">@drawable/abc_ic_menu_moreoverflow_normal_holo_light</item>
+    </style>
+    <style name="Widget.AppCompat.Light.Base.ActionMode.Inverse" parent="@style/Widget.AppCompat.Base.ActionMode">
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse</item>
+    </style>
+    <style name="Widget.AppCompat.Light.Base.DropDownItem.Spinner" parent="@style/Widget.AppCompat.Base.DropDownItem.Spinner" />
+    <style name="Widget.AppCompat.Light.Base.ListPopupWindow" parent="">
+        <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:dropDownHorizontalOffset">0.0dip</item>
+        <item name="android:dropDownVerticalOffset">0.0dip</item>
+    </style>
+    <style name="Widget.AppCompat.Light.Base.ListView.DropDown" parent="@android:style/Widget.ListView">
+        <item name="android:listSelector">@drawable/abc_list_selector_holo_light</item>
+    </style>
+    <style name="Widget.AppCompat.Light.Base.PopupMenu" parent="@style/Widget.AppCompat.Light.Base.ListPopupWindow" />
+    <style name="Widget.AppCompat.Light.Base.Spinner" parent="@style/Widget.AppCompat.Base.Spinner">
+        <item name="android:background">@drawable/abc_spinner_ab_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/abc_list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_light</item>
+    </style>
+    <style name="ActionBarSpinnerItem" parent="@android:style/TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr_nav_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="ActionBarTabPageIndicator" parent="@style/Widget.TabPageIndicator">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/action_bar_tab_indicator_text</item>
+        <item name="android:background">@drawable/bg_action_bar_tab_indicator</item>
+    </style>
+    <style name="AlertDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/alipay_popup_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/kwlopen_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/kwlopen_push_bottom_out</item>
+    </style>
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+    <style name="BlueTabPageIndicator" parent="@style/Widget.TabPageIndicator">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/title_content</item>
+        <item name="android:background">@drawable/blue_indicator</item>
+    </style>
+    <style name="ChartDayTheme">
+        <item name="attr_bg_color">@color/bg</item>
+        <item name="attr_chart_border_color">@color/chart_border</item>
+        <item name="attr_chart_green_color">@color/chart_green_color</item>
+        <item name="attr_chart_period_container_bg_color">@color/chart_period_container_bg_color</item>
+        <item name="attr_chart_period_selected_bg">@drawable/period_btn_bottom_border</item>
+        <item name="attr_chart_red_color">@color/chart_red_color</item>
+        <item name="attr_chart_split_color">@color/chart_split_color</item>
+        <item name="attr_chart_text_color">@color/chart_text_color</item>
+        <item name="attr_kline_config_top_border">@drawable/kline_config_top_border</item>
+        <item name="attr_pankou_btn_bg_color_selector">@drawable/pankou_btn_bg_color_selector</item>
+        <item name="attr_pankou_btn_font_color_selector">@drawable/pankou_btn_font_color_selector</item>
+        <item name="attr_pankou_top_border">@drawable/pankou_top_border</item>
+        <item name="attr_text_level1_color">@color/text_level1_color</item>
+        <item name="attr_text_level2_color">@color/text_level2_color</item>
+        <item name="attr_text_level3_color">@color/text_level3_color</item>
+        <item name="attr_text_level4_color">@color/text_level4_color</item>
+    </style>
+    <style name="ChartNightTheme">
+        <item name="attr_bg_color">@color/bg_night</item>
+        <item name="attr_chart_border_color">@color/chart_border_night</item>
+        <item name="attr_chart_green_color">@color/chart_green_color_night</item>
+        <item name="attr_chart_period_container_bg_color">@color/chart_period_container_bg_color_night</item>
+        <item name="attr_chart_period_selected_bg">@drawable/period_btn_bottom_border_night</item>
+        <item name="attr_chart_red_color">@color/chart_red_color_night</item>
+        <item name="attr_chart_split_color">@color/chart_split_color_night</item>
+        <item name="attr_chart_text_color">@color/chart_text_color_night</item>
+        <item name="attr_kline_config_top_border">@drawable/kline_config_top_border_night</item>
+        <item name="attr_pankou_btn_bg_color_selector">@drawable/pankou_btn_bg_color_selector_night</item>
+        <item name="attr_pankou_btn_font_color_selector">@drawable/pankou_btn_font_color_selector_night</item>
+        <item name="attr_pankou_top_border">@drawable/pankou_top_border_night</item>
+        <item name="attr_text_level1_color">@color/text_level1_color_night</item>
+        <item name="attr_text_level2_color">@color/text_level2_color_night</item>
+        <item name="attr_text_level3_color">@color/text_level3_color_night</item>
+        <item name="attr_text_level4_color">@color/text_level4_color_night</item>
+    </style>
+    <style name="CustomTabPageIndicator" parent="@style/Widget.TabPageIndicator">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?attr_text_level1_color</item>
+        <item name="android:background">?attr_tab_indicator_bg</item>
+        <item name="android:paddingLeft">@dimen/group_header_item_text_padding</item>
+        <item name="android:paddingRight">@dimen/group_header_item_text_padding</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="text_horizontal_margin">5.0dip</item>
+        <item name="bottom_line_color">?attr_toolbar_stroke_color</item>
+        <item name="container_padding_left">4.0dip</item>
+        <item name="container_padding_right">4.0dip</item>
+        <item name="container_background">?attr_tab_indicator_container_bg</item>
+    </style>
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="GenericProgressBackground" parent="@android:style/Theme">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#dd111111</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="GenericProgressIndicator" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+    <style name="ListViewStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:divider">?attr_toolbar_line_color</item>
+        <item name="android:dividerHeight">1.0px</item>
+        <item name="android:smoothScrollbar">false</item>
+    </style>
+    <style name="MyDialogStyleBottom">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="Night.CustomTabPageIndicator" parent="@style/Widget.TabPageIndicator">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_level1_color_night</item>
+    </style>
+    <style name="Night.SNB.ListPopupWindow" parent="@style/Widget.AppCompat.Light.Base.ListPopupWindow">
+        <item name="android:divider">?attr_toolbar_line_color</item>
+        <item name="android:dividerHeight">1.0px</item>
+        <item name="android:popupBackground">@drawable/abc_menu_dropdown_panel_holo_dark</item>
+        <item name="android:listDivider">?attr_toolbar_line_color</item>
+    </style>
+    <style name="PatternViewStyle">
+        <item name="regularColor">@android:color/white</item>
+        <item name="errorColor">@android:color/holo_red_light</item>
+        <item name="successColor">@android:color/white</item>
+        <item name="pathColor">@android:color/white</item>
+        <item name="dotDrawableDefault">@drawable/pl_patternview_dot_default</item>
+        <item name="dotDrawableTouched">@drawable/pl_patternview_dot_touched</item>
+        <item name="circleDrawableDefault">@drawable/pl_patternview_circle_default_alpha</item>
+        <item name="circleDrawable">@drawable/pl_patternview_circle_default_alpha</item>
+        <item name="arrowUpDrawable">@drawable/pl_patternview_arrow_alpha</item>
+    </style>
+    <style name="SNB.ActionBar.MenuTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="textColor">@color/white</item>
+        <item name="textSize">16.0sp</item>
+    </style>
+    <style name="SNB.ActionBar.SubTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">?attr_nav_text_color</item>
+        <item name="textColor">?attr_nav_text_color</item>
+    </style>
+    <style name="SNB.ActionBar.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">?attr_nav_text_color</item>
+        <item name="textColor">?attr_nav_text_color</item>
+    </style>
+    <style name="SNB.DropDownItem.Spinner" parent="@style/Widget.AppCompat.DropDownItem.Spinner">
+        <item name="android:paddingRight">0.0dip</item>
+    </style>
+    <style name="SNB.ListPopupWindow" parent="@style/Widget.AppCompat.Light.Base.ListPopupWindow">
+        <item name="android:divider">?attr_toolbar_line_color</item>
+        <item name="android:dividerHeight">1.0px</item>
+        <item name="android:listDivider">?attr_toolbar_line_color</item>
+    </style>
+    <style name="SNB.Theme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SNB.DropDownItem.Spinner</item>
+        <item name="android:soundEffectsEnabled">false</item>
+        <item name="android:actionBarStyle">@style/SNB.Widget.AppCompat.Light.ActionBar.Solid</item>
+        <item name="android:actionDropDownStyle">@style/SNB.Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
+        <item name="android:listPopupWindowStyle">@style/SNB.ListPopupWindow</item>
+        <item name="android:homeAsUpIndicator">@drawable/nav_icon_back</item>
+        <item name="android:actionMenuTextAppearance">@style/SNB.ActionBar.MenuTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="actionBarSpinnerItemStyle">@style/ActionBarSpinnerItem</item>
+        <item name="actionBarStyle">@style/SNB.Widget.AppCompat.Light.ActionBar.Solid</item>
+        <item name="actionMenuTextAppearance">@style/SNB.ActionBar.MenuTextStyle</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="attr_action_bar_split_bg">@drawable/action_bar_split_bg</item>
+        <item name="attr_arrow">@drawable/arrow_next</item>
+        <item name="attr_avatar_frame">@drawable/avatar_frame</item>
+        <item name="attr_background_color">@color/background</item>
+        <item name="attr_bg_border">@drawable/bg_border</item>
+        <item name="attr_bg_border_selector">@drawable/bg_border_selector</item>
+        <item name="attr_bg_color">@color/bg</item>
+        <item name="attr_bg_common_dialog">@drawable/bg_common_dialog</item>
+        <item name="attr_bg_common_dialog_left_button">@drawable/bg_drawable_common_dialog_left_button_selector</item>
+        <item name="attr_bg_common_dialog_right_button">@drawable/bg_drawable_common_dialog_right_button_selector</item>
+        <item name="attr_bg_dropmenu">@drawable/bg_dropmenu</item>
+        <item name="attr_bg_new_follow_btn">@drawable/bg_new_follow_btn</item>
+        <item name="attr_bg_new_followed_btn">@drawable/bg_new_followed_btn</item>
+        <item name="attr_bg_order_btn">@drawable/bg_order_btn</item>
+        <item name="attr_bg_order_btn_selector">@drawable/bg_order_btn_selector</item>
+        <item name="attr_bg_order_edittext_buy_selector">@drawable/bg_order_edittext_buy_selector</item>
+        <item name="attr_bg_order_edittext_sell_selector">@drawable/bg_order_edittext_sell_selector</item>
+        <item name="attr_bg_order_position_selector">@drawable/bg_order_position_selector</item>
+        <item name="attr_bg_photo">@drawable/bg_photo</item>
+        <item name="attr_bg_selector">@drawable/bg_selector</item>
+        <item name="attr_bg_stock_detail_delay_btn">@drawable/bg_stock_detail_delay_btn</item>
+        <item name="attr_bg_stock_detail_indicator_tab">@drawable/bg_stock_detail_indicator_tab</item>
+        <item name="attr_bg_table_header">@drawable/bg_table_header</item>
+        <item name="attr_bg_table_header_selector">@drawable/bg_table_header_selector</item>
+        <item name="attr_bg_with_stroke_selector_corner_16">@drawable/cell_bg_with_stroke_selector_corner_20</item>
+        <item name="attr_big_round_corner_bg_with_stroke">@drawable/big_round_corner_bg_with_stroke</item>
+        <item name="attr_blue">@color/blue</item>
+        <item name="attr_btn_attention_2_selector">@drawable/btn_attention_2_selector</item>
+        <item name="attr_btn_bg_in_user_profile">@drawable/btn_bg_in_user_profile</item>
+        <item name="attr_btn_blue_selector">@drawable/btn_blue_selector</item>
+        <item name="attr_btn_comment_reply_selector">@drawable/btn_comment_reply_selector</item>
+        <item name="attr_btn_gray_selector">@drawable/btn_gray_selector</item>
+        <item name="attr_button_add_color">@color/button_add_color</item>
+        <item name="attr_button_add_stroke_color">@color/button_add_stroke_color</item>
+        <item name="attr_cell_bg_selector">@drawable/cell_bg_selector</item>
+        <item name="attr_cell_bg_with_stroke_selector">@drawable/cell_bg_with_stroke_selector</item>
+        <item name="attr_cell_card_color">@color/cell_card_color</item>
+        <item name="attr_cell_card_stroke_color">@color/cell_card_stroke_color</item>
+        <item name="attr_cell_color">@color/cell_color</item>
+        <item name="attr_cell_line_color">@color/cell_line_color</item>
+        <item name="attr_cell_stroke_color">@color/cell_stroke_color</item>
+        <item name="attr_cell_toolbar_text_color">@color/cell_toolbar_text_color</item>
+        <item name="attr_chart_border_color">@color/chart_border</item>
+        <item name="attr_chart_green_color">@color/chart_green_color</item>
+        <item name="attr_chart_period_container_bg_color">@color/chart_period_container_bg_color</item>
+        <item name="attr_chart_period_selected_bg">@drawable/period_btn_bottom_border</item>
+        <item name="attr_chart_red_color">@color/chart_red_color</item>
+        <item name="attr_chart_split_color">@color/chart_split_color</item>
+        <item name="attr_chart_text_color">@color/chart_text_color</item>
+        <item name="attr_checkbox_selector">@drawable/checkbox_selector</item>
+        <item name="attr_color_bg">@color/bg</item>
+        <item name="attr_color_content">@color/title_content</item>
+        <item name="attr_color_deep_bg">@color/bg_bottom_layer</item>
+        <item name="attr_color_desc">@color/desc</item>
+        <item name="attr_color_gray_roundcorner_btn">@color/color_gray_roundcorner_btn</item>
+        <item name="attr_color_industry_selected_bg">@color/color_industry_selected_bg</item>
+        <item name="attr_color_line">@color/toolbar_line_color</item>
+        <item name="attr_color_link">@color/link</item>
+        <item name="attr_color_nav_btn">@color/color_nav_btn</item>
+        <item name="attr_color_nav_droplist">@color/color_nav_droplist</item>
+        <item name="attr_color_nav_title">@color/color_nav_title</item>
+        <item name="attr_color_press">@color/color_press</item>
+        <item name="attr_color_roundcorner_content">@color/color_roundcorner_content</item>
+        <item name="attr_color_roundcorner_hint">@color/color_roundcorner_hint</item>
+        <item name="attr_color_roundcorner_intro">@color/color_roundcorner_intro</item>
+        <item name="attr_color_roundcorner_title">@color/color_roundcorner_title</item>
+        <item name="attr_color_search_and_msg_btn">@color/color_search_and_msg_btn</item>
+        <item name="attr_color_search_and_msg_hint">@color/color_search_and_msg_hint</item>
+        <item name="attr_color_status_item_divider">@color/color_status_item_divider</item>
+        <item name="attr_color_status_title">@color/color_status_title</item>
+        <item name="attr_color_stocklist_abbr">@color/color_stocklist_abbr</item>
+        <item name="attr_color_stocklist_number">@color/color_stocklist_number</item>
+        <item name="attr_color_stocklist_stockname">@color/color_stocklist_stockname</item>
+        <item name="attr_color_stocklist_title">@color/color_stocklist_title</item>
+        <item name="attr_color_text_highlight">@color/color_text_highlight</item>
+        <item name="attr_color_title">@color/title_content</item>
+        <item name="attr_color_user_number">@color/color_user_number</item>
+        <item name="attr_color_user_title">@color/color_user_title</item>
+        <item name="attr_color_userintro">@color/color_userintro</item>
+        <item name="attr_color_username">@color/color_username</item>
+        <item name="attr_color_username_2">@color/color_username_2</item>
+        <item name="attr_cycle_delete">@drawable/icon_clear</item>
+        <item name="attr_default_logo">@drawable/default_logo</item>
+        <item name="attr_draft_bg">@drawable/btn_draft_selector</item>
+        <item name="attr_edit_input_bg">@drawable/edit_input_bg</item>
+        <item name="attr_empty_comment">@drawable/empty_comment</item>
+        <item name="attr_empty_default">@drawable/empty_default</item>
+        <item name="attr_empty_network_unavailable">@drawable/empty_network_unavailable</item>
+        <item name="attr_empty_portfolio">@drawable/empty_portfolio</item>
+        <item name="attr_grey_text">@color/light_black</item>
+        <item name="attr_group_header_arrow_down">@drawable/arrow_down_night</item>
+        <item name="attr_group_header_arrow_up">@drawable/arrow_up_night</item>
+        <item name="attr_icon_faq">@drawable/icon_faq</item>
+        <item name="attr_icon_find_topic">@drawable/nav_icon_topic</item>
+        <item name="attr_icon_hq">@drawable/hq_icon</item>
+        <item name="attr_icon_lock">@drawable/icon_lock</item>
+        <item name="attr_icon_nav_arrow_left">@drawable/icon_nav_arrow_left</item>
+        <item name="attr_icon_nav_arrow_right">@drawable/icon_nav_arrow_right</item>
+        <item name="attr_icon_nav_logo">@drawable/nav_icon_logo</item>
+        <item name="attr_icon_personal_at">@drawable/icon_personal_at</item>
+        <item name="attr_icon_personal_im">@drawable/icon_personal_im</item>
+        <item name="attr_icon_spinner_alert">@drawable/icon_spinner_alert</item>
+        <item name="attr_icon_spinner_edit">@drawable/icon_spinner_edit</item>
+        <item name="attr_icon_spinner_profit">@drawable/icon_spinner_profit</item>
+        <item name="attr_icon_spinner_share">@drawable/icon_spinner_share</item>
+        <item name="attr_icon_spinner_trade">@drawable/icon_spinner_trade</item>
+        <item name="attr_icon_spinner_writer">@drawable/icon_spinner_write</item>
+        <item name="attr_icon_tab_done">@drawable/icon_tab_done</item>
+        <item name="attr_icon_tab_edit">@drawable/icon_tab_edit</item>
+        <item name="attr_icon_tool_accept">@drawable/icon_tool_accept</item>
+        <item name="attr_icon_tool_back">@drawable/nav_icon_back</item>
+        <item name="attr_icon_tool_back_with_gold_bg">@drawable/nav_icon_back</item>
+        <item name="attr_icon_tool_comment">@drawable/icon_tool_comment</item>
+        <item name="attr_icon_tool_cubenew">@drawable/nav_icon_cubenew</item>
+        <item name="attr_icon_tool_discard">@drawable/icon_tool_discard</item>
+        <item name="attr_icon_tool_edit">@drawable/nav_icon_edit</item>
+        <item name="attr_icon_tool_faq">@drawable/nav_icon_faq</item>
+        <item name="attr_icon_tool_find_friend">@drawable/icon_im_newtalk_add</item>
+        <item name="attr_icon_tool_home">@drawable/nav_icon_home</item>
+        <item name="attr_icon_tool_im">@drawable/icon_tool_im</item>
+        <item name="attr_icon_tool_im_alert">@drawable/icon_tool_im_alert</item>
+        <item name="attr_icon_tool_invest">@drawable/icon_spinner_cube</item>
+        <item name="attr_icon_tool_market">@drawable/icon_spinner_hq</item>
+        <item name="attr_icon_tool_message">@drawable/nav_icon_message</item>
+        <item name="attr_icon_tool_more">@drawable/nav_icon_more</item>
+        <item name="attr_icon_tool_new">@drawable/nav_icon_add</item>
+        <item name="attr_icon_tool_new_chat">@drawable/icon_tool_new_chat</item>
+        <item name="attr_icon_tool_retweet">@drawable/icon_tool_retweet</item>
+        <item name="attr_icon_tool_reward">@drawable/icon_tool_reward</item>
+        <item name="attr_icon_tool_save">@drawable/icon_tool_save</item>
+        <item name="attr_icon_tool_search">@drawable/nav_icon_search</item>
+        <item name="attr_icon_tool_send_now">@drawable/icon_tool_send_now</item>
+        <item name="attr_icon_tool_setting">@drawable/nav_icon_setting</item>
+        <item name="attr_icon_tool_share">@drawable/nav_icon_share</item>
+        <item name="attr_icon_tool_talk_group">@drawable/icon_im_newtalk_group</item>
+        <item name="attr_icon_tool_write">@drawable/nav_icon_tweet</item>
+        <item name="attr_icon_toolbar_collect">@drawable/toolbar_icon_collect</item>
+        <item name="attr_icon_toolbar_collected">@drawable/toolbar_icon_collected</item>
+        <item name="attr_icon_toolbar_comment">@drawable/toolbar_icon_comment</item>
+        <item name="attr_icon_toolbar_donate">@drawable/toolbar_icon_donate</item>
+        <item name="attr_icon_toolbar_more">@drawable/toolbar_icon_more</item>
+        <item name="attr_icon_toolbar_rebalance">@drawable/toolbar_icon_ralance</item>
+        <item name="attr_icon_toolbar_report">@drawable/toolbar_icon_report</item>
+        <item name="attr_icon_toolbar_reward">@drawable/toolbar_icon_reward</item>
+        <item name="attr_icon_toolbar_share">@drawable/toolbar_icon_share</item>
+        <item name="attr_icon_toolbar_transmit">@drawable/toolbar_icon_transmit</item>
+        <item name="attr_image_no_content">@drawable/image_no_content</item>
+        <item name="attr_image_no_content_with_big_logo">@drawable/image_no_content_with_big_logo</item>
+        <item name="attr_industry_item_bg">@drawable/industry_item_bg</item>
+        <item name="attr_input_bar_bg">@drawable/input_bar_bg</item>
+        <item name="attr_input_bg">@drawable/input_border_bg</item>
+        <item name="attr_kb_icon_at">@drawable/kb_icon_at</item>
+        <item name="attr_kb_icon_camera">@drawable/kb_icon_camera</item>
+        <item name="attr_kb_icon_dollar">@drawable/kb_icon_dollar</item>
+        <item name="attr_kb_icon_emoji_or_keyboard">@drawable/emoticon_selector</item>
+        <item name="attr_keyboard_btn_background">@drawable/keyboard_btn_background_normal</item>
+        <item name="attr_keyboard_delete">@drawable/icon_keyboard_delete</item>
+        <item name="attr_keyboard_hide">@drawable/icon_keyboard_hide</item>
+        <item name="attr_keyboard_shield">@drawable/icon_keyboard_shield</item>
+        <item name="attr_kline_config_top_border">@drawable/kline_config_top_border</item>
+        <item name="attr_line">@color/line</item>
+        <item name="attr_list_changeable_row">@color/list_changeable_row</item>
+        <item name="attr_list_section_bg">@color/list_section_bg</item>
+        <item name="attr_list_selector">@drawable/listview_selector</item>
+        <item name="attr_listview_selector">@drawable/listview_selector</item>
+        <item name="attr_live_news_bg">@color/live_news_bg</item>
+        <item name="attr_loading">@color/text_level2_color</item>
+        <item name="attr_market_live_bg_selector">@drawable/market_live_selector</item>
+        <item name="attr_menu_triangle">@drawable/triangle</item>
+        <item name="attr_menu_vertical_divider">@color/menu_vertical_divider</item>
+        <item name="attr_nav_color">@color/nav_color</item>
+        <item name="attr_nav_gold_bg_text_color">@color/nav_text_color</item>
+        <item name="attr_nav_search_bg_color">@drawable/action_bar_search_bg</item>
+        <item name="attr_nav_text_color">@color/nav_text_color</item>
+        <item name="attr_new_follow_icon">@drawable/follow_icon</item>
+        <item name="attr_new_follow_text_color">@color/text_highlight_color_night</item>
+        <item name="attr_new_followed_icon">@drawable/followed_icon</item>
+        <item name="attr_new_followed_text_color">@color/text_followed_btn_color</item>
+        <item name="attr_order_close">@drawable/order_close</item>
+        <item name="attr_order_goto_detail">@drawable/order_goto_detail</item>
+        <item name="attr_order_lite_shadow">@drawable/order_lite_shadow</item>
+        <item name="attr_order_switch_broker_arrow">@drawable/icon_switch_broker_arrow</item>
+        <item name="attr_order_switch_otype_arrow">@drawable/icon_switch_otype_arrow</item>
+        <item name="attr_pankou_btn_bg_color_selector">@drawable/pankou_btn_bg_color_selector</item>
+        <item name="attr_pankou_btn_font_color_selector">@drawable/pankou_btn_font_color_selector</item>
+        <item name="attr_pankou_top_border">@drawable/pankou_top_border</item>
+        <item name="attr_portfolio_background_default">@drawable/portfolio_background_default</item>
+        <item name="attr_post_status_menu_bg">@color/white</item>
+        <item name="attr_post_status_menu_text">@color/color_search_and_msg_btn</item>
+        <item name="attr_quotes_center_other_types_text_bg">@drawable/quotes_center_other_types_text_bg</item>
+        <item name="attr_radius_corner_btn">@drawable/btn_radius_corner</item>
+        <item name="attr_roundcorner_bg_bottom">@drawable/roundcorner_bg_bottom</item>
+        <item name="attr_roundcorner_bg_bottom_selector">@drawable/roundcorner_bg_bottom_selector</item>
+        <item name="attr_roundcorner_bg_middle">@drawable/roundcorner_bg_middle</item>
+        <item name="attr_roundcorner_bg_middle_selector">@drawable/roundcorner_bg_middle_selector</item>
+        <item name="attr_roundcorner_bg_single">@drawable/roundcorner_bg_single</item>
+        <item name="attr_roundcorner_bg_single_selector">@drawable/roundcorner_bg_single_selector</item>
+        <item name="attr_roundcorner_bg_top">@drawable/roundcorner_bg_top</item>
+        <item name="attr_roundcorner_bg_top_selector">@drawable/roundcorner_bg_top_selector</item>
+        <item name="attr_roundcorner_header_selector">@drawable/roundcorner_header_selector</item>
+        <item name="attr_rtn_chat_selector">@drawable/rtn_chat_selector</item>
+        <item name="attr_rtn_custom_stock_selector">@drawable/rtn_custom_stock_selector</item>
+        <item name="attr_rtn_home_selector">@drawable/rtn_home_selector</item>
+        <item name="attr_rtn_quotes_selector">@drawable/rtn_quotes_selector</item>
+        <item name="attr_rtn_trade_selector">@drawable/rtn_trade_selector</item>
+        <item name="attr_rtn_trends_selector">@drawable/rtn_trends_selector</item>
+        <item name="attr_search_divider_bg">@color/color_search_empty_bg</item>
+        <item name="attr_search_icon">@drawable/search_icon</item>
+        <item name="attr_search_name_text">@color/title_content</item>
+        <item name="attr_searchbar_bg">@drawable/searchbar_bg</item>
+        <item name="attr_small_text">@color/desc_small_text</item>
+        <item name="attr_status_detail_middle_bar_text">@color/status_detail_middle_bar_text</item>
+        <item name="attr_status_detail_middle_bar_triangle">@drawable/status_detail_middle_bar_triangle</item>
+        <item name="attr_status_repost_bg_selector">@drawable/status_repost_bg_selector</item>
+        <item name="attr_stock_chart_inside_line">@color/stock_chart_inside_line</item>
+        <item name="attr_stock_chart_outside_line">@color/stock_chart_outside_line</item>
+        <item name="attr_stock_date_bg">@drawable/stock_date_selector</item>
+        <item name="attr_stock_date_text_color">@color/stock_date_text_color</item>
+        <item name="attr_stock_form_content_bg">@color/stock_form_content_bg</item>
+        <item name="attr_stock_line_color">@color/stock_line_color</item>
+        <item name="attr_stock_table_bg">@drawable/stock_table_bg</item>
+        <item name="attr_stock_tag_text_color">@color/stock_tag_text_color</item>
+        <item name="attr_stock_touch_line_color">@color/stock_touch_line_color</item>
+        <item name="attr_stock_volume_bg_color">@color/stock_volume_bg_color</item>
+        <item name="attr_stock_volume_color">@color/stock_volume_color</item>
+        <item name="attr_stock_x_label_color">@color/stock_x_label_color</item>
+        <item name="attr_stock_y_label_color">@color/stock_y_label_color</item>
+        <item name="attr_tab_bg">@drawable/bg_table_header</item>
+        <item name="attr_tab_edit_shadow">@drawable/tab_edit_shadow</item>
+        <item name="attr_tab_indicator_bg">@drawable/tab_indicator_bg</item>
+        <item name="attr_tab_indicator_container_bg">@drawable/tab_indicator_container_bg</item>
+        <item name="attr_tabbar_color">@color/tabbar_color</item>
+        <item name="attr_tabbar_new_color">@color/tabbar_new_color</item>
+        <item name="attr_tabbar_stroke_color">@color/tabbar_stroke_color</item>
+        <item name="attr_tabbar_text_color">@color/tabbar_text_color</item>
+        <item name="attr_tabbar_text_color_press">@color/tabbar_text_color_press</item>
+        <item name="attr_tag_stock_hk">@color/tag_stock_hk</item>
+        <item name="attr_tag_stock_text">@color/tag_stock_text</item>
+        <item name="attr_tag_stock_us">@color/tag_stock_us</item>
+        <item name="attr_text_button_color">@color/text_button_color</item>
+        <item name="attr_text_highlight_color">@color/text_highlight_color</item>
+        <item name="attr_text_level1_color">@color/text_level1_color</item>
+        <item name="attr_text_level2_color">@color/text_level2_color</item>
+        <item name="attr_text_level3_color">@color/text_level3_color</item>
+        <item name="attr_text_level4_color">@color/text_level4_color</item>
+        <item name="attr_text_link_color">@color/text_link_color</item>
+        <item name="attr_text_search_bar_color">@color/text_search_bar_color</item>
+        <item name="attr_text_stock_green_color">@color/text_stock_green_color</item>
+        <item name="attr_text_stock_grey_color">@color/text_stock_grey_color</item>
+        <item name="attr_text_stock_red_color">@color/text_stock_red_color</item>
+        <item name="attr_timeline_arrow_down">@drawable/arrow_down</item>
+        <item name="attr_toolbar_button_buy_color">@color/toolbar_button_buy_color</item>
+        <item name="attr_toolbar_button_sell_color">@color/toolbar_button_sell_color</item>
+        <item name="attr_toolbar_color">@color/toolbar_color</item>
+        <item name="attr_toolbar_line_color">@color/toolbar_line_color</item>
+        <item name="attr_toolbar_stroke_color">@color/toolbar_stroke_color</item>
+        <item name="attr_toolbar_text_color">@color/toolbar_text_color</item>
+        <item name="attr_trade_action_selector">@drawable/trade_action_selector</item>
+        <item name="attr_trade_bg_open_others_account">@drawable/trade_bg_open_others_account</item>
+        <item name="attr_trade_card_bg_selector">@drawable/trade_card_bg_selector</item>
+        <item name="attr_trade_fund_text_color">@color/white</item>
+        <item name="attr_trade_page_divider">@color/trade_page_divider</item>
+        <item name="attr_trade_page_top_line">@color/trade_page_top_line</item>
+        <item name="attr_trade_title_arrow">@drawable/ic_trade_nav_arrow_down</item>
+        <item name="attr_trade_type_color">@drawable/trade_type_color</item>
+        <item name="attr_user_profile_default_small">@drawable/user_profile_male_default_small</item>
+        <item name="attr_user_profile_female_default_small">@drawable/user_profile_female_default_small</item>
+        <item name="attr_write_search_bg">@drawable/bg_search_rectangle</item>
+        <item name="homeAsUpIndicator">@drawable/nav_icon_back</item>
+        <item name="snbListViewStyle">@style/ListViewStyle</item>
+        <item name="spinnerDropDownItemStyle">@style/SNB.DropDownItem.Spinner</item>
+        <item name="circularImageViewStyle">@style/circularImageViewStyle</item>
+        <item name="snbPatternViewStyle">@style/PatternViewStyle</item>
+        <item name="actionDropDownStyle">@style/SNB.Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/circlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+    <style name="SNB.Theme.Night" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowBackground">@color/background_night</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SNB.DropDownItem.Spinner</item>
+        <item name="android:actionBarStyle">@style/SNB.Widget.AppCompat.Light.ActionBar.Solid</item>
+        <item name="android:actionDropDownStyle">@style/SNB.Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
+        <item name="android:listPopupWindowStyle">@style/Night.SNB.ListPopupWindow</item>
+        <item name="android:homeAsUpIndicator">@drawable/nav_icon_back_night</item>
+        <item name="android:actionMenuTextAppearance">@style/SNB.ActionBar.MenuTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="actionBarSpinnerItemStyle">@style/ActionBarSpinnerItem</item>
+        <item name="actionBarStyle">@style/SNB.Widget.AppCompat.Light.ActionBar.Solid</item>
+        <item name="actionMenuTextAppearance">@style/SNB.ActionBar.MenuTextStyle</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="attr_action_bar_split_bg">@drawable/action_bar_split_bg</item>
+        <item name="attr_arrow">@drawable/arrow_next_night</item>
+        <item name="attr_avatar_frame">@drawable/avatar_frame</item>
+        <item name="attr_background_color">@color/background_night</item>
+        <item name="attr_bg_border">@drawable/bg_border_night</item>
+        <item name="attr_bg_border_selector">@drawable/bg_border_selector_night</item>
+        <item name="attr_bg_color">@color/bg_night</item>
+        <item name="attr_bg_common_dialog">@drawable/bg_common_dialog_night</item>
+        <item name="attr_bg_common_dialog_left_button">@drawable/bg_drawable_common_dialog_left_button_selector_night</item>
+        <item name="attr_bg_common_dialog_right_button">@drawable/bg_drawable_common_dialog_right_button_selector_night</item>
+        <item name="attr_bg_dropmenu">@drawable/bg_dropmenu_night</item>
+        <item name="attr_bg_new_follow_btn">@drawable/bg_new_follow_btn_night</item>
+        <item name="attr_bg_new_followed_btn">@drawable/bg_new_followed_btn_night</item>
+        <item name="attr_bg_order_btn">@drawable/bg_order_btn_night</item>
+        <item name="attr_bg_order_btn_selector">@drawable/bg_order_btn_selector_night</item>
+        <item name="attr_bg_order_edittext_buy_selector">@drawable/bg_order_edittext_buy_selector_night</item>
+        <item name="attr_bg_order_edittext_sell_selector">@drawable/bg_order_edittext_sell_selector_night</item>
+        <item name="attr_bg_order_position_selector">@drawable/bg_order_position_selector_night</item>
+        <item name="attr_bg_photo">@drawable/bg_photo</item>
+        <item name="attr_bg_selector">@drawable/bg_selector_night</item>
+        <item name="attr_bg_stock_detail_delay_btn">@drawable/bg_stock_detail_delay_btn_night</item>
+        <item name="attr_bg_stock_detail_indicator_tab">@drawable/bg_stock_detail_indicator_tab_night</item>
+        <item name="attr_bg_table_header">@drawable/bg_table_header</item>
+        <item name="attr_bg_table_header_selector">@drawable/bg_table_header_selector</item>
+        <item name="attr_bg_with_stroke_selector_corner_16">@drawable/cell_bg_with_stroke_selector_corner_20_night</item>
+        <item name="attr_big_round_corner_bg_with_stroke">@drawable/big_round_corner_bg_with_stroke_night</item>
+        <item name="attr_blue">@color/blue</item>
+        <item name="attr_btn_attention_2_selector">@drawable/btn_attention_2_selector</item>
+        <item name="attr_btn_bg_in_user_profile">@drawable/btn_bg_in_user_profile</item>
+        <item name="attr_btn_blue_selector">@drawable/btn_blue_selector_night</item>
+        <item name="attr_btn_comment_reply_selector">@drawable/btn_comment_reply_selector</item>
+        <item name="attr_btn_gray_selector">@drawable/btn_gray_selector</item>
+        <item name="attr_button_add_color">@color/button_add_color_night</item>
+        <item name="attr_button_add_stroke_color">@color/button_add_stroke_color_night</item>
+        <item name="attr_cell_arrow_color">@color/cell_arrow_color_night</item>
+        <item name="attr_cell_bg_selector">@drawable/bg_cell_selector_night</item>
+        <item name="attr_cell_bg_with_stroke_selector">@drawable/cell_bg_with_stroke_selector_night</item>
+        <item name="attr_cell_card_color">@color/cell_card_color_night</item>
+        <item name="attr_cell_card_stroke_color">@color/cell_card_stroke_color_night</item>
+        <item name="attr_cell_color">@color/cell_color_night</item>
+        <item name="attr_cell_line_color">@color/cell_line_color_night</item>
+        <item name="attr_cell_stroke_color">@color/cell_stroke_color_night</item>
+        <item name="attr_cell_toolbar_icon_color">@color/cell_toolbar_icon_color_night</item>
+        <item name="attr_cell_toolbar_text_color">@color/cell_toolbar_text_color_night</item>
+        <item name="attr_chart_border_color">@color/chart_border_night</item>
+        <item name="attr_chart_green_color">@color/chart_green_color_night</item>
+        <item name="attr_chart_period_container_bg_color">@color/chart_period_container_bg_color_night</item>
+        <item name="attr_chart_period_selected_bg">@drawable/period_btn_bottom_border_night</item>
+        <item name="attr_chart_red_color">@color/chart_red_color_night</item>
+        <item name="attr_chart_split_color">@color/chart_split_color_night</item>
+        <item name="attr_chart_text_color">@color/chart_text_color_night</item>
+        <item name="attr_checkbox_selector">@drawable/checkbox_selector</item>
+        <item name="attr_color_bg">@color/bg_night</item>
+        <item name="attr_color_content">@color/text_level1_color_night</item>
+        <item name="attr_color_deep_bg">@color/bg_bottom_layer</item>
+        <item name="attr_color_desc">@color/desc</item>
+        <item name="attr_color_gray_roundcorner_btn">@color/color_gray_roundcorner_btn</item>
+        <item name="attr_color_industry_selected_bg">@color/color_industry_selected_bg</item>
+        <item name="attr_color_line">@color/toolbar_line_color_night</item>
+        <item name="attr_color_link">@color/link</item>
+        <item name="attr_color_nav_btn">@color/color_nav_btn</item>
+        <item name="attr_color_nav_droplist">@color/color_nav_droplist</item>
+        <item name="attr_color_nav_title">@color/color_nav_title</item>
+        <item name="attr_color_press">@color/color_press</item>
+        <item name="attr_color_roundcorner_content">@color/color_roundcorner_content</item>
+        <item name="attr_color_roundcorner_hint">@color/color_roundcorner_hint</item>
+        <item name="attr_color_roundcorner_intro">@color/color_roundcorner_intro</item>
+        <item name="attr_color_roundcorner_title">@color/color_roundcorner_title</item>
+        <item name="attr_color_search_and_msg_btn">@color/color_search_and_msg_btn</item>
+        <item name="attr_color_search_and_msg_hint">@color/color_search_and_msg_hint</item>
+        <item name="attr_color_status_item_divider">@color/color_status_item_divider</item>
+        <item name="attr_color_status_title">@color/color_status_title</item>
+        <item name="attr_color_stocklist_abbr">@color/color_stocklist_abbr</item>
+        <item name="attr_color_stocklist_number">@color/color_stocklist_number</item>
+        <item name="attr_color_stocklist_stockname">@color/color_stocklist_stockname</item>
+        <item name="attr_color_stocklist_title">@color/color_stocklist_title</item>
+        <item name="attr_color_text_highlight">@color/color_text_highlight</item>
+        <item name="attr_color_title">@color/text_level1_color_night</item>
+        <item name="attr_color_user_number">@color/color_user_number</item>
+        <item name="attr_color_user_title">@color/color_user_title</item>
+        <item name="attr_color_userintro">@color/color_userintro</item>
+        <item name="attr_color_username">@color/color_username</item>
+        <item name="attr_color_username_2">@color/color_username_2</item>
+        <item name="attr_cycle_delete">@drawable/icon_clear_night</item>
+        <item name="attr_default_logo">@drawable/default_logo_night</item>
+        <item name="attr_draft_bg">@drawable/btn_draft_selector</item>
+        <item name="attr_edit_input_bg">@drawable/edit_input_bg</item>
+        <item name="attr_empty_comment">@drawable/empty_comment_night</item>
+        <item name="attr_empty_default">@drawable/empty_default_night</item>
+        <item name="attr_empty_network_unavailable">@drawable/empty_network_unavailable_night</item>
+        <item name="attr_empty_portfolio">@drawable/empty_portfolio_night</item>
+        <item name="attr_grey_text">@color/text_level2_color</item>
+        <item name="attr_group_header_arrow_down">@drawable/arrow_down</item>
+        <item name="attr_group_header_arrow_up">@drawable/arrow_up</item>
+        <item name="attr_icon_faq">@drawable/icon_faq_night</item>
+        <item name="attr_icon_find_topic">@drawable/nav_icon_topic_night</item>
+        <item name="attr_icon_hq">@drawable/hq_icon_night</item>
+        <item name="attr_icon_lock">@drawable/icon_lock_night</item>
+        <item name="attr_icon_nav_arrow_left">@drawable/icon_nav_arrow_left</item>
+        <item name="attr_icon_nav_arrow_right">@drawable/icon_nav_arrow_right</item>
+        <item name="attr_icon_nav_logo">@drawable/nav_icon_logo_night</item>
+        <item name="attr_icon_personal_at">@drawable/icon_personal_at</item>
+        <item name="attr_icon_personal_im">@drawable/icon_personal_im</item>
+        <item name="attr_icon_spinner_alert">@drawable/icon_spinner_alert</item>
+        <item name="attr_icon_spinner_edit">@drawable/icon_spinner_edit</item>
+        <item name="attr_icon_spinner_profit">@drawable/icon_spinner_profit</item>
+        <item name="attr_icon_spinner_share">@drawable/icon_spinner_share</item>
+        <item name="attr_icon_spinner_trade">@drawable/icon_spinner_trade</item>
+        <item name="attr_icon_spinner_writer">@drawable/icon_spinner_write</item>
+        <item name="attr_icon_tab_done">@drawable/icon_tab_done_night</item>
+        <item name="attr_icon_tab_edit">@drawable/icon_tab_edit_night</item>
+        <item name="attr_icon_tool_accept">@drawable/icon_tool_accept</item>
+        <item name="attr_icon_tool_back">@drawable/nav_icon_back_night</item>
+        <item name="attr_icon_tool_back_with_gold_bg">@drawable/nav_icon_back_gold_night</item>
+        <item name="attr_icon_tool_comment">@drawable/icon_tool_comment</item>
+        <item name="attr_icon_tool_cubenew">@drawable/nav_icon_cubenew_night</item>
+        <item name="attr_icon_tool_discard">@drawable/icon_tool_discard</item>
+        <item name="attr_icon_tool_edit">@drawable/nav_icon_edit_night</item>
+        <item name="attr_icon_tool_faq">@drawable/nav_icon_faq_night</item>
+        <item name="attr_icon_tool_find_friend">@drawable/icon_im_newtalk_add</item>
+        <item name="attr_icon_tool_home">@drawable/nav_icon_home_night</item>
+        <item name="attr_icon_tool_im">@drawable/icon_tool_im</item>
+        <item name="attr_icon_tool_im_alert">@drawable/icon_tool_im_alert</item>
+        <item name="attr_icon_tool_invest">@drawable/icon_spinner_cube</item>
+        <item name="attr_icon_tool_market">@drawable/icon_spinner_hq</item>
+        <item name="attr_icon_tool_message">@drawable/nav_icon_message_night</item>
+        <item name="attr_icon_tool_more">@drawable/nav_icon_more_night</item>
+        <item name="attr_icon_tool_new">@drawable/nav_icon_add_night</item>
+        <item name="attr_icon_tool_new_chat">@drawable/icon_tool_new_chat</item>
+        <item name="attr_icon_tool_retweet">@drawable/icon_tool_retweet</item>
+        <item name="attr_icon_tool_reward">@drawable/icon_tool_reward</item>
+        <item name="attr_icon_tool_save">@drawable/icon_tool_save</item>
+        <item name="attr_icon_tool_search">@drawable/nav_icon_search_night</item>
+        <item name="attr_icon_tool_send_now">@drawable/icon_tool_send_now</item>
+        <item name="attr_icon_tool_setting">@drawable/nav_icon_setting_night</item>
+        <item name="attr_icon_tool_share">@drawable/nav_icon_share_night</item>
+        <item name="attr_icon_tool_talk_group">@drawable/icon_im_newtalk_group</item>
+        <item name="attr_icon_tool_write">@drawable/nav_icon_tweet_night</item>
+        <item name="attr_icon_toolbar_collect">@drawable/toolbar_icon_collect_night</item>
+        <item name="attr_icon_toolbar_collected">@drawable/toolbar_icon_collected_night</item>
+        <item name="attr_icon_toolbar_comment">@drawable/toolbar_icon_comment_night</item>
+        <item name="attr_icon_toolbar_donate">@drawable/toolbar_icon_donate_night</item>
+        <item name="attr_icon_toolbar_more">@drawable/toolbar_icon_more_night</item>
+        <item name="attr_icon_toolbar_rebalance">@drawable/toolbar_icon_ralance_night</item>
+        <item name="attr_icon_toolbar_report">@drawable/toolbar_icon_report_night</item>
+        <item name="attr_icon_toolbar_reward">@drawable/toolbar_icon_reward_night</item>
+        <item name="attr_icon_toolbar_share">@drawable/toolbar_icon_share_night</item>
+        <item name="attr_icon_toolbar_transmit">@drawable/toolbar_icon_transmit_night</item>
+        <item name="attr_image_no_content">@drawable/image_no_content</item>
+        <item name="attr_image_no_content_with_big_logo">@drawable/image_no_content_with_big_logo</item>
+        <item name="attr_industry_item_bg">@drawable/industry_item_bg</item>
+        <item name="attr_input_bar_bg">@drawable/input_bar_bg_night</item>
+        <item name="attr_input_bg">@drawable/input_border_bg_night</item>
+        <item name="attr_kb_icon_at">@drawable/kb_icon_at</item>
+        <item name="attr_kb_icon_camera">@drawable/kb_icon_camera</item>
+        <item name="attr_kb_icon_dollar">@drawable/kb_icon_dollar</item>
+        <item name="attr_kb_icon_emoji_or_keyboard">@drawable/emoticon_selector</item>
+        <item name="attr_keyboard_btn_background">@drawable/keyboard_btn_background_normal_night</item>
+        <item name="attr_keyboard_delete">@drawable/icon_keyboard_delete_night</item>
+        <item name="attr_keyboard_hide">@drawable/icon_keyboard_hide_night</item>
+        <item name="attr_keyboard_shield">@drawable/icon_keyboard_shield_night</item>
+        <item name="attr_kline_config_top_border">@drawable/kline_config_top_border_night</item>
+        <item name="attr_line">@color/line_night</item>
+        <item name="attr_list_changeable_row">@color/list_changeable_row</item>
+        <item name="attr_list_section_bg">@color/list_section_bg_night</item>
+        <item name="attr_list_selector">@drawable/bg_drawable_night</item>
+        <item name="attr_listview_selector">@drawable/listview_selector_night</item>
+        <item name="attr_live_news_bg">@color/live_news_bg_night</item>
+        <item name="attr_loading">@color/text_level2_color_night</item>
+        <item name="attr_market_live_bg_selector">@drawable/market_live_selector_night</item>
+        <item name="attr_menu_triangle">@drawable/triangle_night</item>
+        <item name="attr_menu_vertical_divider">@color/radar_point_night</item>
+        <item name="attr_nav_color">@color/nav_color_night</item>
+        <item name="attr_nav_gold_bg_text_color">@color/nav_text_color_gold_night</item>
+        <item name="attr_nav_icon_color">@color/nav_icon_color_night</item>
+        <item name="attr_nav_search_bg_color">@drawable/action_bar_search_bg_night</item>
+        <item name="attr_nav_text_color">@color/nav_text_color_night</item>
+        <item name="attr_new_follow_icon">@drawable/follow_icon_night</item>
+        <item name="attr_new_follow_text_color">#ffcc5f16</item>
+        <item name="attr_new_followed_icon">@drawable/followed_icon_night</item>
+        <item name="attr_new_followed_text_color">#ff727883</item>
+        <item name="attr_order_close">@drawable/order_close_night</item>
+        <item name="attr_order_goto_detail">@drawable/order_goto_detail_night</item>
+        <item name="attr_order_lite_shadow">@drawable/order_lite_shadow_night</item>
+        <item name="attr_order_switch_broker_arrow">@drawable/icon_switch_broker_arrow_night</item>
+        <item name="attr_order_switch_otype_arrow">@drawable/icon_switch_otype_arrow_night</item>
+        <item name="attr_pankou_btn_bg_color_selector">@drawable/pankou_btn_bg_color_selector_night</item>
+        <item name="attr_pankou_btn_font_color_selector">@drawable/pankou_btn_font_color_selector_night</item>
+        <item name="attr_pankou_top_border">@drawable/pankou_top_border_night</item>
+        <item name="attr_portfolio_background_default">@drawable/portfolio_background_default_night</item>
+        <item name="attr_post_status_menu_bg">@color/post_status_menu_bg_night</item>
+        <item name="attr_post_status_menu_text">@color/color_search_and_msg_btn_night</item>
+        <item name="attr_quotes_center_other_types_text_bg">@drawable/quotes_center_other_types_text_bg_night</item>
+        <item name="attr_radius_corner_btn">@drawable/btn_radius_corner_night</item>
+        <item name="attr_roundcorner_bg_bottom">@drawable/roundcorner_bg_bottom</item>
+        <item name="attr_roundcorner_bg_bottom_selector">@drawable/bg_selector_night</item>
+        <item name="attr_roundcorner_bg_middle">@drawable/roundcorner_bg_middle</item>
+        <item name="attr_roundcorner_bg_middle_selector">@drawable/bg_selector_night</item>
+        <item name="attr_roundcorner_bg_single">@drawable/roundcorner_bg_single</item>
+        <item name="attr_roundcorner_bg_single_selector">@drawable/roundcorner_bg_single_selector_night</item>
+        <item name="attr_roundcorner_bg_top">@drawable/roundcorner_bg_top</item>
+        <item name="attr_roundcorner_bg_top_selector">@drawable/bg_selector_night</item>
+        <item name="attr_roundcorner_header_selector">@drawable/roundcorner_header_selector</item>
+        <item name="attr_rtn_chat_selector">@drawable/rtn_chat_selector_night</item>
+        <item name="attr_rtn_custom_stock_selector">@drawable/rtn_custmom_stock_selector_night</item>
+        <item name="attr_rtn_home_selector">@drawable/rtn_home_selector_night</item>
+        <item name="attr_rtn_quotes_selector">@drawable/rtn_quotes_selector_night</item>
+        <item name="attr_rtn_trade_selector">@drawable/rtn_trade_selector_night</item>
+        <item name="attr_rtn_trends_selector">@drawable/rtn_trends_selector_night</item>
+        <item name="attr_search_divider_bg">@color/color_search_empty_bg_night</item>
+        <item name="attr_search_icon">@drawable/search_icon</item>
+        <item name="attr_search_name_text">@color/title_content_night</item>
+        <item name="attr_searchbar_bg">@drawable/searchbar_bg</item>
+        <item name="attr_small_text">@color/desc_small_text</item>
+        <item name="attr_status_detail_middle_bar_text">@color/status_detail_middle_bar_text_night</item>
+        <item name="attr_status_detail_middle_bar_triangle">@drawable/status_detail_middle_bar_triangle_night</item>
+        <item name="attr_status_repost_bg_selector">@drawable/status_repost_bg_selector_night</item>
+        <item name="attr_stock_chart_inside_line">@color/stock_chart_inside_line</item>
+        <item name="attr_stock_chart_outside_line">@color/stock_chart_outside_line</item>
+        <item name="attr_stock_date_bg">@drawable/stock_date_selector</item>
+        <item name="attr_stock_date_text_color">@color/stock_date_text_color</item>
+        <item name="attr_stock_form_content_bg">@color/stock_form_content_bg</item>
+        <item name="attr_stock_line_color">@color/stock_line_color</item>
+        <item name="attr_stock_table_bg">@drawable/stock_table_bg</item>
+        <item name="attr_stock_tag_text_color">@color/stock_tag_text_color_night</item>
+        <item name="attr_stock_touch_line_color">@color/stock_touch_line_color</item>
+        <item name="attr_stock_volume_bg_color">@color/stock_volume_bg_color</item>
+        <item name="attr_stock_volume_color">@color/stock_volume_color</item>
+        <item name="attr_stock_x_label_color">@color/stock_x_label_color</item>
+        <item name="attr_stock_y_label_color">@color/stock_y_label_color</item>
+        <item name="attr_tab_bg">@drawable/bg_table_header</item>
+        <item name="attr_tab_edit_shadow">@drawable/tab_edit_shadow_night</item>
+        <item name="attr_tab_indicator_bg">@drawable/tab_indicator_bg_night</item>
+        <item name="attr_tab_indicator_container_bg">@drawable/tab_indicator_container_bg_night</item>
+        <item name="attr_tabbar_color">@color/tabbar_color_night</item>
+        <item name="attr_tabbar_icon_color">@color/tabbar_icon_color_night</item>
+        <item name="attr_tabbar_icon_color_press">@color/tabbar_icon_color_press_night</item>
+        <item name="attr_tabbar_new_color">@color/tabbar_new_color_night</item>
+        <item name="attr_tabbar_stroke_color">@color/tabbar_stroke_color_night</item>
+        <item name="attr_tabbar_text_color">@color/tabbar_text_color_night</item>
+        <item name="attr_tabbar_text_color_press">@color/tabbar_text_color_press_night</item>
+        <item name="attr_tag_stock_hk">@color/tag_stock_hk_night</item>
+        <item name="attr_tag_stock_text">@color/tag_stock_text_night</item>
+        <item name="attr_tag_stock_us">@color/tag_stock_us_night</item>
+        <item name="attr_text_button_color">@color/text_button_color_night</item>
+        <item name="attr_text_highlight_color">@color/text_highlight_color_night</item>
+        <item name="attr_text_level1_color">@color/text_level1_color_night</item>
+        <item name="attr_text_level2_color">@color/text_level2_color_night</item>
+        <item name="attr_text_level3_color">@color/text_level3_color_night</item>
+        <item name="attr_text_level4_color">@color/text_level4_color_night</item>
+        <item name="attr_text_link_color">@color/text_link_color_night</item>
+        <item name="attr_text_search_bar_color">@color/text_search_bar_color_night</item>
+        <item name="attr_text_stock_green_color">@color/text_stock_green_color_night</item>
+        <item name="attr_text_stock_grey_color">@color/text_stock_grey_color_night</item>
+        <item name="attr_text_stock_red_color">@color/text_stock_red_color_night</item>
+        <item name="attr_timeline_arrow_down">@drawable/arrow_down_night</item>
+        <item name="attr_toolbar_button_buy_color">@color/toolbar_button_buy_color_night</item>
+        <item name="attr_toolbar_button_sell_color">@color/toolbar_button_sell_color_night</item>
+        <item name="attr_toolbar_color">@color/toolbar_color_night</item>
+        <item name="attr_toolbar_icon_color">@color/toolbar_icon_color_night</item>
+        <item name="attr_toolbar_line_color">@color/toolbar_line_color_night</item>
+        <item name="attr_toolbar_stroke_color">@color/toolbar_stroke_color_night</item>
+        <item name="attr_toolbar_text_color">@color/toolbar_text_color_night</item>
+        <item name="attr_trade_action_selector">@drawable/trade_action_selector_night</item>
+        <item name="attr_trade_bg_open_others_account">@drawable/trade_bg_open_others_account_night</item>
+        <item name="attr_trade_card_bg_selector">@drawable/trade_card_bg_selector_night</item>
+        <item name="attr_trade_fund_text_color">@color/text_level1_color_night</item>
+        <item name="attr_trade_page_divider">@color/trade_page_divider_night</item>
+        <item name="attr_trade_page_top_line">@color/trade_page_top_line_night</item>
+        <item name="attr_trade_title_arrow">@drawable/ic_trade_nav_arrow_down_night</item>
+        <item name="attr_trade_type_color">@drawable/trade_type_color_night</item>
+        <item name="attr_user_profile_default_small">@drawable/user_profile_male_default_small</item>
+        <item name="attr_user_profile_female_default_small">@drawable/user_profile_female_default_small</item>
+        <item name="attr_write_search_bg">@drawable/bg_search_rectangle_night</item>
+        <item name="homeAsUpIndicator">@drawable/nav_icon_back_night</item>
+        <item name="snbListViewStyle">@style/ListViewStyle</item>
+        <item name="spinnerDropDownItemStyle">@style/SNB.DropDownItem.Spinner</item>
+        <item name="circularImageViewStyle">@style/circularImageViewStyle</item>
+        <item name="actionDropDownStyle">@style/SNB.Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/circlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+    <style name="SNB.Theme.Night.Normal" parent="@style/SNB.Theme">
+        <item name="android:listPopupWindowStyle">@style/Night.SNB.ListPopupWindow</item>
+        <item name="android:homeAsUpIndicator">@drawable/nav_icon_back_night</item>
+        <item name="actionBarStyle">@style/SNB.Widget.AppCompat.Light.ActionBar.Solid</item>
+        <item name="attr_icon_find_topic">@drawable/nav_icon_topic_night</item>
+        <item name="attr_icon_nav_logo">@drawable/nav_icon_logo_night</item>
+        <item name="attr_icon_tool_cubenew">@drawable/nav_icon_cubenew_night</item>
+        <item name="attr_icon_tool_edit">@drawable/nav_icon_edit_night</item>
+        <item name="attr_icon_tool_faq">@drawable/nav_icon_faq_night</item>
+        <item name="attr_icon_tool_home">@drawable/nav_icon_home_night</item>
+        <item name="attr_icon_tool_more">@drawable/nav_icon_more_night</item>
+        <item name="attr_icon_tool_new">@drawable/nav_icon_add_night</item>
+        <item name="attr_icon_tool_search">@drawable/nav_icon_search_night</item>
+        <item name="attr_icon_tool_setting">@drawable/nav_icon_setting_night</item>
+        <item name="attr_icon_tool_write">@drawable/nav_icon_tweet_night</item>
+        <item name="attr_nav_color">@color/nav_color_night</item>
+        <item name="attr_nav_icon_color">@color/nav_icon_color_night</item>
+        <item name="attr_nav_text_color">@color/nav_text_color_night</item>
+        <item name="homeAsUpIndicator">@drawable/nav_icon_back_night</item>
+    </style>
+    <style name="SNB.Theme.Widget.Checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/private_agreement_checkbox</item>
+    </style>
+    <style name="SNB.Widget.AppCompat.Light.ActionBar.Solid" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:icon">?attr_icon_nav_logo</item>
+        <item name="android:background">?attr_nav_color</item>
+        <item name="android:titleTextStyle">@style/SNB.ActionBar.TitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/SNB.ActionBar.SubTitleTextStyle</item>
+        <item name="android:backgroundStacked">?attr_nav_color</item>
+        <item name="android:backgroundSplit">@drawable/action_bar_split_bg</item>
+        <item name="titleTextStyle">@style/SNB.ActionBar.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/SNB.ActionBar.SubTitleTextStyle</item>
+        <item name="background">?attr_nav_color</item>
+        <item name="backgroundStacked">?attr_nav_color</item>
+        <item name="backgroundSplit">@drawable/action_bar_split_bg</item>
+    </style>
+    <style name="SNB.Widget.AppCompat.Light.Spinner.DropDown.ActionBar" parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@null</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Base.SearchResult" parent="">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Light.Base.SearchResult" parent="@style/TextAppearance.AppCompat.Base.SearchResult">
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:textColorHint">?android:textColorHint</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Light.SearchResult.Subtitle" parent="@style/TextAppearance.AppCompat.Light.Base.SearchResult.Subtitle" />
+    <style name="TextAppearance.AppCompat.Light.SearchResult.Title" parent="@style/TextAppearance.AppCompat.Light.Base.SearchResult.Title" />
+    <style name="TextAppearance.AppCompat.Light.Widget.PopupMenu.Large" parent="@style/TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Large" />
+    <style name="TextAppearance.AppCompat.Light.Widget.PopupMenu.Small" parent="@style/TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small" />
+    <style name="TextAppearance.AppCompat.SearchResult.Subtitle" parent="@style/TextAppearance.AppCompat.Base.SearchResult.Subtitle" />
+    <style name="TextAppearance.AppCompat.SearchResult.Title" parent="@style/TextAppearance.AppCompat.Base.SearchResult.Title" />
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Menu" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Menu" />
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle" />
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title" />
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionBar.Title.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle" />
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Subtitle.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Title" />
+    <style name="TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse" parent="@style/TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.Base.DropDownItem" parent="@android:style/TextAppearance.Small">
+        <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
+    </style>
+    <style name="TextAppearance.AppCompat.Widget.DropDownItem" parent="@style/TextAppearance.AppCompat.Widget.Base.DropDownItem" />
+    <style name="TextAppearance.AppCompat.Widget.PopupMenu.Large" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" />
+    <style name="TextAppearance.AppCompat.Widget.PopupMenu.Small" parent="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" />
+    <style name="TextAppearance.TabPageIndicator" parent="@style/Widget">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/vpi__dark_theme</item>
+    </style>
+    <style name="TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">?android:textColorPrimaryDisableOnly</item>
+    </style>
+    <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="@style/TextAppearance.Widget.AppCompat.Base.ExpandedMenu.Item" />
+    <style name="Theme.AppCompat" parent="@style/Theme.Base.AppCompat">
+        <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_holo_dark</item>
+        <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
+        <item name="dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
+        <item name="isLightTheme">false</item>
+        <item name="listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>
+        <item name="searchDropdownBackground">@drawable/abc_search_dropdown_dark</item>
+        <item name="searchResultListItemHeight">58.0dip</item>
+        <item name="searchViewAutoCompleteTextView">@style/Widget.AppCompat.AutoCompleteTextView</item>
+        <item name="searchViewCloseIcon">@drawable/abc_ic_clear</item>
+        <item name="searchViewEditQuery">@drawable/abc_ic_commit_search_api_holo_dark</item>
+        <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
+        <item name="searchViewGoIcon">@drawable/abc_ic_go</item>
+        <item name="searchViewSearchIcon">@drawable/abc_ic_search</item>
+        <item name="searchViewTextField">@drawable/abc_textfield_searchview_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_dark</item>
+        <item name="searchViewVoiceIcon">@drawable/abc_ic_voice_search</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.DropDownItem.Spinner</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Large</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Widget.PopupMenu.Small</item>
+        <item name="textColorSearchUrl">@color/abc_search_url_text_holo</item>
+        <item name="dropdownListPreferredItemHeight">?listPreferredItemHeightSmall</item>
+        <item name="popupMenuStyle">@style/Widget.AppCompat.PopupMenu</item>
+    </style>
+    <style name="Theme.AppCompat.Base.CompactMenu" parent="">
+        <item name="android:listViewStyle">@style/Widget.AppCompat.ListView.Menu</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance.Widget.AppCompat.ExpandedMenu.Item</item>
+    </style>
+    <style name="Theme.AppCompat.Base.CompactMenu.Dialog" parent="">
+        <item name="android:listViewStyle">@android:style/Widget.ListView.Menu</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance.AppCompat.Base.CompactMenu.Dialog</item>
+    </style>
+    <style name="Theme.AppCompat.CompactMenu" parent="@style/Theme.AppCompat.Base.CompactMenu" />
+    <style name="Theme.AppCompat.CompactMenu.Dialog" parent="@style/Theme.AppCompat.Base.CompactMenu.Dialog" />
+    <style name="Theme.AppCompat.DialogWhenLarge" parent="@style/Theme.Base.AppCompat.DialogWhenLarge" />
+    <style name="Theme.AppCompat.Light" parent="@style/Theme.Base.AppCompat.Light">
+        <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_holo_light</item>
+        <item name="activityChooserViewStyle">@style/Widget.AppCompat.Light.ActivityChooserView</item>
+        <item name="dropDownListViewStyle">@style/Widget.AppCompat.Light.ListView.DropDown</item>
+        <item name="isLightTheme">true</item>
+        <item name="listPopupWindowStyle">@style/Widget.AppCompat.Light.ListPopupWindow</item>
+        <item name="searchDropdownBackground">@drawable/abc_search_dropdown_light</item>
+        <item name="searchResultListItemHeight">58.0dip</item>
+        <item name="searchViewAutoCompleteTextView">@style/Widget.AppCompat.Light.AutoCompleteTextView</item>
+        <item name="searchViewCloseIcon">@drawable/abc_ic_clear_holo_light</item>
+        <item name="searchViewEditQuery">@drawable/abc_ic_commit_search_api_holo_light</item>
+        <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
+        <item name="searchViewGoIcon">@drawable/abc_ic_go_search_api_holo_light</item>
+        <item name="searchViewSearchIcon">@drawable/abc_ic_search_api_holo_light</item>
+        <item name="searchViewTextField">@drawable/abc_textfield_searchview_holo_light</item>
+        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_light</item>
+        <item name="searchViewVoiceIcon">@drawable/abc_ic_voice_search_api_holo_light</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.Light.DropDownItem.Spinner</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.Light.SearchResult.Title</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small</item>
+        <item name="textColorSearchUrl">@color/abc_search_url_text_holo</item>
+        <item name="dropdownListPreferredItemHeight">?listPreferredItemHeightSmall</item>
+        <item name="popupMenuStyle">@style/Widget.AppCompat.Light.PopupMenu</item>
+    </style>
+    <style name="Theme.AppCompat.Light.DarkActionBar" parent="@style/Theme.Base.AppCompat.Light.DarkActionBar">
+        <item name="actionModeShareDrawable">@drawable/abc_ic_menu_share_holo_dark</item>
+        <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
+        <item name="dropDownListViewStyle">@style/Widget.AppCompat.ListView.DropDown</item>
+        <item name="isLightTheme">true</item>
+        <item name="listPopupWindowStyle">@style/Widget.AppCompat.ListPopupWindow</item>
+        <item name="searchDropdownBackground">@drawable/abc_search_dropdown_dark</item>
+        <item name="searchResultListItemHeight">58.0dip</item>
+        <item name="searchViewAutoCompleteTextView">@style/Widget.AppCompat.AutoCompleteTextView</item>
+        <item name="searchViewCloseIcon">@drawable/abc_ic_clear</item>
+        <item name="searchViewEditQuery">@drawable/abc_ic_commit_search_api_holo_dark</item>
+        <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
+        <item name="searchViewGoIcon">@drawable/abc_ic_go</item>
+        <item name="searchViewSearchIcon">@drawable/abc_ic_search</item>
+        <item name="searchViewTextField">@drawable/abc_textfield_searchview_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abc_textfield_searchview_right_holo_dark</item>
+        <item name="searchViewVoiceIcon">@drawable/abc_ic_voice_search</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.AppCompat.Light.DropDownItem.Spinner</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.AppCompat.SearchResult.Subtitle</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.AppCompat.SearchResult.Title</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small</item>
+        <item name="textColorSearchUrl">@color/abc_search_url_text_holo</item>
+        <item name="dropdownListPreferredItemHeight">?listPreferredItemHeightSmall</item>
+        <item name="popupMenuStyle">@style/Widget.AppCompat.Light.PopupMenu</item>
+    </style>
+    <style name="Theme.AppCompat.Light.DialogWhenLarge" parent="@style/Theme.Base.AppCompat.Light.DialogWhenLarge" />
+    <style name="Theme.Function" parent="@style/SNB.Theme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.MenuDialog" parent="@android:style/Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.PageIndicatorDefaults" parent="@android:style/Theme">
+        <item name="vpiIconPageIndicatorStyle">@style/Widget.IconPageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
+    <style name="Theme.TranslucentActionBar" parent="@style/SNB.Theme">
+        <item name="android:actionBarStyle">@style/Widget.ActionBar.Transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="Theme.Transparent" parent="@style/SNB.Theme">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme_AlertDialog" parent="@style/Theme.Base.AppCompat.Dialog.Light.FixedSize">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SNB.DropDownItem.Spinner</item>
+        <item name="android:actionBarStyle">@style/SNB.Widget.AppCompat.Light.ActionBar.Solid</item>
+        <item name="android:actionDropDownStyle">@style/SNB.Widget.AppCompat.Light.Spinner.DropDown.ActionBar</item>
+        <item name="android:homeAsUpIndicator">@drawable/nav_icon_back</item>
+        <item name="android:actionMenuTextAppearance">@style/SNB.ActionBar.MenuTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="spinnerDropDownItemStyle">@style/SNB.DropDownItem.Spinner</item>
+        <item name="vpiCirclePageIndicatorStyle">@style/circlePageIndicator</item>
+        <item name="vpiTabPageIndicatorStyle">@style/CustomTabPageIndicator</item>
+    </style>
+    <style name="Widget" />
+    <style name="Widget.ActionBar.Transparent" parent="@style/SNB.Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="Widget.AppCompat.ActionBar" parent="@style/Widget.AppCompat.Base.ActionBar" />
+    <style name="Widget.AppCompat.ActionBar.Solid" parent="@style/Widget.AppCompat.Base.ActionBar.Solid" />
+    <style name="Widget.AppCompat.ActionBar.TabBar" parent="@style/Widget.AppCompat.Base.ActionBar.TabBar" />
+    <style name="Widget.AppCompat.ActionBar.TabText" parent="@style/Widget.AppCompat.Base.ActionBar.TabText" />
+    <style name="Widget.AppCompat.ActionBar.TabView" parent="@style/Widget.AppCompat.Base.ActionBar.TabView" />
+    <style name="Widget.AppCompat.ActionButton" parent="@style/Widget.AppCompat.Base.ActionButton" />
+    <style name="Widget.AppCompat.ActionButton.CloseMode" parent="@style/Widget.AppCompat.Base.ActionButton.CloseMode" />
+    <style name="Widget.AppCompat.ActionButton.Overflow" parent="@style/Widget.AppCompat.Base.ActionButton.Overflow" />
+    <style name="Widget.AppCompat.ActionMode" parent="@style/Widget.AppCompat.Base.ActionMode" />
+    <style name="Widget.AppCompat.ActivityChooserView" parent="@style/Widget.AppCompat.Base.ActivityChooserView" />
+    <style name="Widget.AppCompat.AutoCompleteTextView" parent="@style/Widget.AppCompat.Base.AutoCompleteTextView" />
+    <style name="Widget.AppCompat.Base.ActionMode" parent="">
+        <item name="height">?actionBarSize</item>
+        <item name="titleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle</item>
+        <item name="background">?actionModeBackground</item>
+        <item name="backgroundSplit">?actionModeSplitBackground</item>
+    </style>
+    <style name="Widget.AppCompat.DropDownItem.Spinner" parent="@style/Widget.AppCompat.Base.DropDownItem.Spinner" />
+    <style name="Widget.AppCompat.Light.ActionBar" parent="@style/Widget.AppCompat.Light.Base.ActionBar" />
+    <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="@style/Widget.AppCompat.Light.Base.ActionBar.Solid" />
+    <style name="Widget.AppCompat.Light.ActionBar.Solid.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.Solid.Inverse" />
+    <style name="Widget.AppCompat.Light.ActionBar.TabBar" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabBar" />
+    <style name="Widget.AppCompat.Light.ActionBar.TabBar.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabBar.Inverse" />
+    <style name="Widget.AppCompat.Light.ActionBar.TabText" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabText" />
+    <style name="Widget.AppCompat.Light.ActionBar.TabText.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabText.Inverse" />
+    <style name="Widget.AppCompat.Light.ActionBar.TabView" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabView" />
+    <style name="Widget.AppCompat.Light.ActionBar.TabView.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionBar.TabView.Inverse" />
+    <style name="Widget.AppCompat.Light.ActionButton" parent="@style/Widget.AppCompat.Light.Base.ActionButton" />
+    <style name="Widget.AppCompat.Light.ActionButton.CloseMode" parent="@style/Widget.AppCompat.Light.Base.ActionButton.CloseMode" />
+    <style name="Widget.AppCompat.Light.ActionButton.Overflow" parent="@style/Widget.AppCompat.Light.Base.ActionButton.Overflow" />
+    <style name="Widget.AppCompat.Light.ActionMode.Inverse" parent="@style/Widget.AppCompat.Light.Base.ActionMode.Inverse" />
+    <style name="Widget.AppCompat.Light.ActivityChooserView" parent="@style/Widget.AppCompat.Light.Base.ActivityChooserView" />
+    <style name="Widget.AppCompat.Light.AutoCompleteTextView" parent="@style/Widget.AppCompat.Light.Base.AutoCompleteTextView" />
+    <style name="Widget.AppCompat.Light.Base.ActivityChooserView" parent="@style/Widget.AppCompat.Base.ActivityChooserView">
+        <item name="android:background">@drawable/abc_ab_share_pack_holo_light</item>
+    </style>
+    <style name="Widget.AppCompat.Light.DropDownItem.Spinner" parent="@style/Widget.AppCompat.Light.Base.DropDownItem.Spinner" />
+    <style name="Widget.AppCompat.Light.ListPopupWindow" parent="@style/Widget.AppCompat.Light.Base.ListPopupWindow" />
+    <style name="Widget.AppCompat.Light.ListView.DropDown" parent="@style/Widget.AppCompat.Light.Base.ListView.DropDown" />
+    <style name="Widget.AppCompat.Light.PopupMenu" parent="@style/Widget.AppCompat.Light.Base.PopupMenu" />
+    <style name="Widget.AppCompat.Light.Spinner.DropDown.ActionBar" parent="@style/Widget.AppCompat.Light.Base.Spinner" />
+    <style name="Widget.AppCompat.ListPopupWindow" parent="@style/Widget.AppCompat.Base.ListPopupWindow" />
+    <style name="Widget.AppCompat.ListView.DropDown" parent="@style/Widget.AppCompat.Base.ListView.DropDown" />
+    <style name="Widget.AppCompat.ListView.Menu" parent="@style/Widget.AppCompat.Base.ListView.Menu" />
+    <style name="Widget.AppCompat.PopupMenu" parent="@style/Widget.AppCompat.Base.PopupMenu" />
+    <style name="Widget.AppCompat.ProgressBar" parent="@style/Widget.AppCompat.Base.ProgressBar" />
+    <style name="Widget.AppCompat.ProgressBar.Horizontal" parent="@style/Widget.AppCompat.Base.ProgressBar.Horizontal" />
+    <style name="Widget.AppCompat.Spinner.DropDown.ActionBar" parent="@style/Widget.AppCompat.Base.Spinner" />
+    <style name="Widget.IconPageIndicator" parent="@style/Widget">
+        <item name="android:layout_marginLeft">6.0dip</item>
+        <item name="android:layout_marginRight">6.0dip</item>
+    </style>
+    <style name="Widget.TabPageIndicator" parent="@style/Widget">
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/vpi__tab_indicator</item>
+        <item name="android:paddingLeft">22.0dip</item>
+        <item name="android:paddingTop">12.0dip</item>
+        <item name="android:paddingRight">22.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="text_horizontal_margin">@dimen/default_tab_text_horizontal_margin</item>
+        <item name="bottom_line_color">@color/vpi__bright_foreground_disabled_holo_dark</item>
+    </style>
+    <style name="blue_button_style">
+        <item name="android:textSize">18.5sp</item>
+        <item name="android:textColor">@color/btn_text_color</item>
+        <item name="android:background">@drawable/btn_blue_selector</item>
+        <item name="android:minHeight">45.0dip</item>
+    </style>
+    <style name="cal_alert_item_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?attr_color_content</item>
+    </style>
+    <style name="cal_list_event_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?attr_color_content</item>
+    </style>
+    <style name="cal_list_time_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?attr_color_content</item>
+    </style>
+    <style name="cal_list_title_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?attr_color_title</item>
+    </style>
+    <style name="circlePageIndicator">
+        <item name="centered">true</item>
+    </style>
+    <style name="circularImageViewStyle">
+        <item name="border_width">2.0dip</item>
+        <item name="border_color">#ffeeeeee</item>
+        <item name="shadow">true</item>
+    </style>
+    <style name="cube_card_desc_big">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/title_content</item>
+    </style>
+    <style name="cube_clean_text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">0.0dip</item>
+    </style>
+    <style name="cube_desc_text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:gravity">left</item>
+    </style>
+    <style name="cube_list_item_desc_text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/transparent</item>
+    </style>
+    <style name="cube_red_text">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/transparent</item>
+    </style>
+    <style name="cube_tag">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="cube_title_text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/title_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/transparent</item>
+    </style>
+    <style name="curr_month_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">?attr_color_title</item>
+    </style>
+    <style name="custom_dialog" parent="@android:style/Animation.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="desc_text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/desc_small_text</item>
+    </style>
+    <style name="form_item_edit_text_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/color_roundcorner_content</item>
+        <item name="android:textColorHint">@color/color_roundcorner_hint</item>
+    </style>
+    <style name="form_item_label_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/title_content</item>
+    </style>
+    <style name="form_item_style">
+        <item name="android:paddingLeft">@dimen/form_item_horizontal_padding</item>
+        <item name="android:paddingTop">@dimen/form_item_vertical_padding</item>
+        <item name="android:paddingRight">@dimen/form_item_horizontal_padding</item>
+        <item name="android:paddingBottom">@dimen/form_item_vertical_padding</item>
+    </style>
+    <style name="gray_button_style">
+        <item name="android:textSize">18.5sp</item>
+        <item name="android:textColor">?attr_color_gray_roundcorner_btn</item>
+        <item name="android:background">?attr_btn_gray_selector</item>
+        <item name="android:minHeight">45.0dip</item>
+    </style>
+    <style name="hint_text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@drawable/hint_text_selector</item>
+    </style>
+    <style name="im_arrow_next">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/arrow_next</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="im_contact_avatar">
+        <item name="android:layout_width">@dimen/im_chat_avatar_width</item>
+        <item name="android:layout_height">@dimen/im_chat_avatar_width</item>
+        <item name="android:src">@drawable/user_profile_male_default_small</item>
+    </style>
+    <style name="im_contact_item">
+        <item name="android:paddingLeft">@dimen/im_chat_item_padding_left</item>
+        <item name="android:paddingTop">@dimen/im_chat_item_padding_top</item>
+        <item name="android:paddingRight">@dimen/im_chat_item_padding_right</item>
+        <item name="android:paddingBottom">@dimen/im_chat_item_padding_bottom</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="im_contact_name">
+        <item name="android:textSize">@dimen/im_contact_name_size</item>
+        <item name="android:textColor">@color/im_contact_name</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">阿猫（别名）</item>
+    </style>
+    <style name="portfolioHeaderBtn">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">?attr_text_level1_color</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="simple_button">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/btn_simple_text_color</item>
+        <item name="android:background">@drawable/btn_simple_bg_selector</item>
+        <item name="android:minHeight">45.0dip</item>
+    </style>
+    <style name="simple_edit_text">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/title_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/bg_simple_cell</item>
+        <item name="android:padding">@dimen/list_item_horizontal_outer_margin</item>
+        <item name="android:minHeight">45.0dip</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:lineSpacingExtra">4.0sp</item>
+    </style>
+    <style name="simple_text">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/title_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@drawable/bg_simple_cell</item>
+        <item name="android:padding">@dimen/list_item_horizontal_outer_margin</item>
+        <item name="android:minHeight">45.0dip</item>
+    </style>
+    <style name="stockStatusText">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/stock_status_round_corner_bg</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+    </style>
+    <style name="stock_date_horizontal_style">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+    <style name="stock_date_style">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?attr_stock_date_text_color</item>
+    </style>
+    <style name="stock_info_style">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">#ff444444</item>
+    </style>
+    <style name="style_table_header">
+        <item name="android:background">?attr_bg_table_header</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+    </style>
+    <style name="style_table_header_clickable">
+        <item name="android:background">?attr_bg_table_header</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingTop">11.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">11.0dip</item>
+    </style>
+    <style name="tips_num_style">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">6.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:minWidth">23.0dip</item>
+    </style>
+    <style name="topic_select_check_box">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@drawable/topic_select_text_selector</item>
+        <item name="android:background">@drawable/topic_select_bg_selector</item>
+        <item name="android:paddingLeft">24.0dip</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:paddingBottom">12.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@drawable/add_icon</item>
+        <item name="android:drawablePadding">24.0dip</item>
+    </style>
+</resources>

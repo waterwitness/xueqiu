@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="alert_array">
+        <item>无</item>
+        <item>5分钟前</item>
+        <item>15分钟前</item>
+        <item>30分钟前</item>
+        <item>1小时前</item>
+        <item>12小时前</item>
+        <item>1天前</item>
+    </string-array>
+    <string-array name="all_index">
+        <item>SH000001</item>
+        <item>SZ399001</item>
+        <item>SZ399006</item>
+        <item>HKHSI</item>
+        <item>HKHSCEI</item>
+        <item>HKHSCCI</item>
+        <item>SP500</item>
+        <item>QQQ</item>
+        <item>ICS30</item>
+    </string-array>
+    <string-array name="all_name">
+        <item>上证指数</item>
+        <item>深证成指</item>
+        <item>创业板指</item>
+        <item>恒生指数</item>
+        <item>国企指数</item>
+        <item>红筹指数</item>
+        <item>标准普尔指数</item>
+        <item>纳斯达克ETF</item>
+        <item>雪球中概30指数</item>
+    </string-array>
+    <string-array name="cn_index">
+        <item>SH000001</item>
+        <item>SZ399001</item>
+        <item>SZ399006</item>
+    </string-array>
+    <string-array name="compatible">
+        <item>公安验证失败</item>
+        <item>证件即将到期，无法继续受理</item>
+        <item>身份证影像模糊</item>
+        <item>大头照非本人照片</item>
+        <item>声音卡或断续</item>
+        <item>手机无声音</item>
+        <item>疑似非本人操作</item>
+        <item>他人代替操作</item>
+        <item>视频卡或不清晰</item>
+        <item>长时间无视频</item>
+        <item>长时间无声音</item>
+        <item>视频认证不通过</item>
+        <item>其他原因</item>
+    </string-array>
+    <string-array name="entries_environment_label">
+        <item>SEP环境</item>
+        <item>RC环境</item>
+        <item>生产环境</item>
+    </string-array>
+    <string-array name="entries_environment_value">
+        <item>@string/env_value_sep</item>
+        <item>@string/env_value_rc</item>
+        <item>@string/env_value_production</item>
+    </string-array>
+    <string-array name="entries_stock_color">
+        <item>@string/red_down_green_up</item>
+        <item>@string/red_up_green_down</item>
+    </string-array>
+    <string-array name="entries_theme_color">
+        <item>@string/blue_mode</item>
+        <item>@string/black_mode</item>
+    </string-array>
+    <string-array name="entries_trade_token_expire_value">
+        <item>@string/token_expire_value_all_day</item>
+        <item>@string/token_expire_value_three_min</item>
+        <item>@string/token_expire_value_fifteen_min</item>
+    </string-array>
+    <string-array name="entries_user_classify">
+        <item>@string/people_all</item>
+        <item>@string/people_followers</item>
+    </string-array>
+    <string-array name="event_type_array">
+        <item>发布财报</item>
+        <item>停牌/复牌</item>
+        <item>IPO/退市</item>
+        <item>股权登记</item>
+        <item>分红派息</item>
+        <item>拆股/合股</item>
+        <item>配股/增发</item>
+        <item>股东大会</item>
+        <item>暂停上市</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="f10_types">
+        <item>公司概况</item>
+        <item>行业地位</item>
+        <item>财务数据</item>
+        <item>交易数据</item>
+        <item>股本信息</item>
+        <item>股东持股</item>
+    </string-array>
+    <array name="face_icons">
+        <item>@drawable/face_20smile_smile</item>
+        <item>@drawable/face_21lol</item>
+        <item>@drawable/face_14guzhang</item>
+        <item>@drawable/face_19qiaopi</item>
+        <item>@drawable/face_08jiayou</item>
+        <item>@drawable/face_23earn</item>
+        <item>@drawable/face_11niubi</item>
+        <item>@drawable/face_24angry</item>
+        <item>@drawable/face_25weep</item>
+        <item>@drawable/face_09lose</item>
+        <item>@drawable/face_26sleepy</item>
+        <item>@drawable/face_18shiwang</item>
+        <item>@drawable/face_10han</item>
+        <item>@drawable/face_13why</item>
+        <item>@drawable/face_16guile</item>
+        <item>@drawable/face_12hand</item>
+        <item>@drawable/face_22buxie</item>
+        <item>@drawable/face_15xunka</item>
+        <item>@drawable/face_chimian</item>
+        <item>@drawable/face_shabi</item>
+        <item>@drawable/face_gerou</item>
+        <item>@drawable/face_maishen</item>
+        <item>@drawable/face_tuxie</item>
+        <item>@drawable/face_kelian</item>
+        <item>@drawable/face_haixiu</item>
+        <item>@drawable/face_koubi</item>
+        <item>@drawable/face_jiong</item>
+        <item>@drawable/face_43kunhuo</item>
+        <item>@drawable/face_44sikao</item>
+        <item>@drawable/face_45aoman</item>
+        <item>@drawable/face_17shutup</item>
+        <item>@drawable/face_27weiguan</item>
+        <item>@drawable/face_03zan</item>
+        <item>@drawable/face_04bian</item>
+        <item>@drawable/face_05woshou</item>
+        <item>@drawable/face_40cheers</item>
+        <item>@drawable/face_36heart</item>
+        <item>@drawable/face_37heartbreak</item>
+        <item>@drawable/face_38flower</item>
+        <item>@drawable/face_39shit</item>
+        <item>@drawable/face_41full</item>
+        <item>@drawable/face_42empty</item>
+        <item>@drawable/face_34reverse</item>
+        <item>@drawable/face_35bottom</item>
+        <item>@drawable/face_33nengliquan</item>
+        <item>@drawable/face_29put</item>
+        <item>@drawable/face_30call</item>
+        <item>@drawable/face_31add</item>
+        <item>@drawable/face_32reduce</item>
+        <item>@drawable/face_01buy</item>
+        <item>@drawable/face_02sell</item>
+        <item>@drawable/face_06maogugu</item>
+        <item>@drawable/face_07deal</item>
+        <item>@drawable/face_28moat</item>
+    </array>
+    <string-array name="financial_data_types">
+        <item>最新</item>
+        <item>年报</item>
+    </string-array>
+    <string-array name="fund_rates">
+        <item>一级</item>
+        <item>二级</item>
+        <item>三级</item>
+        <item>四级</item>
+        <item>五级</item>
+    </string-array>
+    <string-array name="hk_index">
+        <item>HKHSI</item>
+        <item>HKHSCEI</item>
+        <item>HKHSCCI</item>
+    </string-array>
+    <string-array name="hot_stocks">
+        <item>沪深</item>
+        <item>美股</item>
+        <item>港股</item>
+    </string-array>
+    <string-array name="img_eidt_list">
+        <item>重新拍照</item>
+        <item>重选图片</item>
+        <item>删除图片</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="menu_name">
+        <item>首页</item>
+        <item>自选</item>
+        <item>动态</item>
+        <item>行情</item>
+        <item>交易</item>
+    </string-array>
+    <string-array name="month_chinese_labels">
+        <item>一月</item>
+        <item>二月</item>
+        <item>三月</item>
+        <item>四月</item>
+        <item>五月</item>
+        <item>六月</item>
+        <item>七月</item>
+        <item>八月</item>
+        <item>九月</item>
+        <item>十月</item>
+        <item>十一月</item>
+        <item>十二月</item>
+    </string-array>
+    <string-array name="portfolio_types">
+        <item>沪深</item>
+        <item>美股</item>
+        <item>港股</item>
+        <item>沪港通</item>
+        <item>私募工场</item>
+        <item>基金</item>
+        <item>债券</item>
+        <item>比特币</item>
+    </string-array>
+    <string-array name="property_setting_keys">
+        <item>@string/server_key_is_open</item>
+        <item>@string/server_key_begin_time</item>
+        <item>@string/server_key_end_time</item>
+        <item>@string/server_key_direct_message</item>
+        <item>@string/server_key_comment</item>
+        <item>@string/server_key_mention_me</item>
+        <item>@string/server_key_new_follower</item>
+        <item>@string/server_key_news_message</item>
+        <item>@string/server_key_trade_message</item>
+        <item>@string/server_key_mart_message</item>
+        <item>@string/server_key_follow</item>
+    </string-array>
+    <string-array name="quotes_center_industry_types">
+        <item>行业</item>
+        <item>概念</item>
+        <item>地区</item>
+    </string-array>
+    <string-array name="quotes_center_types">
+        <item>沪深</item>
+        <item>美股</item>
+        <item>港股</item>
+        <item>沪港通</item>
+    </string-array>
+    <string-array name="quotes_fund_bond_types">
+        <item>基金</item>
+        <item>债券</item>
+    </string-array>
+    <string-array name="stock_more_info_tab_titles">
+        <item>行情</item>
+        <item>资料</item>
+        <item>期权</item>
+        <item>财务</item>
+    </string-array>
+    <string-array name="timezone_array">
+        <item>北京时间</item>
+        <item>美东时间</item>
+    </string-array>
+    <string-array name="today_topic_types">
+        <item>全部</item>
+        <item>沪深</item>
+        <item>美股</item>
+        <item>港股</item>
+        <item>理财</item>
+    </string-array>
+    <string-array name="top_list_pop_description">
+        <item>反映组合的赚钱能力，组合收益率越高，该项分值越高。</item>
+        <item>反映组合最大回撤的大小。最大回撤用来描述买入组合后可能出现的最糟糕收益情况，是一个重要的风险指标。</item>
+        <item>反映组合收益是否稳定。净值变化波动越小的组合，在该项指标上分值越高。</item>
+        <item>考核组合持股是否分散，持股越分散，该项分值越高。</item>
+        <item>表示该组合是否容易跟单，由组合调仓换手率和持股流动性共同决定。</item>
+    </string-array>
+    <string-array name="top_list_pop_title">
+        <item>盈利能力</item>
+        <item>抗风险能力</item>
+        <item>稳定性</item>
+        <item>持股分散度</item>
+        <item>可复制性</item>
+    </string-array>
+    <string-array name="us_index">
+        <item>SP500</item>
+        <item>QQQ</item>
+        <item>ICS30</item>
+    </string-array>
+</resources>

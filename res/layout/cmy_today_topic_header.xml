@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/img_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/header_status_image" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="?attr_image_no_content_with_big_logo" android:scaleType="fitXY" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="19.0sp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/header_status_title" android:background="@drawable/topic_header_gadient_shadow" android:paddingLeft="10.0dip" android:paddingTop="40.0dip" android:paddingRight="13.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

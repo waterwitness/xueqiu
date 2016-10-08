@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/urlPath" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="broker/test" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/btns" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/urlPath">
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="refresh" android:layout_weight="1.0" android:onClick="refresh" />
+        <Button android:id="@id/find" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="find" android:layout_weight="1.0" android:onClick="find" />
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="display" android:layout_weight="1.0" android:onClick="display" />
+    </LinearLayout>
+    <TextView android:id="@id/result" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/btns" />
+    <WebView android:id="@id/webView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/result" />
+</RelativeLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button android:textSize="12.0dip" android:textColor="@color/chart_button_text_color" android:gravity="center" android:background="@drawable/chart_button_frame_normal" android:layout_width="wrap_content" android:layout_height="@dimen/cube_chart_height" android:text="hello"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

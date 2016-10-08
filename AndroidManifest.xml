@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.xueqiu.android" platformBuildVersionCode="23" platformBuildVersionName="6.0-2704002">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <permission android:name="com.xueqiu.android.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.xueqiu.android.permission.MIPUSH_RECEIVE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:allowBackup="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="?attr_icon_nav_logo" android:name="com.xueqiu.android.base.SnowBallApplication">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.WelcomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_RESP_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="xueqiu"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:name="com.xueqiu.android.view.WelcomeActivityAlias" android:targetActivity="com.xueqiu.android.common.WelcomeActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.MainActivity" android:screenOrientation="portrait" android:theme="@style/SNB.Theme" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.account.LoginByEmailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.xueqiu.android.common.SingleFragmentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.StatusDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.WriteStatusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <data android:mimeType="text/plain"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.RichTextActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.UserProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.UserListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.search.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:launchMode="singleTask" android:name="com.xueqiu.android.common.SNBTAuthView">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencentauth"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tauth.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent100229413"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.account.GetbackPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:name="com.xueqiu.android.common.ImageActivity" android:screenOrientation="sensor"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.SimpleStatusListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.FindPeopleActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.stock.StockDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.setting.SettingsPushActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.UpdateUserInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.UserInfoShowActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.account.RegisterCompleteUserInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.xueqiu.android.common.account.VerifyPhoneNumActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.account.VerifyBindedPhoneNumActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.AppRecommendActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.DraftBoxActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.BigImageActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.stock.InvestmentCalEventAddActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.stock.InvestmentCalendarActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.stock.SearchStockActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.ManageGroupInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.CountryCodeSelectActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.FindPeopleFromWeiBoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/account_bind" android:name="com.xueqiu.android.community.AccountBindingActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="OAuthBackActivity" android:scheme="oauth"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.account.UpdatePasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation" android:name="com.xueqiu.android.message.TalkListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|orientation" android:launchMode="singleTask" android:name="com.xueqiu.android.message.ChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.xueqiu.android.message.GroupCreateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.xueqiu.android.message.GroupProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.xueqiu.android.message.GroupManageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.xueqiu.android.message.GroupMemberListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/setting" android:name="com.xueqiu.android.message.TalkProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.message.SelectUserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="@string/select_picture" android:name="com.xueqiu.android.common.imagepicker.GalleryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/select_picture" android:name="com.xueqiu.android.common.imagepicker.PickActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/preview" android:name="com.xueqiu.android.common.imagepicker.PreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/snowball_message" android:name="com.xueqiu.android.message.SelectTalkActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.xueqiu.android.message.IMGroupListActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/im_name_talk" android:name="com.xueqiu.android.message.GroupNameActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible"/>
+        <activity android:name="com.xueqiu.android.message.RecentTalkActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.xueqiu.android.message.ApplyListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.trade.TakingPositionActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/search_name_card" android:name="com.xueqiu.android.common.SearchNameCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.xueqiu.android.community.CommentsPostedByMeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.common.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.StockRankMoreListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.FeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.RechargeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.common.AlipayWapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.RewardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.CashierActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.UserPrivateFundActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.UserAnsweredQuestionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.UserHotStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.common.search.UserStatusSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.RewardListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.StockMoreInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.trade.kwlopen.KwlOpenActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.xueqiu.android.common.account.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Function" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="OAuthBackActivity" android:scheme="oauth"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.ShareActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.umeng.update.net.DownloadingService" android:process=":DownloadingService"/>
+        <service android:name="com.xueqiu.android.base.DownloadPatchService" android:process=":DownloadPatchService"/>
+        <activity android:name="com.umeng.update.UpdateDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.xueqiu.android.common.UpdateDialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.xueqiu.android.message.client.MessageService"/>
+        <receiver android:name="com.xueqiu.android.OnBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xueqiu.android.base.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.xueqiu.android.action.ALARM"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.xueqiu.android.base.NotificationReceiver">
+            <intent-filter>
+                <action android:name="com.xueqiu.android.action.NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/title_activity_diagnostic" android:name="com.xueqiu.android.common.setting.DiagnosticActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.StockRemindingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.PromotionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.TodayTopicActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.MentionMeStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.CommentReceiveActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.CommentTalksActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.LiveNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.xueqiu.android.wxapi.WXEntryActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="true" android:name="com.xueqiu.android.wxapi.WXPayEntryActivity"/>
+        <activity android:label="@string/title_activity_create_cube" android:name="com.xueqiu.android.cube.CreateCubeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_add_stock" android:name="com.xueqiu.android.cube.AddStockActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_cube" android:name="com.xueqiu.android.cube.CubeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.cube.RebalanceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="@string/title_activity_cube_rb_history" android:name="com.xueqiu.android.cube.CubeRbHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/net_value_history" android:name="com.xueqiu.android.cube.NVHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.FundNvHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/search" android:name="com.xueqiu.android.cube.SearchCubeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_cube_card_list" android:name="com.xueqiu.android.cube.CubeCardListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.cube.CubeEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.cube.IndustryListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.cube.CubeListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.cube.CubeEditorialActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.cube.EditorialHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.cube.CubeTopListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.cube.CubeFlyOrderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.xueqiu.android.cube.CubeFlyOrderResultActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.cube.H5ShareActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.cube.StockGainAnalysisActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.cube.CubeGainAnalysisActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.cube.CubeRbAnalysisActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.common.GuideTutorialActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.xueqiu.android.stock.PortfolioCategoryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.PrivateFundActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.common.search.USearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustNothing|stateVisible"/>
+        <activity android:name="com.xueqiu.android.message.TalkSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.xueqiu.android.common.search.StockSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.xueqiu.android.community.UserSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.xueqiu.android.common.MyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="" android:name="com.xueqiu.android.base.h5.H5Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.base.h5.H5TestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.FundRankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.BondBuyBackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.HgtAhStockRankMoreListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.trade.SetPatternActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.trade.BindBrokerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.trade.TradeSecuritySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.trade.ConfirmPatternActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.TopicDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.trade.OrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.community.TopicFeaturedListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.TopicWordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Function" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.pdf.PDFViewerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Function" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.common.setting.SettingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Function" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.xueqiu.android.tactic.TacticStoreActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.tactic.TacticDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.tactic.MyPushListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.tactic.TacticSubscribeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.xueqiu.android.stock.F10Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.USETFRankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.StockFollowersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.LHBActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.FinancialDataActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.RZRQActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kwlopen.sdk.activity.CaptureVideo" android:screenOrientation="portrait"/>
+        <activity android:name="com.kwlopen.sdk.activity.VideoPlayActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.kwlopen.sdk.activity.VideoVitness" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.kwlopen.sdk.activity.SelectPicActivity" android:screenOrientation="portrait" android:theme="@style/MyDialogStyleBottom"/>
+        <activity android:name="com.kwlopen.sdk.activity.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kwlopen.sdk.activity.ImageShowActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.kwlopen.sdk.activity.KwlOpenActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.common.UserGuideActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.trade.OrderFullActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.trade.PAAccountVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.xueqiu.android.community.ReplierProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.xueqiu.android.community.widget.PaidAnswerCompleteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.stock.StockSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.xueqiu.android.common.GeneralNoticeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.xueqiu.android.community.ShareCommentResultActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.xueqiu.android.base.MiBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.alipay.android.app.sdk.WapPayActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nhaarman.listviewanimations.itemmanipulation.swipedismiss.SwipeTouchListenerTestActivity"/>
+        <activity android:name="com.nhaarman.listviewanimations.itemmanipulation.dragdrop.DynamicListViewTestActivity"/>
+        <activity android:label="RecyclerViewTestActivity" android:name="android.support.v7.widget.TestActivity"/>
+    </application>
+</manifest>

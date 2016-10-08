@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?attr_color_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/trade_history_title_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.xueqiu.android.trade.view.FullHeightListView android:id="@id/trade_history_list" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@drawable/transparent_selector" android:divider="@null" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/table_empty_text_color" android:gravity="center" android:id="@id/trade_history_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="150.0dip" />
+</LinearLayout>

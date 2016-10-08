@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?attr_nav_color" android:layout_width="fill_parent" android:layout_height="@dimen/abc_action_bar_default_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="?attr_nav_text_color" android:gravity="center_vertical" android:id="@id/tv_action_cancel" android:background="?selectableItemBackground" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" />
+    <TextView android:textSize="18.0sp" android:textColor="?attr_nav_text_color" android:gravity="center_horizontal" android:id="@id/tv_action_bar_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="编辑长文" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="?attr_nav_text_color" android:gravity="center_vertical" android:id="@id/tv_action_send" android:background="?selectableItemBackground" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/action_send" />
+</LinearLayout>

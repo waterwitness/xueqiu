@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/blue" android:clickable="true" android:layout_width="fill_parent" android:layout_height="95.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.common.widget.AutoResizeTextView android:textSize="15.0sp" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/name" android:paddingLeft="@dimen/list_item_horizontal_inner_margin" android:paddingRight="@dimen/list_item_horizontal_inner_margin" android:paddingBottom="@dimen/list_item_vertical_inner_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#33000000" android:shadowDy="1.0" style="@style/cube_clean_text" />
+    <ImageView android:layout_gravity="center" android:id="@id/icon_check" android:background="@color/trans_gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_img_select" android:scaleType="center" />
+</FrameLayout>

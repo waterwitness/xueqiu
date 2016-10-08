@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.xueqiu.android.common.widget.SNBPullToRefreshListView android:layout_gravity="bottom" android:id="@id/top_list" android:background="@drawable/transparent" android:paddingBottom="50.0dip" android:clickable="true" android:clipToPadding="false" android:divider="@null" android:dividerHeight="0.0dip" android:layout_alignParentBottom="true" style="?attr/snbListViewStyle" />
+    <include android:id="@id/tab_container" layout="@layout/cube_top_list_tab_container" />
+    <View android:id="@id/anchor_view" android:visibility="invisible" android:layout_width="1.0px" android:layout_height="1.0px" android:layout_marginRight="84.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

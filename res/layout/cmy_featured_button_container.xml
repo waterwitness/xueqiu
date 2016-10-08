@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/featured_buttons_container" android:layout_width="fill_parent" android:layout_height="80.0dip" />
+    <View android:background="?attr_cell_line_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="?attr_background_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+</LinearLayout>

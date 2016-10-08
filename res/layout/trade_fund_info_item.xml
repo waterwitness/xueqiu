@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="#77ffffff" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="--" android:maxLength="6" />
+    <TextView android:textSize="14.0dip" android:textColor="?attr_trade_fund_text_color" android:id="@id/value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="--" />
+</LinearLayout>
